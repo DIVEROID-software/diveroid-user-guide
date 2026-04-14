@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIVEROID NEW UNIVERSAL PRO — 스마트폰 호환성 표</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 14px;
+        color: #1a1a1a;
+        background: #f4f6f9;
+        line-height: 1.7;
+      }
+
+      header {
+        background: #050c18;
+        color: #fff;
+        padding: 32px 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      header .logo-text {
+        font-size: 11px;
+        letter-spacing: 4px;
+        color: #50a9fc;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      header h1 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      header p {
+        font-size: 13px;
+        color: #8ea8c3;
+        margin-top: 4px;
+      }
+
+      .spec-banner {
+        background: #0d1f36;
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .spec-banner .spec-label {
+        font-size: 11px;
+        color: #50a9fc;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
+      }
+      .spec-banner .spec-value {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .spec-banner .spec-unit {
+        font-size: 12px;
+        color: #8ea8c3;
+        margin-left: 4px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 36px auto;
+        padding: 0 24px;
+      }
+
+      .legend {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: #444;
+      }
+      .legend-badge {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #050c18;
+        margin: 36px 0 12px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #50a9fc;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .section-title .brand-icon {
+        font-size: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        margin-bottom: 8px;
+      }
+      thead tr {
+        background: #1e2d42;
+        color: #fff;
+      }
+      thead th {
+        padding: 13px 16px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      thead th.col-model {
+        text-align: left;
+        min-width: 220px;
+      }
+      tbody tr {
+        border-bottom: 1px solid #eef0f3;
+        transition: background 0.15s;
+      }
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+      tbody tr:hover {
+        background: #f0f7ff;
+      }
+      tbody tr.incompatible {
+        background: #fafafa;
+        color: #999;
+      }
+      tbody tr.incompatible:hover {
+        background: #f5f5f5;
+      }
+      td {
+        padding: 11px 16px;
+        text-align: center;
+        font-size: 13px;
+      }
+      td.col-model {
+        text-align: left;
+        font-weight: 500;
+        color: #1a1a1a;
+      }
+      tbody tr.incompatible td.col-model {
+        color: #aaa;
+      }
+      td.hw-ok {
+        font-size: 18px;
+        color: #2ecc71;
+      }
+      td.hw-ng {
+        font-size: 18px;
+        color: #e74c3c;
+      }
+      td.sw-cell {
+        color: #ccc;
+        font-size: 12px;
+      }
+      td.note-cell {
+        font-size: 11px;
+        color: #aaa;
+        text-align: left;
+      }
+
+      .caution {
+        background: #fffbf0;
+        border: 1px solid #f0d070;
+        border-radius: 8px;
+        padding: 14px 18px;
+        font-size: 13px;
+        color: #7a6200;
+        margin-top: 24px;
+        line-height: 1.8;
+      }
+
+      .footer-note {
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+        padding: 32px 0 48px;
+      }
+      .footer-note a {
+        color: #50a9fc;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 24px 20px;
+          gap: 12px;
+        }
+        header h1 {
+          font-size: 17px;
+        }
+        .spec-banner {
+          padding: 16px 20px;
+          gap: 24px;
+        }
+        .container {
+          padding: 0 12px;
+        }
+        table {
+          font-size: 12px;
+        }
+        th,
+        td {
+          padding: 9px 10px;
+        }
+        thead th.col-model {
+          min-width: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo-text">DIVEROID</div>
+        <h1>NEW UNIVERSAL PRO — 스마트폰 호환성 표</h1>
+        <p>
+          HW = 하우징 물리 사이즈 호환 여부 &nbsp;|&nbsp; SW = 앱 소프트웨어
+          호환 여부 (테스트 예정)
+        </p>
+      </div>
+    </header>
+
+    <div class="spec-banner">
+      <div>
+        <div class="spec-label">가로 범위</div>
+        <div class="spec-value">67 ~ 82<span class="spec-unit">mm</span></div>
+      </div>
+      <div>
+        <div class="spec-label">세로 범위</div>
+        <div class="spec-value">138 ~ 163<span class="spec-unit">mm</span></div>
+      </div>
+      <div>
+        <div class="spec-label">두께 범위</div>
+        <div class="spec-value">7 ~ 9<span class="spec-unit">mm</span></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-badge">✅</span> HW 호환 (물리 사이즈 적합)
+        </div>
+        <div class="legend-item">
+          <span class="legend-badge">❌</span> HW 비호환 (사이즈 또는 폼팩터
+          부적합)
+        </div>
+        <div class="legend-item">
+          <span class="legend-badge" style="color: #ccc">—</span> SW 미테스트
+          (공란)
+        </div>
+      </div>
+
+      <!-- ─────────────── Samsung Galaxy ─────────────── -->
+      <div class="section-title">
+        <span class="brand-icon">📱</span> Samsung Galaxy
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">모델명</th>
+            <th>가로 (mm)</th>
+            <th>세로 (mm)</th>
+            <th>두께 (mm)</th>
+            <th>HW</th>
+            <th>SW</th>
+            <th class="col-model">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy S26 Ultra</td>
+            <td>78.1</td>
+            <td>163.6</td>
+            <td>7.9</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">세로 0.6mm 초과</td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S26+</td>
+            <td>75.8</td>
+            <td>158.4</td>
+            <td>7.3</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S26</td>
+            <td>71.7</td>
+            <td>149.6</td>
+            <td>7.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S25 Ultra</td>
+            <td>77.6</td>
+            <td>162.8</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S25+</td>
+            <td>75.5</td>
+            <td>158.0</td>
+            <td>7.3</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S25</td>
+            <td>70.5</td>
+            <td>146.9</td>
+            <td>7.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S24 Ultra</td>
+            <td>79.0</td>
+            <td>162.3</td>
+            <td>8.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S24+</td>
+            <td>75.9</td>
+            <td>158.5</td>
+            <td>7.7</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S24</td>
+            <td>70.6</td>
+            <td>147.0</td>
+            <td>7.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy S23 Ultra</td>
+            <td>78.1</td>
+            <td>163.4</td>
+            <td>8.9</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">세로 0.4mm 초과</td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S23+</td>
+            <td>76.2</td>
+            <td>157.8</td>
+            <td>7.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy S23</td>
+            <td>70.9</td>
+            <td>146.3</td>
+            <td>7.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy Z Fold 6 (접었을 때)</td>
+            <td>68.1</td>
+            <td>153.5</td>
+            <td>12.1</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">폴드 폼팩터 · 두께 초과</td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy Z Fold 5 (접었을 때)</td>
+            <td>67.1</td>
+            <td>154.9</td>
+            <td>13.4</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">폴드 폼팩터 · 두께 초과</td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy Z Flip 6 (펼쳤을 때)</td>
+            <td>71.9</td>
+            <td>165.1</td>
+            <td>6.9</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">세로 초과 · 두께 미달</td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Galaxy Z Flip 5 (펼쳤을 때)</td>
+            <td>71.9</td>
+            <td>165.1</td>
+            <td>6.9</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">세로 초과 · 두께 미달</td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy A55</td>
+            <td>76.5</td>
+            <td>161.1</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy A35</td>
+            <td>77.9</td>
+            <td>161.7</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Galaxy A15</td>
+            <td>76.8</td>
+            <td>160.1</td>
+            <td>8.4</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ─────────────── Apple iPhone ─────────────── -->
+      <div class="section-title">
+        <span class="brand-icon">📱</span> Apple iPhone
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">모델명</th>
+            <th>가로 (mm)</th>
+            <th>세로 (mm)</th>
+            <th>두께 (mm)</th>
+            <th>HW</th>
+            <th>SW</th>
+            <th class="col-model">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="incompatible">
+            <td class="col-model">iPhone 17 Pro Max</td>
+            <td>78.0</td>
+            <td>163.4</td>
+            <td>8.75</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">세로 0.4mm 초과</td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 17 Pro</td>
+            <td>71.9</td>
+            <td>150.0</td>
+            <td>8.75</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 17</td>
+            <td>71.5</td>
+            <td>149.6</td>
+            <td>7.95</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">iPhone Air (2025)</td>
+            <td>74.7</td>
+            <td>156.2</td>
+            <td>5.64</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">두께 5.64mm — 하우징 최소치 미달</td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 16 Pro Max</td>
+            <td>77.6</td>
+            <td>163.0</td>
+            <td>8.25</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 16 Pro</td>
+            <td>71.5</td>
+            <td>149.6</td>
+            <td>8.25</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 16 Plus</td>
+            <td>77.8</td>
+            <td>160.9</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 16</td>
+            <td>71.5</td>
+            <td>147.6</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 15 Pro Max</td>
+            <td>76.7</td>
+            <td>159.9</td>
+            <td>8.25</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 15 Pro</td>
+            <td>70.6</td>
+            <td>146.6</td>
+            <td>8.25</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 15 Plus</td>
+            <td>77.8</td>
+            <td>160.9</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 15</td>
+            <td>71.5</td>
+            <td>147.6</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 14 Pro Max</td>
+            <td>77.6</td>
+            <td>160.7</td>
+            <td>7.85</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 14 Plus</td>
+            <td>78.1</td>
+            <td>160.8</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 14</td>
+            <td>71.5</td>
+            <td>146.7</td>
+            <td>7.80</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 13 Pro Max</td>
+            <td>78.1</td>
+            <td>160.8</td>
+            <td>7.65</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 13 Pro</td>
+            <td>71.5</td>
+            <td>146.7</td>
+            <td>7.65</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone 13</td>
+            <td>71.5</td>
+            <td>146.7</td>
+            <td>7.65</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">iPhone 13 mini</td>
+            <td>64.2</td>
+            <td>131.5</td>
+            <td>7.65</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">Mini 폼팩터 — 가로·세로 미달</td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">iPhone 12 mini</td>
+            <td>64.2</td>
+            <td>131.5</td>
+            <td>7.40</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">Mini 폼팩터 — 가로·세로 미달</td>
+          </tr>
+          <tr>
+            <td class="col-model">iPhone SE (3세대, 2022)</td>
+            <td>67.3</td>
+            <td>138.4</td>
+            <td>7.30</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">최소 사이즈 — 밀착 장착 필요</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ─────────────── Google Pixel ─────────────── -->
+      <div class="section-title">
+        <span class="brand-icon">📱</span> Google Pixel
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">모델명</th>
+            <th>가로 (mm)</th>
+            <th>세로 (mm)</th>
+            <th>두께 (mm)</th>
+            <th>HW</th>
+            <th>SW</th>
+            <th class="col-model">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-model">Pixel 9 Pro XL</td>
+            <td>76.6</td>
+            <td>162.8</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Pixel 9 Pro Fold (접었을 때)</td>
+            <td>77.1</td>
+            <td>155.2</td>
+            <td>10.5</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">폴드 폼팩터 · 두께 초과</td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 9 Pro</td>
+            <td>72.0</td>
+            <td>152.8</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 9</td>
+            <td>72.0</td>
+            <td>152.9</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 8 Pro</td>
+            <td>76.5</td>
+            <td>162.6</td>
+            <td>8.8</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 8a</td>
+            <td>72.7</td>
+            <td>152.1</td>
+            <td>8.9</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 8</td>
+            <td>70.8</td>
+            <td>150.5</td>
+            <td>8.9</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 7 Pro</td>
+            <td>76.6</td>
+            <td>162.9</td>
+            <td>8.9</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Pixel 7a</td>
+            <td>72.9</td>
+            <td>152.4</td>
+            <td>9.0</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">두께 최대치 (9.0mm)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ─────────────── Xiaomi ─────────────── -->
+      <div class="section-title">
+        <span class="brand-icon">📱</span> Xiaomi / Redmi / POCO
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">모델명</th>
+            <th>가로 (mm)</th>
+            <th>세로 (mm)</th>
+            <th>두께 (mm)</th>
+            <th>HW</th>
+            <th>SW</th>
+            <th class="col-model">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="incompatible">
+            <td class="col-model">Xiaomi 15 Ultra</td>
+            <td>75.3</td>
+            <td>161.4</td>
+            <td>9.4</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">두께 초과 (9.4mm)</td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 15 Pro</td>
+            <td>74.7</td>
+            <td>160.4</td>
+            <td>8.35</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 15</td>
+            <td>71.2</td>
+            <td>152.3</td>
+            <td>8.1</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Xiaomi 14 Ultra</td>
+            <td>75.3</td>
+            <td>161.4</td>
+            <td>9.4</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">두께 초과 (9.4mm)</td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 14 Pro</td>
+            <td>75.3</td>
+            <td>161.4</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 14</td>
+            <td>71.5</td>
+            <td>152.8</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 13T Pro</td>
+            <td>75.9</td>
+            <td>162.9</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Xiaomi 13T</td>
+            <td>75.7</td>
+            <td>162.2</td>
+            <td>8.5</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Redmi Note 13 Pro+</td>
+            <td>74.2</td>
+            <td>161.4</td>
+            <td>8.9</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Redmi Note 13 Pro</td>
+            <td>74.2</td>
+            <td>161.2</td>
+            <td>8.0</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">POCO X6 Pro</td>
+            <td>74.3</td>
+            <td>160.5</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ─────────────── Motorola ─────────────── -->
+      <div class="section-title">
+        <span class="brand-icon">📱</span> Motorola
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">모델명</th>
+            <th>가로 (mm)</th>
+            <th>세로 (mm)</th>
+            <th>두께 (mm)</th>
+            <th>HW</th>
+            <th>SW</th>
+            <th class="col-model">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-model">Motorola Edge 50 Ultra</td>
+            <td>72.4</td>
+            <td>161.1</td>
+            <td>8.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Motorola Edge 50 Pro</td>
+            <td>73.0</td>
+            <td>161.2</td>
+            <td>8.2</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Motorola Edge 50</td>
+            <td>73.0</td>
+            <td>161.2</td>
+            <td>7.7</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Motorola Razr 50 Ultra (펼쳤을 때)</td>
+            <td>74.0</td>
+            <td>171.3</td>
+            <td>7.1</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">플립 폼팩터 · 세로 초과</td>
+          </tr>
+          <tr class="incompatible">
+            <td class="col-model">Motorola Razr 50 (펼쳤을 때)</td>
+            <td>74.0</td>
+            <td>171.1</td>
+            <td>7.1</td>
+            <td class="hw-ng">❌</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell">플립 폼팩터 · 세로 초과</td>
+          </tr>
+          <tr>
+            <td class="col-model">Motorola G85</td>
+            <td>73.0</td>
+            <td>161.9</td>
+            <td>7.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+          <tr>
+            <td class="col-model">Motorola G55</td>
+            <td>74.7</td>
+            <td>161.7</td>
+            <td>7.6</td>
+            <td class="hw-ok">✅</td>
+            <td class="sw-cell">—</td>
+            <td class="note-cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="caution">
+        ⚠️ <strong>주의사항</strong><br />
+        · 위 사이즈 데이터는 각 제조사 공식 스펙 기준이며, 실제 측정값과 ±0.5mm
+        오차가 있을 수 있습니다.<br />
+        · 케이스 미착용 기준입니다. 케이스 장착 시 하우징에 들어가지 않을 수
+        있습니다.<br />
+        · 폴드/플립형 스마트폰은 폼팩터 특성상 기본적으로 비호환입니다.<br />
+        · SW 호환 여부는 추후 테스트 후 업데이트 예정입니다.
+      </div>
+
+      <div class="footer-note">
+        DIVEROID NEW UNIVERSAL PRO &nbsp;|&nbsp; 스마트폰 호환성 기준표<br />
+        최종 호환 확인:
+        <a href="https://www.diveroid.com" target="_blank">www.diveroid.com</a>
+      </div>
+    </div>
+  </body>
+</html>
