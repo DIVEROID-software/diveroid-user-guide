@@ -1227,6 +1227,7 @@
         }
       }
     </style>
+    <script src="translations.js"></script>
   </head>
   <body>
     <!-- ══ 언어 선택기 ══ -->
@@ -1238,38 +1239,59 @@
       <div class="lang-dropdown">
         <div
           class="lang-option active"
-          onclick="selectLang(this, '🇰🇷', '한국어')"
+          onclick="selectLang(this, '🇰🇷', '한국어', 'KR')"
         >
           <span class="lang-flag">🇰🇷</span><span class="lang-name">한국어</span
           ><span class="lang-eng">Korean</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇺🇸', 'English')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇺🇸', 'English', 'EN')"
+        >
           <span class="lang-flag">🇺🇸</span><span class="lang-name">English</span
           ><span class="lang-eng">English</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇹🇼', '繁體中文')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇹🇼', '繁體中文', 'TW')"
+        >
           <span class="lang-flag">🇹🇼</span
           ><span class="lang-name">繁體中文</span
           ><span class="lang-eng">Traditional Chinese</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇯🇵', '日本語')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇯🇵', '日本語', 'JP')"
+        >
           <span class="lang-flag">🇯🇵</span><span class="lang-name">日本語</span
           ><span class="lang-eng">Japanese</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇪🇸', 'Español')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇪🇸', 'Español', 'ES')"
+        >
           <span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span
           ><span class="lang-eng">Spanish</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇸🇦', 'العربية')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇸🇦', 'العربية', 'AR')"
+        >
           <span class="lang-flag">🇸🇦</span><span class="lang-name">العربية</span
           ><span class="lang-eng">Arabic</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇧🇷', 'Português')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇧🇷', 'Português', 'PT')"
+        >
           <span class="lang-flag">🇧🇷</span
           ><span class="lang-name">Português</span
           ><span class="lang-eng">Portuguese</span>
         </div>
-        <div class="lang-option" onclick="selectLang(this, '🇮🇹', 'Italiano')">
+        <div
+          class="lang-option"
+          onclick="selectLang(this, '🇮🇹', 'Italiano', 'IT')"
+        >
           <span class="lang-flag">🇮🇹</span
           ><span class="lang-name">Italiano</span
           ><span class="lang-eng">Italian</span>
@@ -1478,14 +1500,18 @@
 
       <div class="cover-inner">
         <div class="cover-badge">DIVEROID &nbsp;·&nbsp; SEASON 2</div>
-        <div class="cover-tagline">바다를 이해하는 AI</div>
-        <div class="cover-sub">스마트폰이 4K 수중카메라가 되는 순간</div>
+        <div class="cover-tagline" data-i18n="cover.tagline">
+          바다를 이해하는 AI
+        </div>
+        <div class="cover-sub" data-i18n="cover.sub">
+          스마트폰이 4K 수중카메라가 되는 순간
+        </div>
         <div class="cover-divider"></div>
         <div class="cover-product-row">
           <div class="cover-product-name">NEW UNIVERSAL PRO</div>
           <div class="cover-guide-label">User &nbsp; Guide</div>
         </div>
-        <div class="cover-lang">한국어</div>
+        <div class="cover-lang" data-i18n="cover.lang">한국어</div>
       </div>
 
       <div class="cover-scroll-hint">
@@ -1636,76 +1662,120 @@
         </div>
 
         <div class="sidenav-group">
-          <div class="sidenav-group-label">시작하기</div>
+          <div class="sidenav-group-label" data-i18n="nav.g1">시작하기</div>
           <a href="#sec-intro" onclick="scrollTo('sec-intro')"
-            ><span class="nav-icon">✦</span> 제품 소개</a
+            ><span class="nav-icon">✦</span>
+            <span data-i18n="nav.intro">제품 소개</span></a
           >
           <a href="#sec-package" onclick="scrollTo('sec-package')"
-            ><span class="nav-icon">📦</span> 구성품</a
+            ><span class="nav-icon">📦</span>
+            <span data-i18n="nav.package">구성품</span></a
           >
           <a href="#sec-parts" onclick="scrollTo('sec-parts')"
-            ><span class="nav-icon">🔍</span> 부위 명칭</a
+            ><span class="nav-icon">🔍</span>
+            <span data-i18n="nav.parts">부위 명칭</span></a
           >
         </div>
 
         <div class="sidenav-group">
-          <div class="sidenav-group-label">하드웨어</div>
+          <div class="sidenav-group-label" data-i18n="nav.g2">하드웨어</div>
           <a href="#sec-ch1" onclick="scrollTo('sec-ch1')"
-            ><span class="nav-icon">1</span> 하우징 사용법</a
+            ><span class="nav-icon">1</span>
+            <span data-i18n="nav.ch1">하우징 사용법</span></a
           >
-          <a href="#sec-ch1" class="sub" onclick="scrollTo('sec-ch1')"
+          <a
+            href="#sec-ch1"
+            class="sub"
+            onclick="scrollTo('sec-ch1')"
+            data-i18n="nav.ch1-1"
             >1-1. 열고 닫기</a
           >
-          <a href="#sec-ch1-2" class="sub" onclick="scrollTo('sec-ch1-2')"
+          <a
+            href="#sec-ch1-2"
+            class="sub"
+            onclick="scrollTo('sec-ch1-2')"
+            data-i18n="nav.ch1-2"
             >1-2. 방수 테스트</a
           >
-          <a href="#sec-ch1-3" class="sub" onclick="scrollTo('sec-ch1-3')"
+          <a
+            href="#sec-ch1-3"
+            class="sub"
+            onclick="scrollTo('sec-ch1-3')"
+            data-i18n="nav.ch1-3"
             >1-3. 하우징 조정</a
           >
         </div>
 
         <div class="sidenav-group">
-          <div class="sidenav-group-label">소프트웨어</div>
+          <div class="sidenav-group-label" data-i18n="nav.g3">소프트웨어</div>
           <a href="#sec-ch2" onclick="scrollTo('sec-ch2')"
-            ><span class="nav-icon">2</span> 앱 사용하기</a
+            ><span class="nav-icon">2</span>
+            <span data-i18n="nav.ch2">앱 사용하기</span></a
           >
-          <a href="#sec-ch2" class="sub" onclick="scrollTo('sec-ch2')"
+          <a
+            href="#sec-ch2"
+            class="sub"
+            onclick="scrollTo('sec-ch2')"
+            data-i18n="nav.ch2-1"
             >2-1. 앱 설치 &amp; 기기 등록</a
           >
-          <a href="#sec-ch2-2" class="sub" onclick="scrollTo('sec-ch2-2')"
+          <a
+            href="#sec-ch2-2"
+            class="sub"
+            onclick="scrollTo('sec-ch2-2')"
+            data-i18n="nav.ch2-2"
             >2-2. 스마트폰 설정</a
           >
           <a href="#sec-dive" onclick="scrollTo('sec-dive')"
-            ><span class="nav-icon">🤿</span> 다이빙 모드 진입</a
+            ><span class="nav-icon">🤿</span>
+            <span data-i18n="nav.dive">다이빙 모드 진입</span></a
           >
         </div>
 
         <div class="sidenav-group">
-          <div class="sidenav-group-label">제품 사용</div>
+          <div class="sidenav-group-label" data-i18n="nav.g4">제품 사용</div>
           <a href="#sec-ch3" onclick="scrollTo('sec-ch3')"
-            ><span class="nav-icon">3</span> 제품 사용하기</a
+            ><span class="nav-icon">3</span>
+            <span data-i18n="nav.ch3">제품 사용하기</span></a
           >
-          <a href="#sec-ch3" class="sub" onclick="scrollTo('sec-ch3')"
+          <a
+            href="#sec-ch3"
+            class="sub"
+            onclick="scrollTo('sec-ch3')"
+            data-i18n="nav.ch3-1"
             >3-1. 사용 준비</a
           >
-          <a href="#sec-ch3-btn" class="sub" onclick="scrollTo('sec-ch3-btn')"
+          <a
+            href="#sec-ch3-btn"
+            class="sub"
+            onclick="scrollTo('sec-ch3-btn')"
+            data-i18n="nav.ch3-2"
             >3-2. 버튼 조작</a
           >
-          <a href="#sec-ch3-feat" class="sub" onclick="scrollTo('sec-ch3-feat')"
+          <a
+            href="#sec-ch3-feat"
+            class="sub"
+            onclick="scrollTo('sec-ch3-feat')"
+            data-i18n="nav.ch3-3"
             >3-3. 주요 기능</a
           >
         </div>
 
         <div class="sidenav-group">
-          <div class="sidenav-group-label">관리 &amp; 지원</div>
+          <div class="sidenav-group-label" data-i18n="nav.g5">
+            관리 &amp; 지원
+          </div>
           <a href="#sec-ch4" onclick="scrollTo('sec-ch4')"
-            ><span class="nav-icon">4</span> 보관 및 관리</a
+            ><span class="nav-icon">4</span>
+            <span data-i18n="nav.ch4">보관 및 관리</span></a
           >
           <a href="#sec-faq" onclick="scrollTo('sec-faq')"
-            ><span class="nav-icon">❓</span> FAQ</a
+            ><span class="nav-icon">❓</span>
+            <span data-i18n="nav.faq">FAQ</span></a
           >
           <a href="#sec-ch5" onclick="scrollTo('sec-ch5')"
-            ><span class="nav-icon">5</span> 제품 보증</a
+            ><span class="nav-icon">5</span>
+            <span data-i18n="nav.ch5">제품 보증</span></a
           >
         </div>
 
@@ -1722,7 +1792,7 @@
         <div class="page page-break" id="sec-intro">
           <div class="intro-block">
             <h3>📦 DIVEROID NEW UNIVERSAL PRO</h3>
-            <p>
+            <p data-i18n-html="intro.p1">
               NEW UNIVERSAL PRO는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는
               하우징입니다.<br />
               별도의 고가 수중 카메라 없이, 이미 보유한 스마트폰으로 전문적인
@@ -1732,20 +1802,20 @@
 
           <div class="intro-block">
             <h3>📱 DIVEROID App 3.0</h3>
-            <p>
+            <p data-i18n="intro.p2">
               App 3.0은 NEW UNIVERSAL PRO와 함께 더욱 강력해진 수중 촬영·다이빙
               기록 앱입니다.
             </p>
             <ul class="feature-list">
-              <li>
+              <li data-i18n="intro.f1">
                 ✅ iCloud · Google Drive 연동을 통한 개인 클라우드 로그북 관리
               </li>
-              <li>✅ AI 기능을 이용한 로그북 자동 완성</li>
-              <li>✅ 다이빙 사이트 리뷰 및 커뮤니티</li>
-              <li>
+              <li data-i18n="intro.f2">✅ AI 기능을 이용한 로그북 자동 완성</li>
+              <li data-i18n="intro.f3">✅ 다이빙 사이트 리뷰 및 커뮤니티</li>
+              <li data-i18n="intro.f4">
                 ✅ 실시간 색보정 (레드 필터 없이 소프트웨어로 수중 색상 보정)
               </li>
-              <li>
+              <li data-i18n="intro.f5">
                 ✅ Mini 없이도 사진·영상·로그북 사용 가능 (App 3.0 신기능)
               </li>
             </ul>
@@ -1756,7 +1826,7 @@
         <div class="page page-break" id="sec-package">
           <div class="chapter-header">
             <span class="ch-num">📦</span>
-            <h2>구성품</h2>
+            <h2 data-i18n="h.package">구성품</h2>
           </div>
 
           <div class="img-block">
@@ -1773,35 +1843,39 @@
             <div class="content-item">
               <span class="num">①</span>
               <div>
-                <div class="name">NEW UNIVERSAL PRO 하우징</div>
+                <div class="name" data-i18n="pkg.item1">
+                  NEW UNIVERSAL PRO 하우징
+                </div>
                 <div class="name-en">Universal Housing</div>
               </div>
             </div>
             <div class="content-item">
               <span class="num">②</span>
               <div>
-                <div class="name">손목 스트랩</div>
+                <div class="name" data-i18n="pkg.item2">손목 스트랩</div>
                 <div class="name-en">Wrist Strap</div>
               </div>
             </div>
             <div class="content-item">
               <span class="num">③</span>
               <div>
-                <div class="name">습기 방지제</div>
+                <div class="name" data-i18n="pkg.item3">습기 방지제</div>
                 <div class="name-en">Anti-fog Sheet</div>
               </div>
             </div>
             <div class="content-item">
               <span class="num">④</span>
               <div>
-                <div class="name">실리콘 그리스</div>
+                <div class="name" data-i18n="pkg.item4">실리콘 그리스</div>
                 <div class="name-en">Silicone Grease</div>
               </div>
             </div>
           </div>
 
           <!-- 손목 스트랩 연결 -->
-          <div class="section-header"><h3>손목 스트랩 연결</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.package-strap">손목 스트랩 연결</h3>
+          </div>
 
           <div class="img-block">
             <img
@@ -1809,22 +1883,26 @@
               alt="손목 스트랩 연결"
               style="max-width: 100%; height: auto"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n="pkg.strap-caption">
               하우징 측면 카라비너 홀에 손목 스트랩을 연결하세요.
             </div>
           </div>
 
-          <p>하우징 측면의 카라비너 홀에 손목 스트랩을 연결해 주세요.</p>
+          <p data-i18n="pkg.strap-p">
+            하우징 측면의 카라비너 홀에 손목 스트랩을 연결해 주세요.
+          </p>
         </div>
 
         <!-- ════════════════════════════════ 부품 명칭 ════════════════════════════════ -->
         <div class="page page-break" id="sec-parts">
           <div class="chapter-header">
             <span class="ch-num">🔍</span>
-            <h2>각 부위 명칭</h2>
+            <h2 data-i18n="h.parts">각 부위 명칭</h2>
           </div>
 
-          <div class="section-header"><h3>전면 / 측면</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.parts-front">전면 / 측면</h3>
+          </div>
           <div class="img-block">
             <img
               src="image/각 부위 명칭_전면-측면.png"
@@ -1834,38 +1912,40 @@
           </div>
           <table>
             <tr>
-              <th>번호</th>
-              <th>명칭</th>
-              <th>번호</th>
-              <th>명칭</th>
+              <th data-i18n="parts.tbl-num">번호</th>
+              <th data-i18n="parts.tbl-name">명칭</th>
+              <th data-i18n="parts.tbl-num">번호</th>
+              <th data-i18n="parts.tbl-name">명칭</th>
             </tr>
             <tr>
               <td>①</td>
-              <td>카라비너 홀</td>
+              <td data-i18n="parts.1">카라비너 홀</td>
               <td>⑤</td>
-              <td>잠금장치 (Lock)</td>
+              <td data-i18n="parts.5">잠금장치 (Lock)</td>
             </tr>
             <tr>
               <td>②</td>
-              <td>히트 싱크</td>
+              <td data-i18n="parts.2">히트 싱크</td>
               <td>⑥</td>
-              <td>스트랩 홀</td>
+              <td data-i18n="parts.6">스트랩 홀</td>
             </tr>
             <tr>
               <td>③</td>
-              <td>핫슈 마운트</td>
+              <td data-i18n="parts.3">핫슈 마운트</td>
               <td>⑦</td>
-              <td>트라이포트 마운트</td>
+              <td data-i18n="parts.7">트라이포트 마운트</td>
             </tr>
             <tr>
               <td>④</td>
-              <td>렌즈</td>
+              <td data-i18n="parts.4">렌즈</td>
               <td>⑧</td>
-              <td>잠금 버튼</td>
+              <td data-i18n="parts.8">잠금 버튼</td>
             </tr>
           </table>
 
-          <div class="section-header"><h3>후면 / 상단</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.parts-back">후면 / 상단</h3>
+          </div>
           <div class="img-block">
             <img
               src="image/각 부위 명칭_후면-상단.png"
@@ -1875,38 +1955,38 @@
           </div>
           <table>
             <tr>
-              <th>번호</th>
-              <th>명칭</th>
-              <th>번호</th>
-              <th>명칭</th>
+              <th data-i18n="parts.tbl-num">번호</th>
+              <th data-i18n="parts.tbl-name">명칭</th>
+              <th data-i18n="parts.tbl-num">번호</th>
+              <th data-i18n="parts.tbl-name">명칭</th>
             </tr>
             <tr>
               <td>⑩</td>
-              <td>셀프 카메라 렌즈</td>
+              <td data-i18n="parts.10">셀프 카메라 렌즈</td>
               <td>⑮</td>
-              <td>미끄럼 방지 패드</td>
+              <td data-i18n="parts.15">미끄럼 방지 패드</td>
             </tr>
             <tr>
               <td>⑪</td>
-              <td>탑 버튼</td>
+              <td data-i18n="parts.11">탑 버튼</td>
               <td>⑯</td>
-              <td>폰 고정 장치</td>
+              <td data-i18n="parts.16">폰 고정 장치</td>
             </tr>
             <tr>
               <td>⑫</td>
-              <td>중앙 버튼</td>
+              <td data-i18n="parts.12">중앙 버튼</td>
               <td>⑰</td>
-              <td>고정식 폰 가이드</td>
+              <td data-i18n="parts.17">고정식 폰 가이드</td>
             </tr>
             <tr>
               <td>⑬</td>
-              <td>바텀 버튼</td>
+              <td data-i18n="parts.13">바텀 버튼</td>
               <td>⑱</td>
-              <td>조절식 폰 가이드</td>
+              <td data-i18n="parts.18">조절식 폰 가이드</td>
             </tr>
             <tr>
               <td>⑭</td>
-              <td>압착 O링</td>
+              <td data-i18n="parts.14">압착 O링</td>
               <td></td>
               <td></td>
             </tr>
@@ -1917,10 +1997,12 @@
         <div class="page page-break" id="sec-ch1">
           <div class="chapter-header">
             <span class="ch-num">1</span>
-            <h2>NEW UNIVERSAL PRO 하우징 사용법</h2>
+            <h2 data-i18n="h.ch1">NEW UNIVERSAL PRO 하우징 사용법</h2>
           </div>
 
-          <div class="section-header"><h3>1-1. 하우징 열고 닫기</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch1-1">1-1. 하우징 열고 닫기</h3>
+          </div>
 
           <p><strong>열기</strong></p>
           <div class="img-block">
@@ -1982,7 +2064,7 @@
         <!-- 방수 테스트 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch1-2">
-            <h3>1-2. 사용 전 방수 테스트</h3>
+            <h3 data-i18n="h.ch1-2">1-2. 사용 전 방수 테스트</h3>
           </div>
 
           <p>스마트폰을 넣기 전, 반드시 방수 기능을 먼저 확인해야 합니다.</p>
@@ -2049,7 +2131,7 @@
         <!-- 하우징 조정 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch1-3">
-            <h3>1-3. 하우징 조정</h3>
+            <h3 data-i18n="h.ch1-3">1-3. 하우징 조정</h3>
           </div>
 
           <p><strong>1) 스마트폰 호환 사이즈 확인</strong></p>
@@ -2193,7 +2275,7 @@
         <div class="page page-break" id="sec-ch2">
           <div class="chapter-header">
             <span class="ch-num">2</span>
-            <h2>DIVEROID 앱 사용하기</h2>
+            <h2 data-i18n="h.ch2">DIVEROID 앱 사용하기</h2>
           </div>
 
           <!-- App 3.0 소개 -->
@@ -2244,7 +2326,9 @@
             </ul>
           </div>
 
-          <div class="section-header"><h3>2-1. 앱 설치 및 기기 등록</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch2-1">2-1. 앱 설치 및 기기 등록</h3>
+          </div>
 
           <!-- STEP 1: App 설치 -->
           <div class="step">
@@ -2352,7 +2436,7 @@
         <div class="page page-break">
           <div class="chapter-header" style="background: #334155">
             <span class="ch-num" style="background: #2563eb">?</span>
-            <h2>Mini를 보유하고 있으신가요?</h2>
+            <h2 data-i18n="h.mini">Mini를 보유하고 있으신가요?</h2>
           </div>
 
           <div
@@ -2563,7 +2647,7 @@
         <!-- 2-2 스마트폰 설정 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch2-2">
-            <h3>2-2. 스마트폰 설정</h3>
+            <h3 data-i18n="h.ch2-2">2-2. 스마트폰 설정</h3>
           </div>
 
           <div class="caution">
@@ -2619,7 +2703,7 @@
         <div class="page page-break" id="sec-dive">
           <div class="chapter-header">
             <span class="ch-num">🤿</span>
-            <h2>다이빙 모드 진입 (다이빙 시작)</h2>
+            <h2 data-i18n="h.dive">다이빙 모드 진입 (다이빙 시작)</h2>
           </div>
 
           <!-- 핵심 메시지 블루 박스 -->
@@ -2660,11 +2744,11 @@
         <div class="page page-break" id="sec-ch3">
           <div class="chapter-header">
             <span class="ch-num">3</span>
-            <h2>제품 사용하기</h2>
+            <h2 data-i18n="h.ch3">제품 사용하기</h2>
           </div>
 
           <div class="section-header">
-            <h3>3-1. 사용 준비 — 단독 모드 (Mini 없이)</h3>
+            <h3 data-i18n="h.ch3-1a">3-1. 사용 준비 — 단독 모드 (Mini 없이)</h3>
           </div>
 
           <div class="step">
@@ -2766,7 +2850,9 @@
         <!-- Mini 연결 모드 -->
         <div class="page page-break">
           <div class="section-header">
-            <h3>3-1. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)</h3>
+            <h3 data-i18n="h.ch3-1b">
+              3-1. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)
+            </h3>
           </div>
 
           <div class="step">
@@ -2803,7 +2889,9 @@
 
           <!-- 모드 비교표 -->
           <div class="section-header">
-            <h3>3-2. 단독 모드 vs Mini 연결 모드 비교</h3>
+            <h3 data-i18n="h.ch3-compare">
+              3-2. 단독 모드 vs Mini 연결 모드 비교
+            </h3>
           </div>
 
           <table>
@@ -2853,7 +2941,7 @@
         <!-- 버튼 조작 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch3-btn">
-            <h3>3-3. 버튼 조작</h3>
+            <h3 data-i18n="h.ch3-btn">3-3. 버튼 조작</h3>
           </div>
 
           <div class="img-block">
@@ -2918,7 +3006,7 @@
         <!-- 앱 주요 기능 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch3-feat">
-            <h3>3-4. App 3.0 주요 기능</h3>
+            <h3 data-i18n="h.ch3-feat">3-4. App 3.0 주요 기능</h3>
           </div>
 
           <p><strong>실시간 색보정 (Real-time Color Correction)</strong></p>
@@ -2985,10 +3073,12 @@
         <div class="page page-break" id="sec-ch4">
           <div class="chapter-header">
             <span class="ch-num">4</span>
-            <h2>보관 및 관리</h2>
+            <h2 data-i18n="h.ch4">보관 및 관리</h2>
           </div>
 
-          <div class="section-header"><h3>4-1. O링 관리</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch4-1">4-1. O링 관리</h3>
+          </div>
           <p>
             O링 관리는 방수 제품에서 매우 중요합니다. 수압이 높거나 이물질이
             있는 환경에서는 방수 기능에 문제가 생길 수 있습니다.
@@ -3113,7 +3203,9 @@
             이상 보관할 경우 O링을 분리하여 지퍼백에 따로 보관하세요.
           </div>
 
-          <div class="section-header"><h3>4-2. 습기 방지 (Anti-fog)</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch4-2">4-2. 습기 방지 (Anti-fog)</h3>
+          </div>
           <div class="img-block">
             <img
               src="image/hardware_cropped/P-20_antifog_p26_illus1.png"
@@ -3137,14 +3229,18 @@
             <li>사용하지 않을 때는 밀봉 팩에 보관하세요.</li>
           </ul>
 
-          <div class="section-header"><h3>4-3. 보관</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch4-3">4-3. 보관</h3>
+          </div>
           <p>
             직사광선을 피하고 플라스틱 하우징이 햇빛에 노출되지 않도록
             하세요.<br />
             다이빙 후에는 주머니나 가방 안에 넣어 보관하세요.
           </p>
 
-          <div class="section-header"><h3>4-4. 충격 발생 시</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch4-4">4-4. 충격 발생 시</h3>
+          </div>
           <div class="caution">
             하우징에 충격이 가해지거나 낙하한 경우, 즉시 사용하지 마세요.<br />
             반드시 빈 하우징 상태로 <strong>방수 테스트를 먼저 진행</strong>한
@@ -3156,12 +3252,14 @@
         <div class="page page-break" id="sec-faq">
           <div class="chapter-header">
             <span class="ch-num">❓</span>
-            <h2>자주 묻는 질문 (FAQ)</h2>
+            <h2 data-i18n="h.faq">자주 묻는 질문 (FAQ)</h2>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">어떤 스마트폰과 호환되나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q1">
+              어떤 스마트폰과 호환되나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a1">
               가로 67~82mm, 세로 138~163mm, 두께 7~9mm 범위의 대부분의 Android /
               iOS 스마트폰과 호환됩니다. 물리 키패드가 있는 기기는 사용이
               불가합니다. 특정 기종 호환 여부는 www.diveroid.com에서 확인하세요.
@@ -3169,8 +3267,10 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Mini 없이도 사용할 수 있나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q2">
+              Mini 없이도 사용할 수 있나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a2">
               네. App 3.0부터 Mini 없이도 사진·영상 촬영, 실시간 색보정,
               로그북(위치·시간) 기능을 사용할 수 있습니다. 단, 다이빙 컴퓨터
               기능(수심·수온 측정)은 Mini 연결 시에만 사용 가능합니다.
@@ -3178,8 +3278,10 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">방수 깊이는 얼마나 되나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q3">
+              방수 깊이는 얼마나 되나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a3">
               NEW UNIVERSAL PRO 하우징은 수심 60m(6기압)까지 방수 설계되어
               있습니다. 단, 최초 사용 전 반드시 수심 10m 이상에서 빈 하우징 방수
               테스트를 진행해 주세요.
@@ -3187,8 +3289,10 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">O링은 얼마나 자주 관리해야 하나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q4">
+              O링은 얼마나 자주 관리해야 하나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a4">
               다이빙 전후마다 O링 상태를 점검하고, 필요 시 실리콘 그리스를 소량
               발라주세요. 3개월 이상 보관할 경우 O링을 분리하여 지퍼백에 따로
               보관하는 것을 권장합니다.
@@ -3196,28 +3300,30 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">
+            <div class="faq-q" data-i18n="faq.q5">
               일반 카메라 앱(기본 카메라)으로 사용할 수 있나요?
             </div>
-            <div class="faq-a">
+            <div class="faq-a" data-i18n="faq.a5">
               아니요. NEW UNIVERSAL PRO는 DIVEROID 전용 앱(App 3.0)에서만
               작동합니다. 스마트폰 기본 카메라 앱과는 호환되지 않습니다.
             </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">영상은 어떤 해상도로 촬영되나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q6">
+              영상은 어떤 해상도로 촬영되나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a6">
               FHD(1080p) 및 4K 해상도로 촬영 가능합니다. 촬영 화면에서 해상도와
               프레임 레이트를 선택하세요.
             </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">
+            <div class="faq-q" data-i18n="faq.q7">
               촬영 중 핸드폰 배터리가 부족하면 어떻게 되나요?
             </div>
-            <div class="faq-a">
+            <div class="faq-a" data-i18n="faq.a7">
               수중에서는 충전이 불가하므로, 입수 전 반드시 핸드폰 배터리를
               충전하세요. 배터리 잔량이 부족하면 앱이 자동으로 저전력 모드로
               전환되거나 기능이 제한될 수 있습니다.
@@ -3225,10 +3331,10 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">
+            <div class="faq-q" data-i18n="faq.q8">
               하우징 안에 물이 들어갔어요. 어떻게 해야 하나요?
             </div>
-            <div class="faq-a">
+            <div class="faq-a" data-i18n="faq.a8">
               즉시 사용을 중지하고 스마트폰을 꺼내 건조하세요. 하우징은 깨끗한
               물로 세척 후 완전히 건조하세요. 방수 결함이 의심되면
               help@diveroid.com으로 문의해 주세요.
@@ -3236,18 +3342,20 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">
+            <div class="faq-q" data-i18n="faq.q9">
               시리얼 번호를 잃어버렸거나 이미 등록된 상태예요.
             </div>
-            <div class="faq-a">
+            <div class="faq-a" data-i18n="faq.a9">
               https://serial.diveroid.com 에서 하우징 시리얼 번호를 입력해 직접
               초기화할 수 있습니다. 완료 후 앱에서 다시 제품 등록을 진행하세요.
             </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">제품 보증 기간은 얼마인가요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q10">
+              제품 보증 기간은 얼마인가요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a10">
               구매일로부터 2년간 재료 및 생산 결함에 대해 보증합니다. 최초 방수
               테스트에서 결함이 발견된 경우 구매일로부터 3개월 이내 무상 교환이
               가능합니다. 자세한 내용은 [5장 제품 보증]을 참고하세요.
@@ -3255,8 +3363,10 @@
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">로그북 데이터를 백업할 수 있나요?</div>
-            <div class="faq-a">
+            <div class="faq-q" data-i18n="faq.q11">
+              로그북 데이터를 백업할 수 있나요?
+            </div>
+            <div class="faq-a" data-i18n="faq.a11">
               네. App 3.0에서는 iCloud(iOS) 또는 Google Drive(Android) 연동을
               통해 로그북 데이터를 자동으로 클라우드에 백업할 수 있습니다. 앱
               설정에서 연동을 활성화하세요.
@@ -3268,34 +3378,40 @@
         <div class="page page-break" id="sec-ch5">
           <div class="chapter-header">
             <span class="ch-num">5</span>
-            <h2>제품 보증</h2>
+            <h2 data-i18n="h.ch5">제품 보증</h2>
           </div>
 
-          <div class="section-header"><h3>5-1. 보증 범위</h3></div>
+          <div class="section-header">
+            <h3 data-i18n="h.ch5-1">5-1. 보증 범위</h3>
+          </div>
           <div class="warranty-scope">
-            <p>
+            <p data-i18n-html="w.scope-p1">
               OceanWick 주식회사(이하 "본사")는 본 제품의 재료 및 생산 결함에
               대해
               <strong>구매일로부터 2년간</strong> 보증합니다.
             </p>
-            <p style="margin-top: 10px">
+            <p style="margin-top: 10px" data-i18n="w.scope-p2">
               구매자는 판매 제품 및 액세서리에 대해 무상 및 유상 수리를 받을
               자격이 있습니다.
             </p>
-            <p style="margin-top: 10px">
+            <p style="margin-top: 10px" data-i18n-html="w.scope-p3">
               사용 설명서에 따른 최초 방수 테스트에서 결함이 발견된 경우,
               <strong>구매일로부터 3개월 이내</strong>에 무상 제품 교환이
               가능합니다.
             </p>
-            <p style="margin-top: 10px">
+            <p style="margin-top: 10px" data-i18n="w.scope-p4">
               이 보증은 본사를 통해 실제로 제품을 구매한 구매자에게만
               적용됩니다. 제3자에게 양도할 수 없으며, 본사가 승인하지 않은
               판매자를 통해 구매한 제품에는 적용되지 않습니다.
             </p>
           </div>
 
-          <div class="section-header"><h3>5-2. 보증 적용 제외 사항</h3></div>
-          <p>다음의 경우로 인한 손상·고장·오작동은 보증에 포함되지 않습니다:</p>
+          <div class="section-header">
+            <h3 data-i18n="h.ch5-2">5-2. 보증 적용 제외 사항</h3>
+          </div>
+          <p data-i18n="w.excl-intro">
+            다음의 경우로 인한 손상·고장·오작동은 보증에 포함되지 않습니다:
+          </p>
           <ol
             style="
               font-size: 13px;
@@ -3305,37 +3421,41 @@
               margin-top: 8px;
             "
           >
-            <li>본사가 제공하는 사용 설명서를 따르지 않아 발생한 손상</li>
-            <li>
+            <li data-i18n="w.excl-1">
+              본사가 제공하는 사용 설명서를 따르지 않아 발생한 손상
+            </li>
+            <li data-i18n="w.excl-2">
               사용자의 부주의, 남용, 오용 또는 사용자 귀책 사고로 인한 손상
             </li>
-            <li>제3자의 변경 또는 수리로 인한 손상</li>
+            <li data-i18n="w.excl-3">제3자의 변경 또는 수리로 인한 손상</li>
           </ol>
 
-          <div class="section-header"><h3>5-3. 책임 제한</h3></div>
-          <p>
+          <div class="section-header">
+            <h3 data-i18n="h.ch5-3">5-3. 책임 제한</h3>
+          </div>
+          <p data-i18n="w.limit-p1">
             OceanWick 주식회사는 본사 또는 본사가 승인한 판매자를 통해 판매된
             제품 및 액세서리의 교환, 또는 구매자가 지불한 실제 비용의 환불에
             대해서만 책임을 집니다.
           </p>
-          <p style="margin-top: 10px">
+          <p style="margin-top: 10px" data-i18n="w.limit-p2">
             본사는 제품 사용 중 직접적·간접적·결과적 또는 부수적으로 발생하는
             경제적 손실, 개인 유·무형 자산 손실 등에 대해 책임을 지지 않습니다.
           </p>
           <div class="caution">
-            <strong
+            <strong data-i18n="w.limit-caution"
               >스마트폰 제조사와 본사 사이에는 어떠한 관계도 없으며, 본사는 제품
               사용 중 발생한 스마트폰 침수 또는 손상에 대해 책임을 지지
               않습니다.</strong
             >
           </div>
-          <p style="margin-top: 10px">
+          <p style="margin-top: 10px" data-i18n="w.limit-p3">
             본 제품을 사용함으로써 위 조건에 동의한 것으로 간주합니다.
           </p>
         </div>
 
         <!-- 푸터 -->
-        <div class="footer">
+        <div class="footer" data-i18n-html="footer.text">
           DIVEROID NEW UNIVERSAL PRO 사용자 가이드 &nbsp;|&nbsp; OceanWick
           주식회사<br />
           help@diveroid.com &nbsp;|&nbsp; www.diveroid.com
@@ -3360,6 +3480,27 @@
         dd.style.display = isOpen ? "none" : "block";
         chevron.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
       }
+      function applyTranslations(lang) {
+        const T =
+          typeof TRANSLATIONS !== "undefined" && TRANSLATIONS[lang]
+            ? TRANSLATIONS[lang]
+            : null;
+        if (!T) return;
+        // RTL support
+        document.body.dir = lang === "AR" ? "rtl" : "ltr";
+        document.documentElement.lang = lang.toLowerCase();
+        // data-i18n → textContent
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n");
+          if (T[key] !== undefined) el.textContent = T[key];
+        });
+        // data-i18n-html → innerHTML
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n-html");
+          if (T[key] !== undefined) el.innerHTML = T[key];
+        });
+      }
+
       function setSidenavLang(el, flag, name, code) {
         document.getElementById("sidenavFlag").textContent = flag;
         document.getElementById("sidenavLangName").textContent = code;
@@ -3371,6 +3512,7 @@
         if (btn)
           btn.querySelector(".lang-btn-left").innerHTML =
             "<span>" + flag + "</span> " + name;
+        applyTranslations(code);
       }
       document.addEventListener("click", function (e) {
         const dd = document.getElementById("sidenavLangDropdown");
@@ -3381,7 +3523,7 @@
           if (ch) ch.style.transform = "rotate(0deg)";
         }
       });
-      function selectLang(el, flag, name) {
+      function selectLang(el, flag, name, code) {
         const btn = document.querySelector(".lang-btn");
         btn.querySelector(".lang-btn-left").innerHTML =
           "<span>" + flag + "</span> " + name;
@@ -3394,7 +3536,8 @@
         const sf = document.getElementById("sidenavFlag");
         const sn = document.getElementById("sidenavLangName");
         if (sf) sf.textContent = flag;
-        if (sn) sn.textContent = name.substring(0, 4);
+        if (sn) sn.textContent = code;
+        applyTranslations(code);
       }
       document.addEventListener("click", function (e) {
         const sel = document.getElementById("langSelector");
