@@ -1408,11 +1408,36 @@
         background: rgba(255, 255, 255, 0.06);
         color: rgba(255, 255, 255, 0.9);
       }
-      /* Adjust sidenav and nav-reopen for header offset */
+      /* ── Fixed sidebar (desktop) ── */
       @media (min-width: 1101px) {
         .sidenav {
+          position: fixed !important;
           top: 60px !important;
+          left: 0 !important;
+          width: 240px !important;
+          min-width: 240px !important;
           height: calc(100vh - 60px) !important;
+          transform: none !important;
+          overflow-y: auto !important;
+        }
+        /* When sidebar collapsed, width 0 */
+        .sidenav.collapsed {
+          width: 0 !important;
+          min-width: 0 !important;
+          padding: 0 !important;
+        }
+        /* Content area pushed right by sidebar width */
+        .content-area {
+          margin-left: 240px;
+          transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .sidenav.collapsed ~ .content-area,
+        .main-content:has(.sidenav.collapsed) .content-area {
+          margin-left: 0;
+        }
+        /* Cover also needs left padding (already has padding-left:240px) */
+        .cover.nav-collapsed {
+          padding-left: 0;
         }
         .nav-reopen {
           top: calc(60px + 30vh) !important;
@@ -1442,12 +1467,97 @@
           display: none;
         }
       }
-      /* Search highlight */
-      mark.guide-hl {
-        background: rgba(80, 169, 252, 0.25);
-        color: inherit;
-        border-radius: 2px;
-        padding: 0 1px;
+      /* ── Table of Contents dropdown ── */
+      .gh-toc-wrap {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+      }
+      .gh-toc-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(80, 169, 252, 0.18);
+        border-radius: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 13px;
+        padding: 0 16px;
+        cursor: pointer;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+        user-select: none;
+      }
+      .gh-toc-btn:hover,
+      .gh-toc-btn.open {
+        border-color: rgba(80, 169, 252, 0.45);
+        background: rgba(255, 255, 255, 0.07);
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .gh-toc-btn .gh-toc-icon {
+        color: rgba(80, 169, 252, 0.6);
+        font-size: 12px;
+      }
+      #ghTocLabel {
+        flex: 1;
+      }
+      .gh-toc-dropdown {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        background: #0a1628;
+        border: 1px solid rgba(80, 169, 252, 0.2);
+        border-radius: 12px;
+        overflow-y: auto;
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+        z-index: 600;
+        max-height: 70vh;
+      }
+      .gh-toc-dropdown.open {
+        display: block;
+      }
+      .gh-toc-group {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.25);
+        padding: 12px 16px 4px;
+        font-weight: 600;
+      }
+      .gh-toc-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 16px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.65);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .gh-toc-item:hover {
+        background: rgba(80, 169, 252, 0.1);
+        color: #fff;
+      }
+      .gh-toc-item.sub {
+        padding-left: 32px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+      .gh-toc-item.sub:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .gh-toc-icon-s {
+        font-size: 13px;
+        width: 18px;
+        text-align: center;
+        flex-shrink: 0;
       }
     </style>
     <link
@@ -1471,18 +1581,75 @@
         <div class="gh-logo-sub">User Guide</div>
       </a>
 
-      <!-- Search bar (center) -->
+      <!-- Table of Contents dropdown (center) -->
       <div class="gh-search">
-        <div class="gh-search-wrap">
-          <i class="fa-solid fa-magnifying-glass gh-search-icon"></i>
-          <input
-            id="ghSearchInput"
-            class="gh-search-input"
-            type="search"
-            placeholder="Search guide..."
-            oninput="guideSearch(this.value)"
-            onkeydown="if (event.key === 'Enter') guideSearch(this.value);"
-          />
+        <div class="gh-toc-wrap">
+          <div class="gh-toc-btn" id="ghTocBtn" onclick="toggleToc(event)">
+            <i class="fa-solid fa-list gh-toc-icon"></i>
+            <span id="ghTocLabel">목차 바로가기</span>
+            <span class="gh-lang-chevron">▼</span>
+          </div>
+          <div class="gh-toc-dropdown" id="ghTocDropdown">
+            <div class="gh-toc-group">시작하기</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-intro')">
+              <span class="gh-toc-icon-s">✦</span> 제품 소개
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-package')">
+              <span class="gh-toc-icon-s">📦</span> 구성품
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-parts')">
+              <span class="gh-toc-icon-s">🔍</span> 부위 명칭
+            </div>
+            <div class="gh-toc-group">하드웨어</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch1')">
+              <span class="gh-toc-icon-s">①</span> 하우징 사용법
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1')">
+              1-1. 열고 닫기
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-2')">
+              1-2. 방수 테스트
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-3')">
+              1-3. 하우징 조정
+            </div>
+            <div class="gh-toc-group">소프트웨어</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch2')">
+              <span class="gh-toc-icon-s">②</span> 앱 사용하기
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch2')">
+              2-1. 앱 설치 &amp; 기기 등록
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch2-2')">
+              2-2. 스마트폰 설정
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-dive')">
+              <span class="gh-toc-icon-s">🤿</span> 다이빙 모드 진입
+            </div>
+            <div class="gh-toc-group">제품 사용</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch3')">
+              <span class="gh-toc-icon-s">③</span> 제품 사용하기
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3')">
+              3-1. 사용 준비
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-btn')">
+              3-2. 버튼 조작
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-feat')">
+              3-3. 주요 기능
+            </div>
+            <div class="gh-toc-group">관리 &amp; 지원</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch4')">
+              <span class="gh-toc-icon-s">④</span> 보관 및 관리
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-faq')">
+              <span class="gh-toc-icon-s">❓</span> FAQ
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch5')">
+              <span class="gh-toc-icon-s">⑤</span> 제품 보증 &amp; 지원
+            </div>
+          </div>
         </div>
       </div>
 
@@ -3927,9 +4094,14 @@
       function toggleSidenav() {
         const nav = document.getElementById("sidenav");
         const cover = document.querySelector(".cover");
+        const contentArea = document.querySelector(".content-area");
         sidenavCollapsed = !sidenavCollapsed;
         nav.classList.toggle("collapsed", sidenavCollapsed);
         if (cover) cover.classList.toggle("nav-collapsed", sidenavCollapsed);
+        // Adjust content area margin when sidebar collapses/expands
+        if (contentArea && window.innerWidth > 1100) {
+          contentArea.style.marginLeft = sidenavCollapsed ? "0" : "240px";
+        }
         updateReopenBtn();
       }
 
@@ -3974,6 +4146,14 @@
       });
       updateActiveNav();
 
+      // ── 초기 content-area margin 설정 (fixed sidebar 보정) ──
+      (function () {
+        if (window.innerWidth > 1100) {
+          var ca = document.querySelector(".content-area");
+          if (ca) ca.style.marginLeft = "240px";
+        }
+      })();
+
       // ══════════════════════════════════════
       //  Header Language Pill
       // ══════════════════════════════════════
@@ -4005,50 +4185,45 @@
       });
 
       // ══════════════════════════════════════
-      //  Guide Search (client-side)
+      //  Table of Contents Dropdown
       // ══════════════════════════════════════
-      var _searchTimeout;
-      function guideSearch(query) {
-        clearTimeout(_searchTimeout);
-        _searchTimeout = setTimeout(function () {
-          // Remove old highlights
-          document.querySelectorAll("mark.guide-hl").forEach(function (m) {
-            const parent = m.parentNode;
-            parent.replaceChild(document.createTextNode(m.textContent), m);
-            parent.normalize();
-          });
-          if (!query || query.length < 2) return;
-          const q = query.toLowerCase();
-          const walker = document.createTreeWalker(
-            document.querySelector(".content-area") || document.body,
-            NodeFilter.SHOW_TEXT,
-            null,
-          );
-          const nodes = [];
-          while (walker.nextNode()) nodes.push(walker.currentNode);
-          let firstMatch = null;
-          nodes.forEach(function (node) {
-            const idx = node.textContent.toLowerCase().indexOf(q);
-            if (idx === -1) return;
-            if (
-              !node.parentElement ||
-              node.parentElement.tagName === "SCRIPT" ||
-              node.parentElement.tagName === "STYLE"
-            )
-              return;
-            const range = document.createRange();
-            range.setStart(node, idx);
-            range.setEnd(node, idx + query.length);
-            const mark = document.createElement("mark");
-            mark.className = "guide-hl";
-            range.surroundContents(mark);
-            if (!firstMatch) firstMatch = mark;
-          });
-          if (firstMatch) {
-            firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
-          }
-        }, 300);
+      function toggleToc(e) {
+        e.stopPropagation();
+        var btn = document.getElementById("ghTocBtn");
+        var dd = document.getElementById("ghTocDropdown");
+        var isOpen = dd.classList.contains("open");
+        dd.classList.toggle("open", !isOpen);
+        btn.classList.toggle("open", !isOpen);
+        // chevron rotation handled via .open on btn
+        var chevron = btn.querySelector(".gh-lang-chevron");
+        if (chevron)
+          chevron.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
       }
+
+      function tocGo(sectionId) {
+        // Close dropdown
+        document.getElementById("ghTocDropdown").classList.remove("open");
+        document.getElementById("ghTocBtn").classList.remove("open");
+        var chevron = document
+          .getElementById("ghTocBtn")
+          .querySelector(".gh-lang-chevron");
+        if (chevron) chevron.style.transform = "rotate(0deg)";
+        // Scroll to section
+        var el = document.getElementById(sectionId);
+        if (!el) return;
+        var top = el.getBoundingClientRect().top + window.scrollY - 68;
+        window.scrollTo({ top: top, behavior: "smooth" });
+      }
+
+      // Close ToC on outside click
+      document.addEventListener("click", function () {
+        document.getElementById("ghTocDropdown")?.classList.remove("open");
+        document.getElementById("ghTocBtn")?.classList.remove("open");
+        var chevron = document
+          .getElementById("ghTocBtn")
+          ?.querySelector(".gh-lang-chevron");
+        if (chevron) chevron.style.transform = "rotate(0deg)";
+      });
     </script>
   </body>
 </html>
