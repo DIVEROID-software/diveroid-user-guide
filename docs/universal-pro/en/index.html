@@ -43,11 +43,56 @@
         color: #50a9fc;
         font-size: 13px;
       }
+      .safety-warning {
+        max-width: 560px;
+        margin: 0 auto 32px;
+        background: linear-gradient(135deg, #fff4f4 0%, #ffe4e4 100%);
+        border: 2px solid #d92d20;
+        border-left: 6px solid #d92d20;
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: left;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        box-shadow: 0 4px 16px rgba(217, 45, 32, 0.18);
+      }
+      .safety-warning .ico {
+        font-size: 28px;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+      .safety-warning .title {
+        font-weight: 700;
+        color: #b42318;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        margin-bottom: 6px;
+      }
+      .safety-warning .body {
+        color: #1a1a1a;
+        font-size: 13px;
+        line-height: 1.65;
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
     <div class="logo">DIVEROID</div>
     <h1>Universal Pro — English Guide</h1>
+
+    <div class="safety-warning" role="alert">
+      <div class="ico">⚠️</div>
+      <div>
+        <div class="title">Safety Notice</div>
+        <div class="body">
+          NEW UNIVERSAL PRO does
+          <strong>not include a dive computer function</strong>. Please use a
+          <strong>separate dive computer</strong> to ensure safe diving.
+        </div>
+      </div>
+    </div>
+
     <p>English guide coming soon.<br />한국어 가이드를 이용해 주세요.</p>
     <a href="../kr/">🇰🇷 한국어 가이드 보기</a>
   </body>

@@ -56,6 +56,9 @@ const TRANSLATIONS = {
     "h.ch5-1": "5-1. 보증 범위",
     "h.ch5-2": "5-2. 보증 적용 제외 사항",
     "h.ch5-3": "5-3. 책임 제한",
+    "safety.title": "안전 안내 (Safety Notice)",
+    "safety.body":
+      "NEW UNIVERSAL PRO에는 <strong>다이빙 컴퓨터 기능이 없습니다</strong>. 꼭 <strong>별도의 다이빙 컴퓨터를 사용하여 안전한 다이빙</strong>을 하시길 바랍니다.",
     "intro.p1":
       "NEW UNIVERSAL PRO는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는 하우징입니다.<br>별도의 고가 수중 카메라 없이, 이미 보유한 스마트폰으로 전문적인 수중 촬영을 경험하세요.",
     "intro.p2":
@@ -204,6 +207,9 @@ const TRANSLATIONS = {
     "h.ch5-1": "5-1. Warranty Coverage",
     "h.ch5-2": "5-2. Warranty Exclusions",
     "h.ch5-3": "5-3. Limitation of Liability",
+    "safety.title": "Safety Notice",
+    "safety.body":
+      "NEW UNIVERSAL PRO does <strong>not include a dive computer function</strong>. Please use a <strong>separate dive computer</strong> to ensure safe diving.",
     "intro.p1":
       "NEW UNIVERSAL PRO is a housing that transforms your smartphone into a 60m-rated 4K underwater camera.<br>Experience professional underwater photography with the smartphone you already own — no expensive dedicated camera needed.",
     "intro.p2":
