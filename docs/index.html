@@ -90,6 +90,11 @@
         color: #64748b;
         line-height: 1.6;
       }
+      .card-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
       .card-langs {
         margin-top: 16px;
         display: flex;
@@ -123,9 +128,11 @@
 
     <div class="grid">
       <div class="card active">
-        <div class="card-tag">Available Now</div>
-        <div class="card-title">Universal Pro</div>
-        <div class="card-desc">스마트폰용 수중카메라 하우징 + 전용 앱</div>
+        <a href="./universal-pro/kr/" class="card-link">
+          <div class="card-tag">Available Now</div>
+          <div class="card-title">Universal Pro</div>
+          <div class="card-desc">스마트폰용 수중카메라 하우징 + 전용 앱</div>
+        </a>
         <div class="card-langs">
           <a class="lang-btn" href="./universal-pro/kr/">🇰🇷 한국어</a>
           <a class="lang-btn" href="./universal-pro/en/">🇺🇸 English</a>
