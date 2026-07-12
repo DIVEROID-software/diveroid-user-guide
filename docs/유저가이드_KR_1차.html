@@ -2,8 +2,10 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/css/SpoqaHanSansNeo.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DIVEROID UNIVERSAL PRO — 사용자 가이드</title>
+    <title>DIVEROID Universal Pro — 사용자 가이드</title>
     <style>
       * {
         box-sizing: border-box;
@@ -16,8 +18,7 @@
         overflow-x: hidden;
       }
       body {
-        font-family:
-          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-family: "Spoqa Han Sans Neo", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
         font-size: 14px;
         color: #1a1a1a;
         background: #fff;
@@ -79,13 +80,13 @@
         0%,
         100% {
           text-shadow:
-            0 0 40px rgba(80, 169, 252, 0.4),
-            0 0 80px rgba(80, 169, 252, 0.15);
+            0 0 40px rgba(54, 169, 225, 0.4),
+            0 0 80px rgba(54, 169, 225, 0.15);
         }
         50% {
           text-shadow:
-            0 0 60px rgba(80, 169, 252, 0.7),
-            0 0 120px rgba(80, 169, 252, 0.3);
+            0 0 60px rgba(54, 169, 225, 0.7),
+            0 0 120px rgba(54, 169, 225, 0.3);
         }
       }
       @keyframes scanLine {
@@ -125,7 +126,7 @@
         left: 12px;
         z-index: 9999;
         background: rgba(10, 20, 40, 0.9);
-        border: 1px solid rgba(80, 169, 252, 0.3);
+        border: 1px solid rgba(54, 169, 225, 0.3);
         border-radius: 8px;
         padding: 9px 12px;
         cursor: pointer;
@@ -212,7 +213,7 @@
       .cover {
         width: 100%;
         min-height: 100vh;
-        background: #050c18;
+        background: #0f0c26;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -291,7 +292,7 @@
         height: 300px;
         background: radial-gradient(
           ellipse,
-          rgba(80, 169, 252, 0.18) 0%,
+          rgba(54, 169, 225, 0.18) 0%,
           transparent 70%
         );
         z-index: 2;
@@ -316,13 +317,13 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: rgba(80, 169, 252, 0.12);
-        border: 1px solid rgba(80, 169, 252, 0.3);
+        background: rgba(54, 169, 225, 0.12);
+        border: 1px solid rgba(54, 169, 225, 0.3);
         border-radius: 20px;
         padding: 6px 18px;
         font-size: 11px;
         letter-spacing: 4px;
-        color: #50a9fc;
+        color: #36a9e1;
         font-weight: 500;
         margin-bottom: 32px;
         animation: fadeIn 1s ease both;
@@ -334,8 +335,8 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #50a9fc;
-        box-shadow: 0 0 8px #50a9fc;
+        background: #36a9e1;
+        box-shadow: 0 0 8px #36a9e1;
         animation: glowPulse 2s ease-in-out infinite;
       }
 
@@ -352,8 +353,8 @@
         background: linear-gradient(
           135deg,
           #ffffff 0%,
-          #a8d8ff 50%,
-          #50a9fc 100%
+          #eef9ff 50%,
+          #36a9e1 100%
         );
         background-size: 200% auto;
         -webkit-background-clip: text;
@@ -379,7 +380,7 @@
       .cover-divider {
         width: 60px;
         height: 1px;
-        background: linear-gradient(90deg, transparent, #50a9fc, transparent);
+        background: linear-gradient(90deg, transparent, #36a9e1, transparent);
         margin-bottom: 32px;
         animation: fadeIn 1s ease both;
         animation-delay: 1s;
@@ -403,15 +404,15 @@
         text-transform: uppercase;
         background: linear-gradient(
           135deg,
-          #7dd3fc 0%,
-          #50a9fc 40%,
-          #2563eb 100%
+          #36a9e1 0%,
+          #36a9e1 40%,
+          #3d2683 100%
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         line-height: 1;
-        filter: drop-shadow(0 0 20px rgba(80, 169, 252, 0.5));
+        filter: drop-shadow(0 0 20px rgba(54, 169, 225, 0.5));
       }
       .cover-guide-label {
         font-size: 13px;
@@ -445,7 +446,7 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(80, 169, 252, 0.2),
+          rgba(54, 169, 225, 0.2),
           transparent
         );
         animation: scanLine 3s ease 2s infinite;
@@ -466,7 +467,7 @@
         border-bottom: none;
       }
       .snav-opt:hover {
-        background: rgba(80, 169, 252, 0.1);
+        background: rgba(54, 169, 225, 0.1);
         color: #fff;
       }
       .snav-opt span:first-child {
@@ -493,7 +494,7 @@
         align-items: center;
         gap: 8px;
         background: rgba(8, 20, 34, 0.85);
-        border: 1px solid rgba(80, 169, 252, 0.25);
+        border: 1px solid rgba(54, 169, 225, 0.25);
         border-radius: 8px;
         padding: 9px 14px;
         cursor: pointer;
@@ -509,8 +510,8 @@
         justify-content: space-between;
       }
       .lang-btn:hover {
-        background: rgba(80, 169, 252, 0.12);
-        border-color: rgba(80, 169, 252, 0.45);
+        background: rgba(54, 169, 225, 0.12);
+        border-color: rgba(54, 169, 225, 0.45);
       }
       .lang-btn-left {
         display: flex;
@@ -529,8 +530,8 @@
         position: absolute;
         top: calc(100% + 8px);
         right: 0;
-        background: #081422;
-        border: 1px solid rgba(80, 169, 252, 0.2);
+        background: #18143d;
+        border: 1px solid rgba(54, 169, 225, 0.2);
         border-radius: 12px;
         overflow: hidden;
         min-width: 200px;
@@ -538,7 +539,7 @@
         -webkit-backdrop-filter: blur(24px);
         box-shadow:
           0 20px 60px rgba(0, 0, 0, 0.7),
-          0 0 0 1px rgba(80, 169, 252, 0.08);
+          0 0 0 1px rgba(54, 169, 225, 0.08);
         display: none;
         animation: dropdownOpen 0.18s ease;
       }
@@ -571,12 +572,12 @@
         border-bottom: none;
       }
       .lang-option:hover {
-        background: rgba(80, 169, 252, 0.1);
+        background: rgba(54, 169, 225, 0.1);
         color: #fff;
       }
       .lang-option.active {
-        color: #50a9fc;
-        background: rgba(80, 169, 252, 0.07);
+        color: #36a9e1;
+        background: rgba(54, 169, 225, 0.07);
       }
       .lang-option .lang-flag {
         font-size: 20px;
@@ -595,7 +596,7 @@
         letter-spacing: 0.5px;
       }
       .lang-option.active .lang-eng {
-        color: rgba(80, 169, 252, 0.5);
+        color: rgba(54, 169, 225, 0.5);
       }
 
       /* 하단 스크롤 힌트 */
@@ -623,7 +624,7 @@
         height: 40px;
         background: linear-gradient(
           to bottom,
-          rgba(80, 169, 252, 0.6),
+          rgba(54, 169, 225, 0.6),
           transparent
         );
         animation: fadeIn 2s ease 2.5s infinite alternate;
@@ -641,19 +642,19 @@
 
       /* 챕터 헤더 */
       .chapter-header {
-        background: #0d1f3c;
+        background: #201748;
         color: #fff;
         padding: 16px 24px;
         margin-bottom: 32px;
         display: flex;
         align-items: center;
         gap: 12px;
-        border-left: 4px solid #50a9fc;
+        border-left: 4px solid #36a9e1;
       }
       .chapter-header .ch-num {
         font-size: 11px;
         letter-spacing: 2px;
-        color: #50a9fc;
+        color: #36a9e1;
         min-width: 24px;
       }
       .chapter-header h2 {
@@ -664,7 +665,7 @@
 
       /* 섹션 헤더 */
       .section-header {
-        border-left: 3px solid #50a9fc;
+        border-left: 3px solid #36a9e1;
         padding: 6px 12px;
         margin: 32px 0 16px;
         background: #f0f6ff;
@@ -679,7 +680,7 @@
       .intro-block {
         background: #f4f9ff;
         border: 1px solid #d0e8ff;
-        border-top: 3px solid #50a9fc;
+        border-top: 3px solid #36a9e1;
         padding: 28px 32px;
         margin-bottom: 24px;
         border-radius: 2px;
@@ -722,7 +723,9 @@
         max-width: 100%;
         max-height: 400px;
         object-fit: contain;
-        border: 1px solid #eee;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(7, 19, 28, 0.12);
       }
       .img-block img.app-screen {
         max-width: 240px;
@@ -790,7 +793,7 @@
         align-items: flex-start;
       }
       .step-num {
-        background: #50a9fc;
+        background: #36a9e1;
         color: #fff;
         width: 24px;
         height: 24px;
@@ -809,24 +812,24 @@
         color: #333;
       }
       .step-body strong {
-        color: #0d1f3c;
+        color: #201748;
       }
 
       /* 주의 박스 */
       .caution {
         background: #fff8e1;
-        border-left: 4px solid #f59e0b;
+        border-left: 4px solid #f4b942;
         padding: 12px 16px;
         margin: 12px 0;
         font-size: 12px;
         color: #555;
       }
       .caution strong {
-        color: #d97706;
+        color: #8a5a00;
       }
       .note {
         background: #f0f4ff;
-        border-left: 4px solid #50a9fc;
+        border-left: 4px solid #36a9e1;
         padding: 10px 16px;
         margin: 10px 0;
         font-size: 12px;
@@ -841,7 +844,7 @@
         font-size: 13px;
       }
       th {
-        background: #0d1f3c;
+        background: #201748;
         color: #fff;
         padding: 10px 14px;
         text-align: left;
@@ -856,11 +859,11 @@
         background: #fafafa;
       }
       .check {
-        color: #16a34a;
+        color: #177552;
         font-weight: 700;
       }
       .cross {
-        color: #dc2626;
+        color: #b6382e;
         font-weight: 700;
       }
 
@@ -908,7 +911,7 @@
         margin-bottom: 10px;
       }
       .button-box .btn-badge {
-        background: #50a9fc;
+        background: #36a9e1;
         color: #fff;
         width: 22px;
         height: 22px;
@@ -948,14 +951,14 @@
       .faq-q {
         font-weight: 700;
         font-size: 13px;
-        color: #0d1f3c;
+        color: #201748;
         margin-bottom: 8px;
         display: flex;
         gap: 8px;
       }
       .faq-q::before {
         content: "Q.";
-        color: #50a9fc;
+        color: #36a9e1;
         font-weight: 800;
       }
       .faq-a {
@@ -986,8 +989,8 @@
       /* ── 사이드 내비게이션 ── */
       /* ── 사이드바 기본 (모바일: fixed 슬라이드인) ── */
       .sidenav {
-        background: #070f1e;
-        border-right: 1px solid rgba(80, 169, 252, 0.12);
+        background: #18143d;
+        border-right: 1px solid rgba(54, 169, 225, 0.12);
         overflow-y: auto;
         overflow-x: hidden;
         z-index: 200;
@@ -1009,7 +1012,7 @@
         width: 3px;
       }
       .sidenav::-webkit-scrollbar-thumb {
-        background: rgba(80, 169, 252, 0.3);
+        background: rgba(54, 169, 225, 0.3);
         border-radius: 2px;
       }
       .sidenav.mob-open {
@@ -1049,8 +1052,8 @@
         width: 28px;
         height: 28px;
         flex-shrink: 0;
-        background: rgba(80, 169, 252, 0.1);
-        border: 1px solid rgba(80, 169, 252, 0.25);
+        background: rgba(54, 169, 225, 0.1);
+        border: 1px solid rgba(54, 169, 225, 0.25);
         border-radius: 6px;
         display: flex;
         align-items: center;
@@ -1063,14 +1066,14 @@
         z-index: 10;
       }
       .nav-toggle-inner:hover {
-        background: rgba(80, 169, 252, 0.25);
-        border-color: #50a9fc;
+        background: rgba(54, 169, 225, 0.25);
+        border-color: #36a9e1;
       }
       .nav-toggle-inner svg {
         width: 12px;
         height: 12px;
         fill: none;
-        stroke: #50a9fc;
+        stroke: #36a9e1;
         stroke-width: 2.5;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -1085,8 +1088,8 @@
         z-index: 200;
         width: 20px;
         height: 48px;
-        background: #0d1f3c;
-        border: 1px solid rgba(80, 169, 252, 0.35);
+        background: #201748;
+        border: 1px solid rgba(54, 169, 225, 0.35);
         border-left: none;
         border-radius: 0 8px 8px 0;
         display: flex;
@@ -1105,13 +1108,13 @@
         pointer-events: auto;
       }
       .nav-reopen:hover {
-        background: rgba(80, 169, 252, 0.2);
+        background: rgba(54, 169, 225, 0.2);
       }
       .nav-reopen svg {
         width: 10px;
         height: 10px;
         fill: none;
-        stroke: #50a9fc;
+        stroke: #36a9e1;
         stroke-width: 2.5;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -1128,7 +1131,7 @@
         width: 3px;
       }
       .sidenav::-webkit-scrollbar-thumb {
-        background: rgba(80, 169, 252, 0.3);
+        background: rgba(54, 169, 225, 0.3);
         border-radius: 2px;
       }
       .sidenav-logo {
@@ -1139,7 +1142,7 @@
       .sidenav-logo span {
         font-size: 11px;
         letter-spacing: 4px;
-        color: #50a9fc;
+        color: #36a9e1;
         font-weight: 600;
       }
       .sidenav-logo small {
@@ -1160,11 +1163,15 @@
         text-transform: uppercase;
         font-weight: 600;
       }
+      .page,
+      .section-header {
+        scroll-margin-top: 68px;
+      }
       .sidenav a {
         display: flex;
         align-items: center;
         gap: 10px;
-        padding: 9px 20px;
+        padding: 13px 20px;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.5);
         font-size: 12.5px;
@@ -1175,13 +1182,13 @@
       }
       .sidenav a:hover {
         color: rgba(255, 255, 255, 0.85);
-        background: rgba(80, 169, 252, 0.06);
-        border-left-color: rgba(80, 169, 252, 0.4);
+        background: rgba(54, 169, 225, 0.06);
+        border-left-color: rgba(54, 169, 225, 0.4);
       }
       .sidenav a.active {
-        color: #50a9fc;
-        background: rgba(80, 169, 252, 0.1);
-        border-left-color: #50a9fc;
+        color: #36a9e1;
+        background: rgba(54, 169, 225, 0.1);
+        border-left-color: #36a9e1;
         font-weight: 600;
       }
       .sidenav a .nav-icon {
@@ -1239,8 +1246,8 @@
         left: 0;
         right: 0;
         height: 60px;
-        background: #070f1e;
-        border-bottom: 1px solid rgba(80, 169, 252, 0.12);
+        background: #18143d;
+        border-bottom: 1px solid rgba(54, 169, 225, 0.12);
         display: flex;
         align-items: center;
         z-index: 500;
@@ -1257,7 +1264,7 @@
         justify-content: center;
         padding: 0 20px;
         text-decoration: none;
-        border-right: 1px solid rgba(80, 169, 252, 0.08);
+        border-right: 1px solid rgba(54, 169, 225, 0.08);
         height: 100%;
       }
       .gh-logo-brand {
@@ -1269,7 +1276,7 @@
       }
       .gh-logo-sub {
         font-size: 9px;
-        color: #50a9fc;
+        color: #36a9e1;
         letter-spacing: 2.5px;
         text-transform: uppercase;
         margin-top: 2px;
@@ -1299,7 +1306,7 @@
         width: 100%;
         height: 36px;
         background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(80, 169, 252, 0.18);
+        border: 1px solid rgba(54, 169, 225, 0.18);
         border-radius: 20px;
         color: #fff;
         font-size: 13px;
@@ -1314,7 +1321,7 @@
         color: rgba(255, 255, 255, 0.2);
       }
       .gh-search-input:focus {
-        border-color: rgba(80, 169, 252, 0.45);
+        border-color: rgba(54, 169, 225, 0.45);
         background: rgba(255, 255, 255, 0.07);
       }
       /* Right actions */
@@ -1329,8 +1336,8 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        background: rgba(80, 169, 252, 0.08);
-        border: 1px solid rgba(80, 169, 252, 0.2);
+        background: rgba(54, 169, 225, 0.08);
+        border: 1px solid rgba(54, 169, 225, 0.2);
         border-radius: 20px;
         padding: 5px 12px;
         cursor: pointer;
@@ -1342,7 +1349,7 @@
         user-select: none;
       }
       .gh-lang-pill:hover {
-        background: rgba(80, 169, 252, 0.15);
+        background: rgba(54, 169, 225, 0.15);
       }
       .gh-lang-chevron {
         font-size: 8px;
@@ -1358,8 +1365,8 @@
         position: absolute;
         top: calc(100% + 8px);
         right: 0;
-        background: #0a1628;
-        border: 1px solid rgba(80, 169, 252, 0.25);
+        background: #201748;
+        border: 1px solid rgba(54, 169, 225, 0.25);
         border-radius: 10px;
         min-width: 180px;
         overflow: hidden;
@@ -1380,11 +1387,11 @@
         transition: background 0.15s;
       }
       .gh-lang-opt:hover {
-        background: rgba(80, 169, 252, 0.1);
+        background: rgba(54, 169, 225, 0.1);
         color: #fff;
       }
       .gh-lang-opt.active {
-        color: #50a9fc;
+        color: #36a9e1;
         font-weight: 600;
       }
       .gh-home-btn {
@@ -1392,9 +1399,9 @@
         align-items: center;
         gap: 6px;
         background: transparent;
-        border: 1px solid rgba(80, 169, 252, 0.2);
+        border: 1px solid rgba(54, 169, 225, 0.2);
         border-radius: 20px;
-        padding: 5px 14px;
+        padding: 9px 16px;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.55);
         font-size: 12px;
@@ -1480,7 +1487,7 @@
         width: 100%;
         height: 36px;
         background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(80, 169, 252, 0.18);
+        border: 1px solid rgba(54, 169, 225, 0.18);
         border-radius: 20px;
         color: rgba(255, 255, 255, 0.5);
         font-size: 13px;
@@ -1493,12 +1500,12 @@
       }
       .gh-toc-btn:hover,
       .gh-toc-btn.open {
-        border-color: rgba(80, 169, 252, 0.45);
+        border-color: rgba(54, 169, 225, 0.45);
         background: rgba(255, 255, 255, 0.07);
         color: rgba(255, 255, 255, 0.8);
       }
       .gh-toc-btn .gh-toc-icon {
-        color: rgba(80, 169, 252, 0.6);
+        color: rgba(54, 169, 225, 0.6);
         font-size: 12px;
       }
       #ghTocLabel {
@@ -1510,8 +1517,8 @@
         top: calc(100% + 8px);
         left: 0;
         right: 0;
-        background: #0a1628;
-        border: 1px solid rgba(80, 169, 252, 0.2);
+        background: #201748;
+        border: 1px solid rgba(54, 169, 225, 0.2);
         border-radius: 12px;
         overflow-y: auto;
         box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
@@ -1542,7 +1549,7 @@
           color 0.15s;
       }
       .gh-toc-item:hover {
-        background: rgba(80, 169, 252, 0.1);
+        background: rgba(54, 169, 225, 0.1);
         color: #fff;
       }
       .gh-toc-item.sub {
@@ -1623,9 +1630,6 @@
             <div class="gh-toc-item sub" onclick="tocGo('sec-ch2-2')">
               2-2. 스마트폰 설정
             </div>
-            <div class="gh-toc-item" onclick="tocGo('sec-dive')">
-              <span class="gh-toc-icon-s">🤿</span> 다이빙 모드 진입
-            </div>
             <div class="gh-toc-group">제품 사용</div>
             <div class="gh-toc-item" onclick="tocGo('sec-ch3')">
               <span class="gh-toc-icon-s">③</span> 제품 사용하기
@@ -1633,11 +1637,20 @@
             <div class="gh-toc-item sub" onclick="tocGo('sec-ch3')">
               3-1. 사용 준비
             </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-mini')">
+              3-2. Mini 연결 준비
+            </div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-compare')">
+              3-3. 모드 비교
+            </div>
+            <div class="gh-toc-item" onclick="tocGo('sec-dive')">
+              <span class="gh-toc-icon-s">🤿</span> 다이빙 모드 진입
+            </div>
             <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-btn')">
-              3-2. 버튼 조작
+              3-4. 버튼 조작
             </div>
             <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-feat')">
-              3-3. 주요 기능
+              3-5. 주요 기능
             </div>
             <div class="gh-toc-group">관리 &amp; 지원</div>
             <div class="gh-toc-item" onclick="tocGo('sec-ch4')">
@@ -2058,8 +2071,8 @@
                   display: flex;
                   align-items: center;
                   gap: 4px;
-                  background: rgba(80, 169, 252, 0.1);
-                  border: 1px solid rgba(80, 169, 252, 0.2);
+                  background: rgba(54, 169, 225, 0.1);
+                  border: 1px solid rgba(54, 169, 225, 0.2);
                   border-radius: 6px;
                   padding: 4px 7px;
                   font-size: 11px;
@@ -2085,8 +2098,8 @@
                   position: absolute;
                   top: calc(100% + 6px);
                   right: 0;
-                  background: #0a1628;
-                  border: 1px solid rgba(80, 169, 252, 0.25);
+                  background: #201748;
+                  border: 1px solid rgba(54, 169, 225, 0.25);
                   border-radius: 8px;
                   min-width: 170px;
                   overflow: hidden;
@@ -2222,10 +2235,6 @@
             data-i18n="nav.ch2-2"
             >2-2. 스마트폰 설정</a
           >
-          <a href="#sec-dive" onclick="scrollTo('sec-dive')"
-            ><span class="nav-icon">🤿</span>
-            <span data-i18n="nav.dive">다이빙 모드 진입</span></a
-          >
         </div>
 
         <div class="sidenav-group">
@@ -2242,18 +2251,36 @@
             >3-1. 사용 준비</a
           >
           <a
+            href="#sec-ch3-mini"
+            class="sub"
+            onclick="scrollTo('sec-ch3-mini')"
+            data-i18n="nav.ch3-mini"
+            >3-2. Mini 연결 준비</a
+          >
+          <a
+            href="#sec-ch3-compare"
+            class="sub"
+            onclick="scrollTo('sec-ch3-compare')"
+            data-i18n="nav.ch3-comp"
+            >3-3. 모드 비교</a
+          >
+          <a href="#sec-dive" onclick="scrollTo('sec-dive')"
+            ><span class="nav-icon">🤿</span>
+            <span data-i18n="nav.dive">다이빙 모드 진입</span></a
+          >
+          <a
             href="#sec-ch3-btn"
             class="sub"
             onclick="scrollTo('sec-ch3-btn')"
             data-i18n="nav.ch3-2"
-            >3-2. 버튼 조작</a
+            >3-4. 버튼 조작</a
           >
           <a
             href="#sec-ch3-feat"
             class="sub"
             onclick="scrollTo('sec-ch3-feat')"
             data-i18n="nav.ch3-3"
-            >3-3. 주요 기능</a
+            >3-5. 주요 기능</a
           >
         </div>
 
@@ -2290,8 +2317,8 @@
           role="alert"
           style="
             background: linear-gradient(135deg, #fff4f4 0%, #ffe4e4 100%);
-            border: 2px solid #d92d20;
-            border-left: 6px solid #d92d20;
+            border: 2px solid #b6382e;
+            border-left: 6px solid #b6382e;
             border-radius: 12px;
             padding: 18px 22px;
             margin: 24px 0 32px 0;
@@ -2324,7 +2351,7 @@
               "
               data-i18n-html="safety.body"
             >
-              UNIVERSAL PRO에는
+              Universal Pro에는
               <strong>다이빙 컴퓨터 기능이 없습니다</strong>. 꼭
               <strong>별도의 다이빙 컴퓨터를 사용하여 안전한 다이빙</strong>을
               하시길 바랍니다.
@@ -2335,9 +2362,9 @@
         <!-- ════════════════════════════════ 소개 ════════════════════════════════ -->
         <div class="page page-break" id="sec-intro">
           <div class="intro-block">
-            <h3>📦 DIVEROID UNIVERSAL PRO</h3>
+            <h3>📦 DIVEROID Universal Pro</h3>
             <p data-i18n-html="intro.p1">
-              UNIVERSAL PRO는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는
+              Universal Pro는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는
               하우징입니다.<br />
               별도의 고가 수중 카메라 없이, 이미 보유한 스마트폰으로 전문적인
               수중 촬영을 경험하세요.
@@ -2347,7 +2374,7 @@
           <div class="intro-block">
             <h3>📱 DIVEROID App 3.0</h3>
             <p data-i18n="intro.p2">
-              App 3.0은 UNIVERSAL PRO와 함께 더욱 강력해진 수중 촬영·다이빙 기록
+              App 3.0은 Universal Pro와 함께 더욱 강력해진 수중 촬영·다이빙 기록
               앱입니다.
             </p>
             <ul class="feature-list">
@@ -2374,7 +2401,7 @@
           </div>
 
           <div class="img-block">
-            <img src="image/package2.png" alt="구성품" />
+            <img src="image/package2.webp" alt="구성품" />
           </div>
 
           <div class="contents-grid">
@@ -2382,7 +2409,7 @@
               <span class="num">①</span>
               <div>
                 <div class="name" data-i18n="pkg.item1">
-                  UNIVERSAL PRO 하우징
+                  Universal Pro 하우징
                 </div>
                 <div class="name-en">Universal Housing</div>
               </div>
@@ -2417,7 +2444,7 @@
 
           <div class="img-block">
             <img
-              src="image/connecting the DIVEROID wrist strap.png"
+              src="image/connecting the DIVEROID wrist strap.webp"
               alt="손목 스트랩 연결"
               style="max-width: 100%; height: auto"
             />
@@ -2535,7 +2562,7 @@
         <div class="page page-break" id="sec-ch1">
           <div class="chapter-header">
             <span class="ch-num">1</span>
-            <h2 data-i18n="h.ch1">UNIVERSAL PRO 하우징 사용법</h2>
+            <h2 data-i18n="h.ch1">Universal Pro 하우징 사용법</h2>
           </div>
 
           <div class="section-header">
@@ -2553,7 +2580,7 @@
               "
             >
               <img
-                src="image/opening and closing.png"
+                src="image/opening and closing.webp"
                 alt="하우징 열고 닫기"
                 style="max-width: 100%; height: auto"
               />
@@ -2574,7 +2601,7 @@
 
           <div class="img-block">
             <img
-              src="image/closing.png"
+              src="image/closing.webp"
               style="max-width: 100%; height: auto"
               alt="하우징 닫기 — 직립 상태"
             />
@@ -2604,7 +2631,7 @@
 
           <div class="img-block">
             <img
-              src="image/checking o-ring.png"
+              src="image/checking o-ring.webp"
               style="max-width: 100%; height: auto"
               alt="O링 확인"
             />
@@ -2626,7 +2653,7 @@
           </div>
           <div class="img-block">
             <img
-              src="image/checking o-ring tightly.png"
+              src="image/checking o-ring tightly.webp"
               style="max-width: 100%; height: auto"
               alt="하우징 단단히 닫기"
             />
@@ -2641,7 +2668,7 @@
 
           <div class="img-block">
             <img
-              src="image/waterproof test.png"
+              src="image/waterproof test.webp"
               style="max-width: 100%; height: auto"
               alt="방수 테스트"
             />
@@ -2676,7 +2703,7 @@
 
           <p><strong>1) 스마트폰 호환 사이즈 확인</strong></p>
           <p>
-            UNIVERSAL PRO 하우징은 대부분의 Android / iOS 스마트폰과 호환됩니다.
+            Universal Pro 하우징은 대부분의 Android / iOS 스마트폰과 호환됩니다.
           </p>
 
           <div class="img-block">
@@ -2720,7 +2747,7 @@
                 display: inline-flex;
                 align-items: center;
                 gap: 8px;
-                background: #50a9fc;
+                background: #36a9e1;
                 color: #fff;
                 text-decoration: none;
                 padding: 12px 24px;
@@ -2731,7 +2758,7 @@
                 transition: background 0.2s;
               "
               onmouseover="this.style.background = '#3a8de0'"
-              onmouseout="this.style.background = '#50A9FC'"
+              onmouseout="this.style.background = '#36a9e1'"
             >
               📱 내 스마트폰 호환 여부 확인 →
             </a>
@@ -2748,7 +2775,7 @@
               "
             >
               <img
-                src="image/smartphone placement guide.png"
+                src="image/smartphone placement guide.webp"
                 alt="가이드 조정"
                 style="max-width: 80%; height: auto"
               />
@@ -2777,12 +2804,12 @@
               "
             >
               <img
-                src="image/smartphone placement_1.png"
+                src="image/smartphone placement_1.webp"
                 alt="스마트폰 배치 가이드 1"
                 style="max-width: 100%; height: auto"
               />
               <img
-                src="image/smartphone placement_2.png"
+                src="image/smartphone placement_2.webp"
                 alt="스마트폰 배치 가이드 2"
                 style="max-width: 100%; height: auto"
               />
@@ -2829,7 +2856,7 @@
                 margin: 0 0 14px 0;
               "
             >
-              App 3.0은 UNIVERSAL PRO와 함께 더욱 강력해진 수중 촬영·다이빙 기록
+              App 3.0은 Universal Pro와 함께 더욱 강력해진 수중 촬영·다이빙 기록
               앱입니다.
             </p>
             <ul
@@ -2900,7 +2927,7 @@
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              기기를 선택합니다. <strong>UNIVERSAL PRO</strong>를 선택하세요.
+              기기를 선택합니다. <strong>Universal Pro</strong>를 선택하세요.
             </div>
           </div>
           <div class="img-block">
@@ -2948,7 +2975,7 @@
 
           <div
             style="
-              background: #2563eb;
+              background: #3d2683;
               color: #fff;
               border-radius: 10px;
               padding: 16px;
@@ -2968,7 +2995,7 @@
         <!-- 분기: Mini 보유 여부 -->
         <div class="page page-break">
           <div class="chapter-header" style="background: #334155">
-            <span class="ch-num" style="background: #2563eb">?</span>
+            <span class="ch-num" style="background: #3d2683">?</span>
             <h2 data-i18n="h.mini">Mini를 보유하고 있으신가요?</h2>
           </div>
 
@@ -3037,7 +3064,7 @@
               <!-- 강조 블루 박스 -->
               <div
                 style="
-                  background: #2563eb;
+                  background: #3d2683;
                   color: #fff;
                   border-radius: 10px;
                   padding: 16px;
@@ -3072,7 +3099,7 @@
                 style="
                   font-size: 14px;
                   font-weight: 700;
-                  color: #1d4ed8;
+                  color: #3d2683;
                   margin-bottom: 14px;
                   padding-bottom: 8px;
                   border-bottom: 1px solid #bfdbfe;
@@ -3088,7 +3115,7 @@
                     min-width: 28px;
                     height: 28px;
                     font-size: 12px;
-                    background: #1d4ed8;
+                    background: #3d2683;
                   "
                 >
                   5
@@ -3113,7 +3140,7 @@
                     min-width: 28px;
                     height: 28px;
                     font-size: 12px;
-                    background: #1d4ed8;
+                    background: #3d2683;
                   "
                 >
                   6
@@ -3137,7 +3164,7 @@
                     min-width: 28px;
                     height: 28px;
                     font-size: 12px;
-                    background: #1d4ed8;
+                    background: #3d2683;
                   "
                 >
                   →
@@ -3160,7 +3187,7 @@
               <!-- 강조 블루 박스 -->
               <div
                 style="
-                  background: #2563eb;
+                  background: #3d2683;
                   color: #fff;
                   border-radius: 10px;
                   padding: 16px;
@@ -3249,70 +3276,6 @@
         </div>
 
         <!-- ════════════════════════════════ 다이빙 모드 진입 ════════════════════════════════ -->
-        <div class="page page-break" id="sec-dive">
-          <div class="chapter-header">
-            <span class="ch-num">🤿</span>
-            <h2 data-i18n="h.dive">다이빙 모드 진입 (다이빙 시작)</h2>
-          </div>
-
-          <!-- 핵심 메시지 블루 박스 -->
-          <div
-            style="
-              background: #2563eb;
-              color: #fff;
-              border-radius: 14px;
-              padding: 32px;
-              text-align: center;
-              margin-bottom: 28px;
-            "
-          >
-            <div style="font-size: 20px; font-weight: 700; margin-bottom: 12px">
-              하우징을 닫으면
-            </div>
-            <div style="font-size: 24px; font-weight: 800; margin-bottom: 14px">
-              자동으로 다이빙 모드 진입!
-            </div>
-            <div style="font-size: 14px; opacity: 0.85">
-              다른 설정 필요 없음
-            </div>
-          </div>
-
-          <div class="img-block">
-            <img
-              src="image/dive standalone.png"
-              alt="Universal Pro 단독 모드 다이빙 화면"
-              style="max-width: 100%; height: auto; border-radius: 12px"
-            />
-            <div class="img-caption">
-              Universal Pro 단독 모드 — 기본 다이빙 촬영 화면
-            </div>
-          </div>
-
-          <div class="img-block">
-            <img
-              src="image/dive standalone menu.png"
-              alt="Universal Pro 단독 모드 카메라 메뉴"
-              style="max-width: 100%; height: auto; border-radius: 12px"
-            />
-            <div class="img-caption">
-              Universal Pro 단독 모드 — Wide angle / Standard / Zoom / Selfie
-              모드 선택
-            </div>
-          </div>
-
-          <div class="img-block">
-            <img
-              src="image/F-04.png"
-              alt="Universal Pro & Mini 다이빙 촬영 화면"
-              style="max-width: 100%; height: auto; border-radius: 12px"
-            />
-            <div class="img-caption">
-              Universal Pro &amp; Mini 모드 (Mini 사용) — 수심·기체 정보 포함
-            </div>
-          </div>
-        </div>
-
-        <!-- ════════════════════════════════ 3장 사용 ════════════════════════════════ -->
         <div class="page page-break" id="sec-ch3">
           <div class="chapter-header">
             <span class="ch-num">3</span>
@@ -3385,10 +3348,10 @@
         </div>
 
         <!-- Mini 연결 모드 -->
-        <div class="page page-break">
+        <div class="page page-break" id="sec-ch3-mini">
           <div class="section-header">
             <h3 data-i18n="h.ch3-1b">
-              3-1. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)
+              3-2. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)
             </h3>
           </div>
 
@@ -3437,9 +3400,9 @@
           </div>
 
           <!-- 모드 비교표 -->
-          <div class="section-header">
+          <div class="section-header" id="sec-ch3-compare">
             <h3 data-i18n="h.ch3-compare">
-              3-2. 단독 모드 vs Mini 연결 모드 비교
+              3-3. 단독 모드 vs Mini 연결 모드 비교
             </h3>
           </div>
 
@@ -3488,14 +3451,78 @@
         </div>
 
         <!-- 버튼 조작 -->
-        <div class="page page-break">
-          <div class="section-header" id="sec-ch3-btn">
-            <h3 data-i18n="h.ch3-btn">3-3. 버튼 조작</h3>
+        <div class="page page-break" id="sec-dive">
+          <div class="chapter-header">
+            <span class="ch-num">🤿</span>
+            <h2 data-i18n="h.dive">다이빙 모드 진입 (다이빙 시작)</h2>
+          </div>
+
+          <!-- 핵심 메시지 블루 박스 -->
+          <div
+            style="
+              background: #3d2683;
+              color: #fff;
+              border-radius: 14px;
+              padding: 32px;
+              text-align: center;
+              margin-bottom: 28px;
+            "
+          >
+            <div style="font-size: 20px; font-weight: 700; margin-bottom: 12px">
+              하우징을 닫으면
+            </div>
+            <div style="font-size: 24px; font-weight: 800; margin-bottom: 14px">
+              자동으로 다이빙 모드 진입!
+            </div>
+            <div style="font-size: 14px; opacity: 0.85">
+              다른 설정 필요 없음
+            </div>
           </div>
 
           <div class="img-block">
             <img
-              src="image/Universal Pro button.png"
+              src="image/dive standalone.png"
+              alt="Universal Pro 단독 모드 다이빙 화면"
+              style="max-width: 100%; height: auto; border-radius: 12px"
+            />
+            <div class="img-caption">
+              Universal Pro 단독 모드 — 기본 다이빙 촬영 화면
+            </div>
+          </div>
+
+          <div class="img-block">
+            <img
+              src="image/dive standalone menu.png"
+              alt="Universal Pro 단독 모드 카메라 메뉴"
+              style="max-width: 100%; height: auto; border-radius: 12px"
+            />
+            <div class="img-caption">
+              Universal Pro 단독 모드 — Wide angle / Standard / Zoom / Selfie
+              모드 선택
+            </div>
+          </div>
+
+          <div class="img-block">
+            <img
+              src="image/F-04.png"
+              alt="Universal Pro & Mini 다이빙 촬영 화면"
+              style="max-width: 100%; height: auto; border-radius: 12px"
+            />
+            <div class="img-caption">
+              Universal Pro &amp; Mini 모드 (Mini 사용) — 수심·기체 정보 포함
+            </div>
+          </div>
+        </div>
+
+        <!-- ════════════════════════════════ 3장 사용 ════════════════════════════════ -->
+        <div class="page page-break">
+          <div class="section-header" id="sec-ch3-btn">
+            <h3 data-i18n="h.ch3-btn">3-4. 버튼 조작</h3>
+          </div>
+
+          <div class="img-block">
+            <img
+              src="image/Universal Pro button.webp"
               alt="Universal Pro 버튼 위치"
               style="max-width: 100%; height: auto"
             />
@@ -3548,7 +3575,7 @@
 
           <div class="img-block">
             <img
-              src="image/color correction_before.png"
+              src="image/color correction_before.webp"
               alt="색보정 OFF (BEFORE)"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
@@ -3556,7 +3583,7 @@
           </div>
           <div class="img-block">
             <img
-              src="image/color correction_after.png"
+              src="image/color correction_after.webp"
               alt="색보정 ON (AFTER)"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
@@ -3567,13 +3594,13 @@
         <!-- 앱 주요 기능 -->
         <div class="page page-break">
           <div class="section-header" id="sec-ch3-feat">
-            <h3 data-i18n="h.ch3-feat">3-4. App 3.0 주요 기능</h3>
+            <h3 data-i18n="h.ch3-feat">3-5. App 3.0 주요 기능</h3>
           </div>
 
           <p><strong>실시간 색보정 (Real-time Color Correction)</strong></p>
           <div class="img-block">
             <img
-              src="image/color correction_before.png"
+              src="image/color correction_before.webp"
               alt="색보정 OFF"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
@@ -3581,7 +3608,7 @@
           </div>
           <div class="img-block">
             <img
-              src="image/color correction_after.png"
+              src="image/color correction_after.webp"
               alt="색보정 ON"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
@@ -3619,7 +3646,7 @@
             <p
               style="
                 font-size: 13px;
-                color: #1d4ed8;
+                color: #3d2683;
                 font-weight: 700;
                 margin: 0 0 10px;
               "
@@ -3700,7 +3727,7 @@
 
           <div class="img-block">
             <img
-              src="image/Oring1.png"
+              src="image/Oring1.webp"
               alt="O링 Step 1 — 옆으로 밀기"
               style="max-width: 100%; height: auto"
             />
@@ -3737,7 +3764,7 @@
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              O링을 꺼냅니다.<br /><span style="color: #d97706"
+              O링을 꺼냅니다.<br /><span style="color: #8a5a00"
                 >⚠️ [주의] O링이 찢어지지 않도록 조심하세요.</span
               >
             </div>
@@ -4261,7 +4288,7 @@
 
         <!-- 푸터 -->
         <div class="footer" data-i18n-html="footer.text">
-          DIVEROID UNIVERSAL PRO 사용자 가이드 &nbsp;|&nbsp; OceanWick
+          DIVEROID Universal Pro 사용자 가이드 &nbsp;|&nbsp; OceanWick
           주식회사<br />
           help@diveroid.com &nbsp;|&nbsp; www.diveroid.com
         </div>

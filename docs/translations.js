@@ -21,8 +21,10 @@ const TRANSLATIONS = {
     "nav.dive": "다이빙 모드 진입",
     "nav.ch3": "제품 사용하기",
     "nav.ch3-1": "3-1. 사용 준비",
-    "nav.ch3-2": "3-2. 버튼 조작",
-    "nav.ch3-3": "3-3. 주요 기능",
+    "nav.ch3-mini": "3-2. Mini 연결 준비",
+    "nav.ch3-comp": "3-3. 모드 비교",
+    "nav.ch3-2": "3-4. 버튼 조작",
+    "nav.ch3-3": "3-5. 주요 기능",
     "nav.ch4": "보관 및 관리",
     "nav.faq": "FAQ",
     "nav.ch5": "제품 보증",
@@ -31,7 +33,7 @@ const TRANSLATIONS = {
     "h.parts": "각 부위 명칭",
     "h.parts-front": "전면 / 측면",
     "h.parts-back": "후면 / 상단",
-    "h.ch1": "UNIVERSAL PRO 하우징 사용법",
+    "h.ch1": "Universal Pro 하우징 사용법",
     "h.ch1-1": "1-1. 하우징 열고 닫기",
     "h.ch1-2": "1-2. 사용 전 방수 테스트",
     "h.ch1-3": "1-3. 하우징 조정",
@@ -42,10 +44,10 @@ const TRANSLATIONS = {
     "h.dive": "다이빙 모드 진입 (다이빙 시작)",
     "h.ch3": "제품 사용하기",
     "h.ch3-1a": "3-1. 사용 준비 — 단독 모드 (Mini 없이)",
-    "h.ch3-1b": "3-1. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)",
-    "h.ch3-compare": "3-2. 단독 모드 vs Mini 연결 모드 비교",
-    "h.ch3-btn": "3-3. 버튼 조작",
-    "h.ch3-feat": "3-4. App 3.0 주요 기능",
+    "h.ch3-1b": "3-2. 사용 준비 — Mini 연결 모드 (다이빙 컴퓨터 사용)",
+    "h.ch3-compare": "3-3. 단독 모드 vs Mini 연결 모드 비교",
+    "h.ch3-btn": "3-4. 버튼 조작",
+    "h.ch3-feat": "3-5. App 3.0 주요 기능",
     "h.ch4": "보관 및 관리",
     "h.ch4-1": "4-1. O링 관리",
     "h.ch4-2": "4-2. 습기 방지 (Anti-fog)",
@@ -58,18 +60,18 @@ const TRANSLATIONS = {
     "h.ch5-3": "5-3. 책임 제한",
     "safety.title": "안전 안내 (Safety Notice)",
     "safety.body":
-      "UNIVERSAL PRO에는 <strong>다이빙 컴퓨터 기능이 없습니다</strong>. 꼭 <strong>별도의 다이빙 컴퓨터를 사용하여 안전한 다이빙</strong>을 하시길 바랍니다.",
+      "Universal Pro에는 <strong>다이빙 컴퓨터 기능이 없습니다</strong>. 꼭 <strong>별도의 다이빙 컴퓨터를 사용하여 안전한 다이빙</strong>을 하시길 바랍니다.",
     "intro.p1":
-      "UNIVERSAL PRO는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는 하우징입니다.<br>별도의 고가 수중 카메라 없이, 이미 보유한 스마트폰으로 전문적인 수중 촬영을 경험하세요.",
+      "Universal Pro는 스마트폰을 수심 60m급 4K 수중카메라로 변환하는 하우징입니다.<br>별도의 고가 수중 카메라 없이, 이미 보유한 스마트폰으로 전문적인 수중 촬영을 경험하세요.",
     "intro.p2":
-      "App 3.0은 UNIVERSAL PRO와 함께 더욱 강력해진 수중 촬영·다이빙 기록 앱입니다.",
+      "App 3.0은 Universal Pro와 함께 더욱 강력해진 수중 촬영·다이빙 기록 앱입니다.",
     "intro.f1":
       "✅ iCloud · Google Drive 연동을 통한 개인 클라우드 로그북 관리",
     "intro.f2": "✅ AI 기능을 이용한 로그북 자동 완성",
     "intro.f3": "✅ 다이빙 사이트 리뷰 및 커뮤니티",
     "intro.f4": "✅ 실시간 색보정 (레드 필터 없이 소프트웨어로 수중 색상 보정)",
     "intro.f5": "✅ Mini 없이도 사진·영상·로그북 사용 가능 (App 3.0 신기능)",
-    "pkg.item1": "UNIVERSAL PRO 하우징",
+    "pkg.item1": "Universal Pro 하우징",
     "pkg.item2": "손목 스트랩",
     "pkg.item3": "습기 방지제",
     "pkg.item4": "실리콘 그리스",
@@ -102,13 +104,13 @@ const TRANSLATIONS = {
       "네. App 3.0부터 Mini 없이도 사진·영상 촬영, 실시간 색보정, 로그북(위치·시간) 기능을 사용할 수 있습니다. 단, 다이빙 컴퓨터 기능(수심·수온 측정)은 Mini 연결 시에만 사용 가능합니다.",
     "faq.q3": "방수 깊이는 얼마나 되나요?",
     "faq.a3":
-      "UNIVERSAL PRO 하우징은 수심 60m(6기압)까지 방수 설계되어 있습니다. 단, 최초 사용 전 반드시 수심 10m 이상에서 빈 하우징 방수 테스트를 진행해 주세요.",
+      "Universal Pro 하우징은 수심 60m(6기압)까지 방수 설계되어 있습니다. 단, 최초 사용 전 반드시 수심 10m 이상에서 빈 하우징 방수 테스트를 진행해 주세요.",
     "faq.q4": "O링은 얼마나 자주 관리해야 하나요?",
     "faq.a4":
       "다이빙 전후마다 O링 상태를 점검하고, 필요 시 실리콘 그리스를 소량 발라주세요. 3개월 이상 보관할 경우 O링을 분리하여 지퍼백에 따로 보관하는 것을 권장합니다.",
     "faq.q5": "일반 카메라 앱(기본 카메라)으로 사용할 수 있나요?",
     "faq.a5":
-      "아니요. UNIVERSAL PRO는 DIVEROID 전용 앱(App 3.0)에서만 작동합니다. 스마트폰 기본 카메라 앱과는 호환되지 않습니다.",
+      "아니요. Universal Pro는 DIVEROID 전용 앱(App 3.0)에서만 작동합니다. 스마트폰 기본 카메라 앱과는 호환되지 않습니다.",
     "faq.q6": "영상은 어떤 해상도로 촬영되나요?",
     "faq.a6":
       "FHD(1080p) 및 4K 해상도로 촬영 가능합니다. 촬영 화면에서 해상도와 프레임 레이트를 선택하세요.",
@@ -148,7 +150,7 @@ const TRANSLATIONS = {
       "스마트폰 제조사와 본사 사이에는 어떠한 관계도 없으며, 본사는 제품 사용 중 발생한 스마트폰 침수 또는 손상에 대해 책임을 지지 않습니다.",
     "w.limit-p3": "본 제품을 사용함으로써 위 조건에 동의한 것으로 간주합니다.",
     "footer.text":
-      "DIVEROID UNIVERSAL PRO 사용자 가이드 &nbsp;|&nbsp; OceanWick 주식회사",
+      "DIVEROID Universal Pro 사용자 가이드 &nbsp;|&nbsp; OceanWick 주식회사",
   },
   EN: {
     "cover.tagline": "AI That Understands the Ocean",
@@ -172,8 +174,10 @@ const TRANSLATIONS = {
     "nav.dive": "Enter Dive Mode",
     "nav.ch3": "Product Operation",
     "nav.ch3-1": "3-1. Setup",
-    "nav.ch3-2": "3-2. Button Controls",
-    "nav.ch3-3": "3-3. Key Features",
+    "nav.ch3-mini": "3-2. Mini Connected Setup",
+    "nav.ch3-comp": "3-3. Mode Comparison",
+    "nav.ch3-2": "3-4. Button Controls",
+    "nav.ch3-3": "3-5. Key Features",
     "nav.ch4": "Storage &amp; Maintenance",
     "nav.faq": "FAQ",
     "nav.ch5": "Warranty",
@@ -182,7 +186,7 @@ const TRANSLATIONS = {
     "h.parts": "Part Names",
     "h.parts-front": "Front / Side",
     "h.parts-back": "Rear / Top",
-    "h.ch1": "UNIVERSAL PRO Housing Usage",
+    "h.ch1": "Universal Pro Housing Usage",
     "h.ch1-1": "1-1. Opening &amp; Closing the Housing",
     "h.ch1-2": "1-2. Waterproof Test Before Use",
     "h.ch1-3": "1-3. Housing Adjustment",
@@ -193,10 +197,10 @@ const TRANSLATIONS = {
     "h.dive": "Entering Dive Mode (Starting a Dive)",
     "h.ch3": "Product Operation",
     "h.ch3-1a": "3-1. Setup — Standalone Mode (without Mini)",
-    "h.ch3-1b": "3-1. Setup — Mini Connected Mode (with Dive Computer)",
-    "h.ch3-compare": "3-2. Standalone Mode vs Mini Connected Mode Comparison",
-    "h.ch3-btn": "3-3. Button Controls",
-    "h.ch3-feat": "3-4. App 3.0 Key Features",
+    "h.ch3-1b": "3-2. Setup — Mini Connected Mode (with Dive Computer)",
+    "h.ch3-compare": "3-3. Standalone Mode vs Mini Connected Mode Comparison",
+    "h.ch3-btn": "3-4. Button Controls",
+    "h.ch3-feat": "3-5. App 3.0 Key Features",
     "h.ch4": "Storage &amp; Maintenance",
     "h.ch4-1": "4-1. O-Ring Maintenance",
     "h.ch4-2": "4-2. Anti-Fog",
@@ -209,11 +213,11 @@ const TRANSLATIONS = {
     "h.ch5-3": "5-3. Limitation of Liability",
     "safety.title": "Safety Notice",
     "safety.body":
-      "UNIVERSAL PRO does <strong>not include a dive computer function</strong>. Please use a <strong>separate dive computer</strong> to ensure safe diving.",
+      "Universal Pro does <strong>not include a dive computer function</strong>. Please use a <strong>separate dive computer</strong> to ensure safe diving.",
     "intro.p1":
-      "UNIVERSAL PRO is a housing that transforms your smartphone into a 60m-rated 4K underwater camera.<br>Experience professional underwater photography with the smartphone you already own — no expensive dedicated camera needed.",
+      "Universal Pro is a housing that transforms your smartphone into a 60m-rated 4K underwater camera.<br>Experience professional underwater photography with the smartphone you already own — no expensive dedicated camera needed.",
     "intro.p2":
-      "App 3.0 is the powerful underwater shooting and dive logging app made for UNIVERSAL PRO.",
+      "App 3.0 is the powerful underwater shooting and dive logging app made for Universal Pro.",
     "intro.f1": "✅ Personal cloud logbook via iCloud · Google Drive sync",
     "intro.f2": "✅ AI-powered auto-complete for your dive log",
     "intro.f3": "✅ Dive site reviews &amp; community",
@@ -221,7 +225,7 @@ const TRANSLATIONS = {
       "✅ Real-time color correction (software-based, no red filter needed)",
     "intro.f5":
       "✅ Photos, videos &amp; logbook without Mini (App 3.0 new feature)",
-    "pkg.item1": "UNIVERSAL PRO Housing",
+    "pkg.item1": "Universal Pro Housing",
     "pkg.item2": "Wrist Strap",
     "pkg.item3": "Anti-fog Sheet",
     "pkg.item4": "Silicone Grease",
@@ -256,13 +260,13 @@ const TRANSLATIONS = {
       "Yes. From App 3.0, you can shoot photos/videos, use real-time color correction, and record a logbook (location & time) without a Mini. However, the dive computer functions (depth & water temperature) require a Mini connection.",
     "faq.q3": "What is the waterproof depth rating?",
     "faq.a3":
-      "The UNIVERSAL PRO housing is waterproof rated to 60m (6 ATM). Before first use, always perform a waterproof test dive with an empty housing to at least 10m depth.",
+      "The Universal Pro housing is waterproof rated to 60m (6 ATM). Before first use, always perform a waterproof test dive with an empty housing to at least 10m depth.",
     "faq.q4": "How often should I maintain the O-ring?",
     "faq.a4":
       "Inspect the O-ring before and after every dive, and apply a small amount of silicone grease as needed. If storing for more than 3 months, remove the O-ring and store it separately in a zip-lock bag.",
     "faq.q5": "Can I use the built-in camera app?",
     "faq.a5":
-      "No. The UNIVERSAL PRO only works with the dedicated DIVEROID app (App 3.0). It is not compatible with the smartphone's default camera app.",
+      "No. The Universal Pro only works with the dedicated DIVEROID app (App 3.0). It is not compatible with the smartphone's default camera app.",
     "faq.q6": "What video resolutions are available?",
     "faq.a6":
       "FHD (1080p) and 4K resolution are available. Select the resolution and frame rate on the shooting screen.",
@@ -305,7 +309,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "By using this product, you are deemed to have agreed to the above terms.",
     "footer.text":
-      "DIVEROID UNIVERSAL PRO User Guide &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "DIVEROID Universal Pro User Guide &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
   TW: {
     "cover.tagline": "理解海洋的 AI",
@@ -329,8 +333,13 @@ const TRANSLATIONS = {
     "nav.dive": "進入潛水模式",
     "nav.ch3": "產品操作",
     "nav.ch3-1": "3-1. 使用準備",
-    "nav.ch3-2": "3-2. 按鈕操作",
-    "nav.ch3-3": "3-3. 主要功能",
+    "nav.ch3-mini": "3-2. Mini 連線準備",
+    "nav.ch3-comp": "3-3. 模式比較",
+    "safety.title": "安全須知 (Safety Notice)",
+    "safety.body":
+      "Universal Pro <strong>不具備潛水電腦功能</strong>。請務必<strong>搭配獨立的潛水電腦</strong>，確保潛水安全。",
+    "nav.ch3-2": "3-4. 按鈕操作",
+    "nav.ch3-3": "3-5. 主要功能",
     "nav.ch4": "保管 &amp; 保養",
     "nav.faq": "常見問題",
     "nav.ch5": "產品保固",
@@ -339,7 +348,7 @@ const TRANSLATIONS = {
     "h.parts": "各部位名稱",
     "h.parts-front": "正面 / 側面",
     "h.parts-back": "背面 / 頂部",
-    "h.ch1": "UNIVERSAL PRO 外殼使用方法",
+    "h.ch1": "Universal Pro 外殼使用方法",
     "h.ch1-1": "1-1. 外殼開啟與關閉",
     "h.ch1-2": "1-2. 使用前防水測試",
     "h.ch1-3": "1-3. 外殼調整",
@@ -350,10 +359,10 @@ const TRANSLATIONS = {
     "h.dive": "進入潛水模式（開始潛水）",
     "h.ch3": "產品操作",
     "h.ch3-1a": "3-1. 使用準備 — 單機模式（無 Mini）",
-    "h.ch3-1b": "3-1. 使用準備 — Mini 連線模式（使用潛水電腦）",
-    "h.ch3-compare": "3-2. 單機模式 vs Mini 連線模式比較",
-    "h.ch3-btn": "3-3. 按鈕操作",
-    "h.ch3-feat": "3-4. App 3.0 主要功能",
+    "h.ch3-1b": "3-2. 使用準備 — Mini 連線模式（使用潛水電腦）",
+    "h.ch3-compare": "3-3. 單機模式 vs Mini 連線模式比較",
+    "h.ch3-btn": "3-4. 按鈕操作",
+    "h.ch3-feat": "3-5. App 3.0 主要功能",
     "h.ch4": "保管 &amp; 保養",
     "h.ch4-1": "4-1. O 型圈保養",
     "h.ch4-2": "4-2. 防霧處理",
@@ -365,15 +374,15 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. 保固除外事項",
     "h.ch5-3": "5-3. 責任限制",
     "intro.p1":
-      "UNIVERSAL PRO 是一款能將智慧型手機轉換為 60m 級 4K 水下相機的外殼。<br>無需購買昂貴的水下相機，使用您已有的手機即可享受專業水下攝影。",
+      "Universal Pro 是一款能將智慧型手機轉換為 60m 級 4K 水下相機的外殼。<br>無需購買昂貴的水下相機，使用您已有的手機即可享受專業水下攝影。",
     "intro.p2":
-      "App 3.0 是搭配 UNIVERSAL PRO 的強大水下拍攝·潛水記錄 App。",
+      "App 3.0 是搭配 Universal Pro 的強大水下拍攝·潛水記錄 App。",
     "intro.f1": "✅ 透過 iCloud · Google Drive 同步的個人雲端潛水日誌",
     "intro.f2": "✅ 利用 AI 功能自動完成潛水日誌",
     "intro.f3": "✅ 潛水地點評論 &amp; 社群",
     "intro.f4": "✅ 即時色彩校正（軟體校正，無需紅色濾鏡）",
     "intro.f5": "✅ 無 Mini 亦可使用照片·影片·日誌（App 3.0 新功能）",
-    "pkg.item1": "UNIVERSAL PRO 外殼",
+    "pkg.item1": "Universal Pro 外殼",
     "pkg.item2": "腕帶",
     "pkg.item3": "防霧片",
     "pkg.item4": "矽脂",
@@ -406,13 +415,13 @@ const TRANSLATIONS = {
       "可以。從 App 3.0 開始，沒有 Mini 也能進行照片·影片拍攝、即時色彩校正、潛水日誌（位置·時間）。但潛水電腦功能（水深·水溫測量）需連線 Mini 才能使用。",
     "faq.q3": "防水深度是多少？",
     "faq.a3":
-      "UNIVERSAL PRO 外殼防水設計達水深 60m（6 大氣壓）。首次使用前，請務必用空外殼在 10m 以上水深進行防水測試。",
+      "Universal Pro 外殼防水設計達水深 60m（6 大氣壓）。首次使用前，請務必用空外殼在 10m 以上水深進行防水測試。",
     "faq.q4": "O 型圈需要多久保養一次？",
     "faq.a4":
       "每次潛水前後均需檢查 O 型圈狀態，必要時塗抹少量矽脂。若保存超過 3 個月，建議取出 O 型圈單獨放入夾鏈袋保存。",
     "faq.q5": "可以使用手機內建相機 App 嗎？",
     "faq.a5":
-      "不行。UNIVERSAL PRO 僅在 DIVEROID 專用 App（App 3.0）上運作，與手機內建相機 App 不相容。",
+      "不行。Universal Pro 僅在 DIVEROID 專用 App（App 3.0）上運作，與手機內建相機 App 不相容。",
     "faq.q6": "可以拍攝什麼解析度的影片？",
     "faq.a6":
       "可選擇 FHD（1080p）及 4K 解析度拍攝。請在拍攝畫面中選擇解析度與幀率。",
@@ -450,7 +459,7 @@ const TRANSLATIONS = {
       "智慧型手機製造商與本公司之間沒有任何關係，本公司不對使用本產品期間發生的手機進水或損壞負責。",
     "w.limit-p3": "使用本產品即視為同意上述條款。",
     "footer.text":
-      "DIVEROID UNIVERSAL PRO 使用者指南 &nbsp;|&nbsp; OceanWick 股份有限公司",
+      "DIVEROID Universal Pro 使用者指南 &nbsp;|&nbsp; OceanWick 股份有限公司",
   },
   JP: {
     "cover.tagline": "海を理解するAI",
@@ -474,8 +483,13 @@ const TRANSLATIONS = {
     "nav.dive": "ダイビングモード開始",
     "nav.ch3": "製品の使い方",
     "nav.ch3-1": "3-1. 使用準備",
-    "nav.ch3-2": "3-2. ボタン操作",
-    "nav.ch3-3": "3-3. 主要機能",
+    "nav.ch3-mini": "3-2. Mini接続の準備",
+    "nav.ch3-comp": "3-3. モード比較",
+    "safety.title": "安全に関するご案内 (Safety Notice)",
+    "safety.body":
+      "Universal Pro には<strong>ダイブコンピューター機能はありません</strong>。安全なダイビングのため、必ず<strong>別途ダイブコンピューターをご使用ください</strong>。",
+    "nav.ch3-2": "3-4. ボタン操作",
+    "nav.ch3-3": "3-5. 主要機能",
     "nav.ch4": "保管 &amp; メンテナンス",
     "nav.faq": "よくある質問",
     "nav.ch5": "製品保証",
@@ -484,7 +498,7 @@ const TRANSLATIONS = {
     "h.parts": "各部名称",
     "h.parts-front": "正面 / 側面",
     "h.parts-back": "背面 / 上部",
-    "h.ch1": "UNIVERSAL PRO ハウジングの使い方",
+    "h.ch1": "Universal Pro ハウジングの使い方",
     "h.ch1-1": "1-1. ハウジングの開閉",
     "h.ch1-2": "1-2. 使用前の防水テスト",
     "h.ch1-3": "1-3. ハウジング調整",
@@ -495,10 +509,10 @@ const TRANSLATIONS = {
     "h.dive": "ダイビングモードの開始（ダイビング開始）",
     "h.ch3": "製品の使い方",
     "h.ch3-1a": "3-1. 使用準備 — スタンドアロンモード（Mini なし）",
-    "h.ch3-1b": "3-1. 使用準備 — Mini接続モード（ダイビングコンピュータ使用）",
-    "h.ch3-compare": "3-2. スタンドアロンモード vs Mini接続モード 比較",
-    "h.ch3-btn": "3-3. ボタン操作",
-    "h.ch3-feat": "3-4. App 3.0 主要機能",
+    "h.ch3-1b": "3-2. 使用準備 — Mini接続モード（ダイビングコンピュータ使用）",
+    "h.ch3-compare": "3-3. スタンドアロンモード vs Mini接続モード 比較",
+    "h.ch3-btn": "3-4. ボタン操作",
+    "h.ch3-feat": "3-5. App 3.0 主要機能",
     "h.ch4": "保管 &amp; メンテナンス",
     "h.ch4-1": "4-1. Oリングのメンテナンス",
     "h.ch4-2": "4-2. 曇り止め（Anti-fog）",
@@ -510,15 +524,15 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. 保証の除外事項",
     "h.ch5-3": "5-3. 責任の制限",
     "intro.p1":
-      "UNIVERSAL PRO は、スマートフォンを水深60m対応の4K水中カメラに変換するハウジングです。<br>高価な専用水中カメラなしに、手持ちのスマートフォンでプロフェッショナルな水中撮影を体験してください。",
+      "Universal Pro は、スマートフォンを水深60m対応の4K水中カメラに変換するハウジングです。<br>高価な専用水中カメラなしに、手持ちのスマートフォンでプロフェッショナルな水中撮影を体験してください。",
     "intro.p2":
-      "App 3.0は、UNIVERSAL PROと共にさらに強力になった水中撮影・ダイビング記録アプリです。",
+      "App 3.0は、Universal Proと共にさらに強力になった水中撮影・ダイビング記録アプリです。",
     "intro.f1": "✅ iCloud · Google Drive連携による個人クラウドログブック管理",
     "intro.f2": "✅ AI機能によるログブック自動入力",
     "intro.f3": "✅ ダイビングサイトレビュー &amp; コミュニティ",
     "intro.f4": "✅ リアルタイム色補正（赤フィルター不要、ソフトウェアで補正）",
     "intro.f5": "✅ Miniなしでも写真・動画・ログブック使用可（App 3.0新機能）",
-    "pkg.item1": "UNIVERSAL PRO ハウジング",
+    "pkg.item1": "Universal Pro ハウジング",
     "pkg.item2": "リストストラップ",
     "pkg.item3": "曇り止めシート",
     "pkg.item4": "シリコングリス",
@@ -553,13 +567,13 @@ const TRANSLATIONS = {
       "はい。App 3.0からMiniなしでも写真・動画撮影、リアルタイム色補正、ログブック（位置・時間）が使用できます。ただし、ダイビングコンピュータ機能（水深・水温測定）はMini接続時のみ使用可能です。",
     "faq.q3": "防水深度はどのくらいですか？",
     "faq.a3":
-      "UNIVERSAL PRO ハウジングは水深60m（6気圧）まで防水設計されています。初回使用前に必ず空のハウジング状態で10m以上の深さで防水テストを行ってください。",
+      "Universal Pro ハウジングは水深60m（6気圧）まで防水設計されています。初回使用前に必ず空のハウジング状態で10m以上の深さで防水テストを行ってください。",
     "faq.q4": "Oリングはどのくらいの頻度でメンテナンスが必要ですか？",
     "faq.a4":
       "ダイビング前後に毎回Oリングの状態を確認し、必要に応じてシリコングリスを少量塗ってください。3ヶ月以上保管する場合はOリングを取り外してジッパー袋に保管することを推奨します。",
     "faq.q5": "標準カメラアプリで使用できますか？",
     "faq.a5":
-      "いいえ。UNIVERSAL PROはDIVEROID専用アプリ（App 3.0）でのみ動作します。スマートフォンの標準カメラアプリとは互換性がありません。",
+      "いいえ。Universal ProはDIVEROID専用アプリ（App 3.0）でのみ動作します。スマートフォンの標準カメラアプリとは互換性がありません。",
     "faq.q6": "どの解像度で動画を撮影できますか？",
     "faq.a6":
       "FHD（1080p）および4K解像度で撮影可能です。撮影画面で解像度とフレームレートを選択してください。",
@@ -601,7 +615,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "本製品を使用することにより、上記条件に同意したものとみなします。",
     "footer.text":
-      "DIVEROID UNIVERSAL PRO ユーザーガイド &nbsp;|&nbsp; OceanWick株式会社",
+      "DIVEROID Universal Pro ユーザーガイド &nbsp;|&nbsp; OceanWick株式会社",
   },
   ES: {
     "cover.tagline": "La IA que entiende el océano",
@@ -626,8 +640,13 @@ const TRANSLATIONS = {
     "nav.dive": "Entrar al modo buceo",
     "nav.ch3": "Operación del producto",
     "nav.ch3-1": "3-1. Preparación",
-    "nav.ch3-2": "3-2. Controles de botones",
-    "nav.ch3-3": "3-3. Funciones principales",
+    "nav.ch3-mini": "3-2. Preparación con Mini",
+    "nav.ch3-comp": "3-3. Comparación de modos",
+    "safety.title": "Aviso de seguridad",
+    "safety.body":
+      "Universal Pro <strong>no incluye función de ordenador de buceo</strong>. Utilice un <strong>ordenador de buceo independiente</strong> para garantizar un buceo seguro.",
+    "nav.ch3-2": "3-4. Controles de botones",
+    "nav.ch3-3": "3-5. Funciones principales",
     "nav.ch4": "Almacenamiento &amp; Mantenimiento",
     "nav.faq": "Preguntas frecuentes",
     "nav.ch5": "Garantía",
@@ -636,7 +655,7 @@ const TRANSLATIONS = {
     "h.parts": "Nombre de las partes",
     "h.parts-front": "Frente / Lateral",
     "h.parts-back": "Trasera / Superior",
-    "h.ch1": "Uso de la carcasa UNIVERSAL PRO",
+    "h.ch1": "Uso de la carcasa Universal Pro",
     "h.ch1-1": "1-1. Abrir y cerrar la carcasa",
     "h.ch1-2": "1-2. Prueba de impermeabilidad antes del uso",
     "h.ch1-3": "1-3. Ajuste de la carcasa",
@@ -648,11 +667,11 @@ const TRANSLATIONS = {
     "h.ch3": "Operación del producto",
     "h.ch3-1a": "3-1. Preparación — Modo independiente (sin Mini)",
     "h.ch3-1b":
-      "3-1. Preparación — Modo Mini conectado (con ordenador de buceo)",
+      "3-2. Preparación — Modo Mini conectado (con ordenador de buceo)",
     "h.ch3-compare":
-      "3-2. Modo independiente vs Modo Mini conectado — Comparación",
-    "h.ch3-btn": "3-3. Controles de botones",
-    "h.ch3-feat": "3-4. Funciones principales de App 3.0",
+      "3-3. Modo independiente vs Modo Mini conectado — Comparación",
+    "h.ch3-btn": "3-4. Controles de botones",
+    "h.ch3-feat": "3-5. Funciones principales de App 3.0",
     "h.ch4": "Almacenamiento &amp; Mantenimiento",
     "h.ch4-1": "4-1. Mantenimiento del O-ring",
     "h.ch4-2": "4-2. Antiempañante (Anti-fog)",
@@ -664,9 +683,9 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. Exclusiones de garantía",
     "h.ch5-3": "5-3. Limitación de responsabilidad",
     "intro.p1":
-      "UNIVERSAL PRO es una carcasa que transforma tu smartphone en una cámara 4K submarina con capacidad para 60m.<br>Experimenta la fotografía submarina profesional con el smartphone que ya tienes, sin necesidad de una cara cámara dedicada.",
+      "Universal Pro es una carcasa que transforma tu smartphone en una cámara 4K submarina con capacidad para 60m.<br>Experimenta la fotografía submarina profesional con el smartphone que ya tienes, sin necesidad de una cara cámara dedicada.",
     "intro.p2":
-      "App 3.0 es la potente app de fotografía submarina y registro de buceos creada para UNIVERSAL PRO.",
+      "App 3.0 es la potente app de fotografía submarina y registro de buceos creada para Universal Pro.",
     "intro.f1":
       "✅ Registro de buceos en la nube personal mediante iCloud · Google Drive",
     "intro.f2": "✅ Autocompletado de diario de buceo con IA",
@@ -674,7 +693,7 @@ const TRANSLATIONS = {
     "intro.f4":
       "✅ Corrección de color en tiempo real (sin filtro rojo, por software)",
     "intro.f5": "✅ Fotos, videos y diario sin Mini (nueva función de App 3.0)",
-    "pkg.item1": "Carcasa UNIVERSAL PRO",
+    "pkg.item1": "Carcasa Universal Pro",
     "pkg.item2": "Correa de muñeca",
     "pkg.item3": "Hoja antiempañante",
     "pkg.item4": "Grasa de silicona",
@@ -709,13 +728,13 @@ const TRANSLATIONS = {
       "Sí. Desde App 3.0, puedes hacer fotos/videos, usar corrección de color en tiempo real y registrar un diario (ubicación y hora) sin Mini. Sin embargo, las funciones de ordenador de buceo (profundidad y temperatura del agua) requieren conexión con Mini.",
     "faq.q3": "¿Cuál es la profundidad máxima de impermeabilidad?",
     "faq.a3":
-      "La carcasa UNIVERSAL PRO está diseñada para ser impermeable hasta 60m (6 ATM). Antes del primer uso, realiza siempre una inmersión de prueba con la carcasa vacía a al menos 10m de profundidad.",
+      "La carcasa Universal Pro está diseñada para ser impermeable hasta 60m (6 ATM). Antes del primer uso, realiza siempre una inmersión de prueba con la carcasa vacía a al menos 10m de profundidad.",
     "faq.q4": "¿Con qué frecuencia debo mantener el O-ring?",
     "faq.a4":
       "Inspecciona el O-ring antes y después de cada buceo, y aplica una pequeña cantidad de grasa de silicona según sea necesario. Si guardas durante más de 3 meses, retira el O-ring y guárdalo por separado en una bolsa con cierre.",
     "faq.q5": "¿Puedo usar la app de cámara integrada?",
     "faq.a5":
-      "No. UNIVERSAL PRO solo funciona con la app dedicada DIVEROID (App 3.0) y no es compatible con la app de cámara predeterminada del smartphone.",
+      "No. Universal Pro solo funciona con la app dedicada DIVEROID (App 3.0) y no es compatible con la app de cámara predeterminada del smartphone.",
     "faq.q6": "¿Qué resoluciones de video están disponibles?",
     "faq.a6":
       "Disponible en FHD (1080p) y 4K. Selecciona la resolución y la velocidad de fotogramas en la pantalla de grabación.",
@@ -759,7 +778,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "Al utilizar este producto, se considera que has aceptado los términos anteriores.",
     "footer.text":
-      "Guía del usuario DIVEROID UNIVERSAL PRO &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guía del usuario DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
   AR: {
     "cover.tagline": "الذكاء الاصطناعي الذي يفهم المحيط",
@@ -783,8 +802,13 @@ const TRANSLATIONS = {
     "nav.dive": "الدخول إلى وضع الغوص",
     "nav.ch3": "تشغيل المنتج",
     "nav.ch3-1": "3-1. الإعداد",
-    "nav.ch3-2": "3-2. أزرار التحكم",
-    "nav.ch3-3": "3-3. الميزات الرئيسية",
+    "nav.ch3-mini": "3-2. التحضير مع Mini",
+    "nav.ch3-comp": "3-3. مقارنة الأوضاع",
+    "safety.title": "تنبيه السلامة",
+    "safety.body":
+      "لا يتضمن Universal Pro <strong>وظيفة كمبيوتر الغوص</strong>. يُرجى استخدام <strong>كمبيوتر غوص منفصل</strong> لضمان غوص آمن.",
+    "nav.ch3-2": "3-4. أزرار التحكم",
+    "nav.ch3-3": "3-5. الميزات الرئيسية",
     "nav.ch4": "التخزين &amp; الصيانة",
     "nav.faq": "الأسئلة الشائعة",
     "nav.ch5": "الضمان",
@@ -793,7 +817,7 @@ const TRANSLATIONS = {
     "h.parts": "أسماء الأجزاء",
     "h.parts-front": "الأمام / الجانب",
     "h.parts-back": "الخلف / الأعلى",
-    "h.ch1": "استخدام غلاف UNIVERSAL PRO",
+    "h.ch1": "استخدام غلاف Universal Pro",
     "h.ch1-1": "1-1. فتح وإغلاق الغلاف",
     "h.ch1-2": "1-2. اختبار مقاومة الماء قبل الاستخدام",
     "h.ch1-3": "1-3. ضبط الغلاف",
@@ -804,10 +828,10 @@ const TRANSLATIONS = {
     "h.dive": "الدخول إلى وضع الغوص (بدء الغوص)",
     "h.ch3": "تشغيل المنتج",
     "h.ch3-1a": "3-1. الإعداد — الوضع المستقل (بدون Mini)",
-    "h.ch3-1b": "3-1. الإعداد — وضع اتصال Mini (مع كمبيوتر الغوص)",
-    "h.ch3-compare": "3-2. الوضع المستقل مقابل وضع اتصال Mini — مقارنة",
-    "h.ch3-btn": "3-3. أزرار التحكم",
-    "h.ch3-feat": "3-4. الميزات الرئيسية لـ App 3.0",
+    "h.ch3-1b": "3-2. الإعداد — وضع اتصال Mini (مع كمبيوتر الغوص)",
+    "h.ch3-compare": "3-3. الوضع المستقل مقابل وضع اتصال Mini — مقارنة",
+    "h.ch3-btn": "3-4. أزرار التحكم",
+    "h.ch3-feat": "3-5. الميزات الرئيسية لـ App 3.0",
     "h.ch4": "التخزين &amp; الصيانة",
     "h.ch4-1": "4-1. صيانة حلقة O",
     "h.ch4-2": "4-2. مانع التبخر (Anti-fog)",
@@ -819,16 +843,16 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. استثناءات الضمان",
     "h.ch5-3": "5-3. تحديد المسؤولية",
     "intro.p1":
-      "UNIVERSAL PRO هو غلاف يحوّل هاتفك الذكي إلى كاميرا 4K تحت الماء بعمق 60 متر.<br>استمتع بالتصوير الاحترافي تحت الماء باستخدام هاتفك الحالي دون الحاجة إلى كاميرا مخصصة مكلفة.",
+      "Universal Pro هو غلاف يحوّل هاتفك الذكي إلى كاميرا 4K تحت الماء بعمق 60 متر.<br>استمتع بالتصوير الاحترافي تحت الماء باستخدام هاتفك الحالي دون الحاجة إلى كاميرا مخصصة مكلفة.",
     "intro.p2":
-      "App 3.0 هو تطبيق قوي للتصوير تحت الماء وتسجيل الغوص مصمم لـ UNIVERSAL PRO.",
+      "App 3.0 هو تطبيق قوي للتصوير تحت الماء وتسجيل الغوص مصمم لـ Universal Pro.",
     "intro.f1": "✅ دفتر غوص شخصي عبر السحابة من خلال iCloud · Google Drive",
     "intro.f2": "✅ إكمال تلقائي لدفتر الغوص بالذكاء الاصطناعي",
     "intro.f3": "✅ مراجعات مواقع الغوص &amp; المجتمع",
     "intro.f4": "✅ تصحيح الألوان في الوقت الفعلي (بالبرمجيات، بدون فلتر أحمر)",
     "intro.f5":
       "✅ الصور والمقاطع ودفتر الغوص بدون Mini (ميزة جديدة في App 3.0)",
-    "pkg.item1": "غلاف UNIVERSAL PRO",
+    "pkg.item1": "غلاف Universal Pro",
     "pkg.item2": "حزام المعصم",
     "pkg.item3": "ورقة مانعة للتبخر",
     "pkg.item4": "شحم السيليكون",
@@ -862,13 +886,13 @@ const TRANSLATIONS = {
       "نعم. من App 3.0، يمكنك التقاط الصور/مقاطع الفيديو، واستخدام تصحيح الألوان في الوقت الفعلي، وتسجيل دفتر الغوص (الموقع والوقت) بدون Mini. ومع ذلك، تتطلب وظائف كمبيوتر الغوص (العمق ودرجة حرارة الماء) اتصال Mini.",
     "faq.q3": "ما عمق مقاومة الماء؟",
     "faq.a3":
-      "غلاف UNIVERSAL PRO مصمم ليكون مقاوماً للماء حتى عمق 60 متر (6 ضغط جوي). قبل الاستخدام الأول، أجرِ دائماً غطسة اختبار بالغلاف الفارغ على عمق لا يقل عن 10 أمتار.",
+      "غلاف Universal Pro مصمم ليكون مقاوماً للماء حتى عمق 60 متر (6 ضغط جوي). قبل الاستخدام الأول، أجرِ دائماً غطسة اختبار بالغلاف الفارغ على عمق لا يقل عن 10 أمتار.",
     "faq.q4": "كم مرة أحتاج لصيانة حلقة O؟",
     "faq.a4":
       "افحص حلقة O قبل وبعد كل غوصة، وضع كمية صغيرة من شحم السيليكون حسب الحاجة. إذا خزنتها لأكثر من 3 أشهر، أزل حلقة O وخزّنها منفصلة في كيس بسحاب.",
     "faq.q5": "هل يمكنني استخدام تطبيق الكاميرا المدمج؟",
     "faq.a5":
-      "لا. يعمل UNIVERSAL PRO فقط مع تطبيق DIVEROID المخصص (App 3.0) وليس متوافقاً مع تطبيق الكاميرا الافتراضي للهاتف.",
+      "لا. يعمل Universal Pro فقط مع تطبيق DIVEROID المخصص (App 3.0) وليس متوافقاً مع تطبيق الكاميرا الافتراضي للهاتف.",
     "faq.q6": "ما دقة الفيديو المتاحة؟",
     "faq.a6":
       "متاح FHD (1080p) و4K. اختر الدقة ومعدل الإطارات على شاشة التسجيل.",
@@ -910,7 +934,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "باستخدام هذا المنتج، يُعتبر أنك وافقت على الشروط المذكورة أعلاه.",
     "footer.text":
-      "دليل مستخدم DIVEROID UNIVERSAL PRO &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "دليل مستخدم DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
   PT: {
     "cover.tagline": "A IA que entende o oceano",
@@ -935,8 +959,13 @@ const TRANSLATIONS = {
     "nav.dive": "Entrar no modo mergulho",
     "nav.ch3": "Operação do produto",
     "nav.ch3-1": "3-1. Preparação",
-    "nav.ch3-2": "3-2. Controles dos botões",
-    "nav.ch3-3": "3-3. Funções principais",
+    "nav.ch3-mini": "3-2. Preparação com Mini",
+    "nav.ch3-comp": "3-3. Comparação de modos",
+    "safety.title": "Aviso de segurança",
+    "safety.body":
+      "O Universal Pro <strong>não inclui função de computador de mergulho</strong>. Use um <strong>computador de mergulho separado</strong> para garantir um mergulho seguro.",
+    "nav.ch3-2": "3-4. Controles dos botões",
+    "nav.ch3-3": "3-5. Funções principais",
     "nav.ch4": "Armazenamento &amp; Manutenção",
     "nav.faq": "Perguntas frequentes",
     "nav.ch5": "Garantia",
@@ -945,7 +974,7 @@ const TRANSLATIONS = {
     "h.parts": "Nomes das peças",
     "h.parts-front": "Frente / Lateral",
     "h.parts-back": "Traseira / Topo",
-    "h.ch1": "Uso da carcaça UNIVERSAL PRO",
+    "h.ch1": "Uso da carcaça Universal Pro",
     "h.ch1-1": "1-1. Abrindo e fechando a carcaça",
     "h.ch1-2": "1-2. Teste de impermeabilidade antes do uso",
     "h.ch1-3": "1-3. Ajuste da carcaça",
@@ -957,11 +986,11 @@ const TRANSLATIONS = {
     "h.ch3": "Operação do produto",
     "h.ch3-1a": "3-1. Preparação — Modo independente (sem Mini)",
     "h.ch3-1b":
-      "3-1. Preparação — Modo Mini conectado (com computador de mergulho)",
+      "3-2. Preparação — Modo Mini conectado (com computador de mergulho)",
     "h.ch3-compare":
-      "3-2. Modo independente vs Modo Mini conectado — Comparação",
-    "h.ch3-btn": "3-3. Controles dos botões",
-    "h.ch3-feat": "3-4. Funções principais do App 3.0",
+      "3-3. Modo independente vs Modo Mini conectado — Comparação",
+    "h.ch3-btn": "3-4. Controles dos botões",
+    "h.ch3-feat": "3-5. Funções principais do App 3.0",
     "h.ch4": "Armazenamento &amp; Manutenção",
     "h.ch4-1": "4-1. Manutenção do O-ring",
     "h.ch4-2": "4-2. Anti-embaçante (Anti-fog)",
@@ -973,9 +1002,9 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. Exclusões da garantia",
     "h.ch5-3": "5-3. Limitação de responsabilidade",
     "intro.p1":
-      "UNIVERSAL PRO é uma carcaça que transforma seu smartphone em uma câmera 4K subaquática com classificação de 60m.<br>Experimente a fotografia subaquática profissional com o smartphone que você já possui — sem necessidade de uma cara câmera dedicada.",
+      "Universal Pro é uma carcaça que transforma seu smartphone em uma câmera 4K subaquática com classificação de 60m.<br>Experimente a fotografia subaquática profissional com o smartphone que você já possui — sem necessidade de uma cara câmera dedicada.",
     "intro.p2":
-      "App 3.0 é o poderoso app de filmagem subaquática e registro de mergulhos criado para UNIVERSAL PRO.",
+      "App 3.0 é o poderoso app de filmagem subaquática e registro de mergulhos criado para Universal Pro.",
     "intro.f1":
       "✅ Diário de mergulho pessoal na nuvem via iCloud · Google Drive",
     "intro.f2": "✅ Preenchimento automático do diário de mergulho com IA",
@@ -983,7 +1012,7 @@ const TRANSLATIONS = {
     "intro.f4":
       "✅ Correção de cor em tempo real (por software, sem filtro vermelho)",
     "intro.f5": "✅ Fotos, vídeos e diário sem Mini (novo recurso do App 3.0)",
-    "pkg.item1": "Carcaça UNIVERSAL PRO",
+    "pkg.item1": "Carcaça Universal Pro",
     "pkg.item2": "Pulseira de pulso",
     "pkg.item3": "Folha anti-embaçante",
     "pkg.item4": "Graxa de silicone",
@@ -1018,13 +1047,13 @@ const TRANSLATIONS = {
       "Sim. A partir do App 3.0, você pode tirar fotos/vídeos, usar correção de cor em tempo real e registrar um diário (localização e hora) sem Mini. No entanto, as funções do computador de mergulho (profundidade e temperatura da água) requerem conexão com Mini.",
     "faq.q3": "Qual é a profundidade máxima de impermeabilidade?",
     "faq.a3":
-      "A carcaça UNIVERSAL PRO tem classificação de impermeabilidade até 60m (6 ATM). Antes do primeiro uso, sempre realize um mergulho de teste com a carcaça vazia a pelo menos 10m de profundidade.",
+      "A carcaça Universal Pro tem classificação de impermeabilidade até 60m (6 ATM). Antes do primeiro uso, sempre realize um mergulho de teste com a carcaça vazia a pelo menos 10m de profundidade.",
     "faq.q4": "Com que frequência devo fazer manutenção no O-ring?",
     "faq.a4":
       "Inspecione o O-ring antes e depois de cada mergulho e aplique uma pequena quantidade de graxa de silicone conforme necessário. Se armazenar por mais de 3 meses, remova o O-ring e guarde-o separadamente em um saco com fecho.",
     "faq.q5": "Posso usar o app de câmera integrado?",
     "faq.a5":
-      "Não. O UNIVERSAL PRO funciona apenas com o app dedicado DIVEROID (App 3.0) e não é compatível com o app de câmera padrão do smartphone.",
+      "Não. O Universal Pro funciona apenas com o app dedicado DIVEROID (App 3.0) e não é compatível com o app de câmera padrão do smartphone.",
     "faq.q6": "Quais resoluções de vídeo estão disponíveis?",
     "faq.a6":
       "Disponível em FHD (1080p) e 4K. Selecione a resolução e a taxa de quadros na tela de gravação.",
@@ -1068,7 +1097,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "Ao usar este produto, considera-se que você concordou com os termos acima.",
     "footer.text":
-      "Guia do usuário DIVEROID UNIVERSAL PRO &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guia do usuário DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
   IT: {
     "cover.tagline": "L'IA che comprende l'oceano",
@@ -1093,8 +1122,13 @@ const TRANSLATIONS = {
     "nav.dive": "Entra in modalità immersione",
     "nav.ch3": "Funzionamento prodotto",
     "nav.ch3-1": "3-1. Preparazione",
-    "nav.ch3-2": "3-2. Controlli pulsanti",
-    "nav.ch3-3": "3-3. Funzioni principali",
+    "nav.ch3-mini": "3-2. Preparazione con Mini",
+    "nav.ch3-comp": "3-3. Confronto modalità",
+    "safety.title": "Avviso di sicurezza",
+    "safety.body":
+      "Universal Pro <strong>non include la funzione di computer subacqueo</strong>. Utilizza un <strong>computer subacqueo separato</strong> per garantire immersioni sicure.",
+    "nav.ch3-2": "3-4. Controlli pulsanti",
+    "nav.ch3-3": "3-5. Funzioni principali",
     "nav.ch4": "Conservazione &amp; Manutenzione",
     "nav.faq": "Domande frequenti",
     "nav.ch5": "Garanzia",
@@ -1103,7 +1137,7 @@ const TRANSLATIONS = {
     "h.parts": "Nomi dei componenti",
     "h.parts-front": "Fronte / Lato",
     "h.parts-back": "Retro / Superiore",
-    "h.ch1": "Uso della custodia UNIVERSAL PRO",
+    "h.ch1": "Uso della custodia Universal Pro",
     "h.ch1-1": "1-1. Apertura e chiusura della custodia",
     "h.ch1-2": "1-2. Test impermeabilità prima dell'uso",
     "h.ch1-3": "1-3. Regolazione custodia",
@@ -1115,11 +1149,11 @@ const TRANSLATIONS = {
     "h.ch3": "Funzionamento prodotto",
     "h.ch3-1a": "3-1. Preparazione — Modalità autonoma (senza Mini)",
     "h.ch3-1b":
-      "3-1. Preparazione — Modalità Mini connessa (con computer subacqueo)",
+      "3-2. Preparazione — Modalità Mini connessa (con computer subacqueo)",
     "h.ch3-compare":
-      "3-2. Modalità autonoma vs Modalità Mini connessa — Confronto",
-    "h.ch3-btn": "3-3. Controlli pulsanti",
-    "h.ch3-feat": "3-4. Funzioni principali App 3.0",
+      "3-3. Modalità autonoma vs Modalità Mini connessa — Confronto",
+    "h.ch3-btn": "3-4. Controlli pulsanti",
+    "h.ch3-feat": "3-5. Funzioni principali App 3.0",
     "h.ch4": "Conservazione &amp; Manutenzione",
     "h.ch4-1": "4-1. Manutenzione O-ring",
     "h.ch4-2": "4-2. Anti-appannamento (Anti-fog)",
@@ -1131,9 +1165,9 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. Esclusioni garanzia",
     "h.ch5-3": "5-3. Limitazione di responsabilità",
     "intro.p1":
-      "UNIVERSAL PRO è una custodia che trasforma il tuo smartphone in una fotocamera subacquea 4K con profondità fino a 60m.<br>Vivi la fotografia subacquea professionale con lo smartphone che già possiedi — senza bisogno di una costosa fotocamera dedicata.",
+      "Universal Pro è una custodia che trasforma il tuo smartphone in una fotocamera subacquea 4K con profondità fino a 60m.<br>Vivi la fotografia subacquea professionale con lo smartphone che già possiedi — senza bisogno di una costosa fotocamera dedicata.",
     "intro.p2":
-      "App 3.0 è la potente app di ripresa subacquea e registrazione immersioni creata per UNIVERSAL PRO.",
+      "App 3.0 è la potente app di ripresa subacquea e registrazione immersioni creata per Universal Pro.",
     "intro.f1":
       "✅ Diario immersioni personale nel cloud tramite iCloud · Google Drive",
     "intro.f2": "✅ Completamento automatico del diario immersioni con IA",
@@ -1141,7 +1175,7 @@ const TRANSLATIONS = {
     "intro.f4":
       "✅ Correzione colore in tempo reale (software, senza filtro rosso)",
     "intro.f5": "✅ Foto, video e diario senza Mini (nuova funzione App 3.0)",
-    "pkg.item1": "Custodia UNIVERSAL PRO",
+    "pkg.item1": "Custodia Universal Pro",
     "pkg.item2": "Laccio da polso",
     "pkg.item3": "Foglio anti-appannamento",
     "pkg.item4": "Grasso siliconico",
@@ -1176,14 +1210,14 @@ const TRANSLATIONS = {
       "Sì. Da App 3.0, puoi scattare foto/video, usare la correzione colore in tempo reale e registrare un diario (posizione e ora) senza Mini. Tuttavia, le funzioni del computer subacqueo (profondità e temperatura dell'acqua) richiedono la connessione Mini.",
     "faq.q3": "Qual è la profondità massima di impermeabilità?",
     "faq.a3":
-      "La custodia UNIVERSAL PRO è impermeabile fino a 60m (6 ATM). Prima del primo utilizzo, esegui sempre un'immersione di test con la custodia vuota ad almeno 10m di profondità.",
+      "La custodia Universal Pro è impermeabile fino a 60m (6 ATM). Prima del primo utilizzo, esegui sempre un'immersione di test con la custodia vuota ad almeno 10m di profondità.",
     "faq.q4":
       "Con quale frequenza devo effettuare la manutenzione dell'O-ring?",
     "faq.a4":
       "Ispeziona l'O-ring prima e dopo ogni immersione e applica una piccola quantità di grasso siliconico se necessario. Se conservi per più di 3 mesi, rimuovi l'O-ring e conservalo separatamente in un sacchetto con chiusura.",
     "faq.q5": "Posso usare l'app fotocamera integrata?",
     "faq.a5":
-      "No. UNIVERSAL PRO funziona solo con l'app dedicata DIVEROID (App 3.0) e non è compatibile con l'app fotocamera predefinita dello smartphone.",
+      "No. Universal Pro funziona solo con l'app dedicata DIVEROID (App 3.0) e non è compatibile con l'app fotocamera predefinita dello smartphone.",
     "faq.q6": "Quali risoluzioni video sono disponibili?",
     "faq.a6":
       "Disponibile in FHD (1080p) e 4K. Seleziona la risoluzione e il frame rate nella schermata di registrazione.",
@@ -1227,6 +1261,6 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "Utilizzando questo prodotto, si considera che abbiate accettato i termini di cui sopra.",
     "footer.text":
-      "Guida utente DIVEROID UNIVERSAL PRO &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guida utente DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
 };
