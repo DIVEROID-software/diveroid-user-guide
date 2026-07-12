@@ -303,7 +303,7 @@ const TRANSLATIONS = {
     "faq.a11":
       "네. App 3.0에서는 iCloud(iOS) 또는 Google Drive(Android) 연동을 통해 로그북 데이터를 자동으로 클라우드에 백업할 수 있습니다. 앱 설정에서 연동을 활성화하세요.",
     "w.scope-p1":
-      'OceanWick 주식회사(이하 "본사")는 본 제품의 재료 및 생산 결함에 대해 <strong>구매일로부터 2년간</strong> 보증합니다.',
+      '오션윅 주식회사(Oceanwick Inc.)(이하 "본사")는 본 제품의 재료 및 생산 결함에 대해 <strong>구매일로부터 2년간</strong> 보증합니다.',
     "w.scope-p2":
       "구매자는 판매 제품 및 액세서리에 대해 무상 및 유상 수리를 받을 자격이 있습니다.",
     "w.scope-p3":
@@ -316,21 +316,21 @@ const TRANSLATIONS = {
     "w.excl-2": "사용자의 부주의, 남용, 오용 또는 사용자 귀책 사고로 인한 손상",
     "w.excl-3": "제3자의 변경 또는 수리로 인한 손상",
     "w.limit-p1":
-      "OceanWick 주식회사는 본사 또는 본사가 승인한 판매자를 통해 판매된 제품 및 액세서리의 교환, 또는 구매자가 지불한 실제 비용의 환불에 대해서만 책임을 집니다.",
+      "오션윅 주식회사(Oceanwick Inc.)는 본사 또는 본사가 승인한 판매자를 통해 판매된 제품 및 액세서리의 교환, 또는 구매자가 지불한 실제 비용의 환불에 대해서만 책임을 집니다.",
     "w.limit-p2":
       "본사는 제품 사용 중 직접적·간접적·결과적 또는 부수적으로 발생하는 경제적 손실, 개인 유·무형 자산 손실 등에 대해 책임을 지지 않습니다.",
     "w.limit-caution":
       "스마트폰 제조사와 본사 사이에는 어떠한 관계도 없으며, 본사는 제품 사용 중 발생한 스마트폰 침수 또는 손상에 대해 책임을 지지 않습니다.",
     "w.limit-p3": "본 제품을 사용함으로써 위 조건에 동의한 것으로 간주합니다.",
     "footer.text":
-      "DIVEROID Universal Pro 사용자 가이드 &nbsp;|&nbsp; OceanWick 주식회사",
+      "DIVEROID Universal Pro 사용자 가이드 &nbsp;|&nbsp; 오션윅 주식회사(Oceanwick Inc.)",
   },
   EN: {
     "b.1": "<strong>Open</strong>",
     "b.2": "Pull the lock button outward and, <strong>while holding it out</strong>, turn it counterclockwise.",
     "b.3": "<strong>Close</strong>",
     "b.4": "Turn the lock clockwise <strong>until it clicks</strong>.",
-    "b.5": "Always check the waterproof performance first, before inserting your smartphone.",
+    "b.5": "Always test for waterproofing before inserting your smartphone.",
     "b.6": "<strong>1) Check smartphone compatibility size</strong>",
     "b.7": "The Universal Pro housing is compatible with most Android / iOS smartphones.",
     "b.8": "<strong>2) Adjust the internal guide</strong>",
@@ -360,7 +360,7 @@ const TRANSLATIONS = {
     "b.32": "<strong>Standalone mode:</strong> records location, time, photos, and videos",
     "b.33": "<strong>Mini-connected mode:</strong> records depth, water temperature, location, time, photos, and videos",
     "b.34": "Automatic cloud backup via <strong>iCloud / Google Drive</strong> integration",
-    "b.35": "You can reuse the anti-moisture sheet by <strong>heating it in a 150°C pan for 5 minutes</strong>.",
+    "b.35": "You can reuse the anti-fog sheet by <strong>heating it in a 150°C pan for 5 minutes</strong>.",
     "b.36": "It can be reused up to <strong>4 times</strong>.",
     "b.37": "When not in use, store it in a sealed pack.",
     "b.38": "Width (mm)",
@@ -632,7 +632,7 @@ const TRANSLATIONS = {
     "faq.a11":
       "Yes. In App 3.0, you can automatically back up logbook data to the cloud via iCloud (iOS) or Google Drive (Android). Activate the sync in the app settings.",
     "w.scope-p1":
-      'OceanWick Co., Ltd. (hereinafter "the Company") warrants this product against defects in materials and workmanship for <strong>2 years from the date of purchase</strong>.',
+      'Oceanwick Inc. (hereinafter "the Company") warrants this product against defects in materials and workmanship for <strong>2 years from the date of purchase</strong>.',
     "w.scope-p2":
       "The purchaser is entitled to free and paid repairs for the sold product and accessories.",
     "w.scope-p3":
@@ -647,7 +647,7 @@ const TRANSLATIONS = {
       "Damage resulting from user negligence, abuse, misuse, or user-responsible accidents",
     "w.excl-3": "Damage resulting from modification or repair by a third party",
     "w.limit-p1":
-      "OceanWick Co., Ltd. is liable only for the replacement of products and accessories sold through the Company or its authorized sellers, or the refund of the actual amount paid by the purchaser.",
+      "Oceanwick Inc. is liable only for the replacement of products and accessories sold through the Company or its authorized sellers, or the refund of the actual amount paid by the purchaser.",
     "w.limit-p2":
       "The Company is not liable for direct, indirect, consequential, or incidental economic losses or loss of personal tangible/intangible assets arising from the use of the product.",
     "w.limit-caution":
@@ -655,7 +655,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "By using this product, you are deemed to have agreed to the above terms.",
     "footer.text":
-      "DIVEROID Universal Pro User Guide &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "DIVEROID Universal Pro User Guide &nbsp;|&nbsp; Oceanwick Inc.",
   },
   TW: {
     "b.1": "<strong>開啟</strong>",
@@ -842,10 +842,10 @@ const TRANSLATIONS = {
     "nav.intro": "產品介紹",
     "nav.package": "包裝內容",
     "nav.parts": "各部位名稱",
-    "nav.ch1": "外殼使用方法",
+    "nav.ch1": "防水殼使用方法",
     "nav.ch1-1": "1-1. 開啟與關閉",
     "nav.ch1-2": "1-2. 防水測試",
-    "nav.ch1-3": "1-3. 外殼調整",
+    "nav.ch1-3": "防水殼調整",
     "nav.ch2": "使用 App",
     "nav.ch2-1": "2-1. 安裝 & 設備註冊",
     "nav.ch2-2": "2-2. 手機設定",
@@ -867,10 +867,10 @@ const TRANSLATIONS = {
     "h.parts": "各部位名稱",
     "h.parts-front": "正面 / 側面",
     "h.parts-back": "背面 / 頂部",
-    "h.ch1": "Universal Pro 外殼使用方法",
-    "h.ch1-1": "1-1. 外殼開啟與關閉",
+    "h.ch1": "Universal Pro 防水殼使用方法",
+    "h.ch1-1": "1-1. 防水殼開啟與關閉",
     "h.ch1-2": "1-2. 使用前防水測試",
-    "h.ch1-3": "1-3. 外殼調整",
+    "h.ch1-3": "1-3. 防水殼調整",
     "h.ch2": "使用 DIVEROID App",
     "h.ch2-1": "2-1. 安裝 App & 設備註冊",
     "h.ch2-2": "2-2. 手機設定",
@@ -893,7 +893,7 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. 保固除外事項",
     "h.ch5-3": "5-3. 責任限制",
     "intro.p1":
-      "Universal Pro 是一款能將智慧型手機轉換為 60m 級 4K 水下相機的外殼。<br>無需購買昂貴的水下相機，使用您已有的手機即可享受專業水下攝影。",
+      "Universal Pro 是一款能將智慧型手機轉換為 60m 級 4K 水下相機的防水殼。<br>無需購買昂貴的水下相機，使用您已有的手機即可享受專業水下攝影。",
     "intro.p2":
       "App 3.0 是搭配 Universal Pro 的強大水下拍攝·潛水記錄 App。",
     "intro.f1": "✅ 透過 iCloud · Google Drive 同步的個人雲端潛水日誌",
@@ -901,12 +901,12 @@ const TRANSLATIONS = {
     "intro.f3": "✅ 潛水地點評論 & 社群",
     "intro.f4": "✅ 即時色彩校正（軟體校正，無需紅色濾鏡）",
     "intro.f5": "✅ 無 Mini 亦可使用照片·影片·日誌（App 3.0 新功能）",
-    "pkg.item1": "Universal Pro 外殼",
+    "pkg.item1": "Universal Pro 防水殼",
     "pkg.item2": "腕帶",
     "pkg.item3": "防霧片",
-    "pkg.item4": "矽脂",
-    "pkg.strap-caption": "將腕帶連接至外殼側面的登山扣孔。",
-    "pkg.strap-p": "請將腕帶穿過外殼側面的登山扣孔並固定。",
+    "pkg.item4": "矽利康潤滑脂",
+    "pkg.strap-caption": "將腕帶連接至防水殼側面的登山扣孔。",
+    "pkg.strap-p": "請將腕帶穿過防水殼側面的登山扣孔並固定。",
     "parts.tbl-num": "編號",
     "parts.tbl-name": "名稱",
     "parts.1": "登山扣孔",
@@ -921,7 +921,7 @@ const TRANSLATIONS = {
     "parts.11": "頂部按鈕",
     "parts.12": "中央按鈕",
     "parts.13": "底部按鈕",
-    "parts.14": "O 型圈",
+    "parts.14": "O環",
     "parts.15": "防滑墊",
     "parts.16": "手機固定器",
     "parts.17": "固定式手機導槽",
@@ -934,22 +934,22 @@ const TRANSLATIONS = {
       "可以。從 App 3.0 開始，沒有 Mini 也能進行照片·影片拍攝、即時色彩校正、潛水日誌（位置·時間）。但潛水電腦功能（水深·水溫測量）需連線 Mini 才能使用。",
     "faq.q3": "防水深度是多少？",
     "faq.a3":
-      "Universal Pro 外殼防水設計達水深 60m（6 大氣壓）。首次使用前，請務必用空外殼在 10m 以上水深進行防水測試。",
-    "faq.q4": "O 型圈需要多久保養一次？",
+      "Universal Pro 防水殼採防水設計，可達水深 60m（6 大氣壓）。首次使用前，請務必以空的防水殼在 10m 以上水深進行防水測試。",
+    "faq.q4": "O環需要多久保養一次？",
     "faq.a4":
-      "每次潛水前後均需檢查 O 型圈狀態，必要時塗抹少量矽脂。若保存超過 3 個月，建議取出 O 型圈單獨放入夾鏈袋保存。",
+      "每次潛水前後均需檢查 O環狀態，必要時塗抹少量矽利康潤滑脂。若保存超過 3 個月，建議取出 O環單獨放入夾鏈袋保存。",
     "faq.q5": "可以使用手機內建相機 App 嗎？",
     "faq.a5":
       "不行。Universal Pro 僅在 DIVEROID 專用 App（App 3.0）上運作，與手機內建相機 App 不相容。",
     "faq.q6": "可以拍攝什麼解析度的影片？",
     "faq.a6":
-      "可選擇 FHD（1080p）及 4K 解析度拍攝。請在拍攝畫面中選擇解析度與幀率。",
+      "可選擇 FHD（1080p）及 4K 解析度拍攝。請在拍攝畫面中選擇解析度與影格率。",
     "faq.q7": "拍攝中手機電池不足怎麼辦？",
     "faq.a7":
       "水下無法充電，入水前請務必充飽手機電池。電池不足時，App 可能自動切換至低耗電模式或限制部分功能。",
-    "faq.q8": "外殼內進水了，該怎麼辦？",
+    "faq.q8": "防水殼內進水了，該怎麼辦？",
     "faq.a8":
-      "請立即停止使用並取出手機讓其乾燥。外殼用清水清洗後完全烘乾。若懷疑防水瑕疵，請聯絡 help@diveroid.com。",
+      "請立即停止使用並取出手機讓其乾燥。防水殼用清水清洗後完全烘乾。若懷疑防水瑕疵，請聯絡 help@diveroid.com。",
     "faq.q9": "序號遺失或已被註冊。",
     "faq.a9":
       "可至 https://serial.diveroid.com 輸入外殼序號直接重置。完成後請在 App 中重新進行產品註冊。",
@@ -960,7 +960,7 @@ const TRANSLATIONS = {
     "faq.a11":
       "可以。在 App 3.0 中，可透過 iCloud（iOS）或 Google Drive（Android）自動將日誌資料備份至雲端。請在 App 設定中啟用同步。",
     "w.scope-p1":
-      "OceanWick 股份有限公司（以下簡稱「本公司」）就本產品之材料及製造瑕疵，提供 <strong>自購買日起 2 年</strong> 保固。",
+      "Oceanwick 股份有限公司（以下簡稱「本公司」）就本產品之材料及製造瑕疵，提供 <strong>自購買日起 2 年</strong> 保固。",
     "w.scope-p2": "購買者有權針對已售出之產品及配件申請免費或付費維修。",
     "w.scope-p3":
       "若依使用說明書進行初次防水測試時發現瑕疵，可於 <strong>購買日起 3 個月內</strong> 申請免費產品更換。",
@@ -971,14 +971,14 @@ const TRANSLATIONS = {
     "w.excl-2": "因使用者疏失、濫用、誤用或使用者責任事故造成的損壞",
     "w.excl-3": "因第三方改裝或維修造成的損壞",
     "w.limit-p1":
-      "OceanWick 股份有限公司僅對透過本公司或本公司授權賣家販售之產品及配件之更換，或對購買者實際支付金額之退款負責。",
+      "Oceanwick 股份有限公司僅對透過本公司或本公司授權賣家販售之產品及配件之更換，或對購買者實際支付金額之退款負責。",
     "w.limit-p2":
       "本公司不對因使用本產品直接·間接·衍生或附帶產生之經濟損失、個人有形/無形資產損失等負責。",
     "w.limit-caution":
       "智慧型手機製造商與本公司之間沒有任何關係，本公司不對使用本產品期間發生的手機進水或損壞負責。",
     "w.limit-p3": "使用本產品即視為同意上述條款。",
     "footer.text":
-      "DIVEROID Universal Pro 使用者指南 &nbsp;|&nbsp; OceanWick 股份有限公司",
+      "DIVEROID Universal Pro 使用者指南 &nbsp;|&nbsp; Oceanwick 股份有限公司",
   },
   JP: {
     "b.1": "<strong>開ける</strong>",
@@ -989,7 +989,7 @@ const TRANSLATIONS = {
     "b.6": "<strong>1) スマートフォンの互換サイズを確認</strong>",
     "b.7": "Universal Proハウジングは、ほとんどのAndroid / iOSスマートフォンと互換性があります。",
     "b.8": "<strong>2) 内部ガイドの調整</strong>",
-    "b.9": "小さなドライバーを使って、ハウジング内部の<strong>調節式フォンガイド ⑱</strong>を移動させてください。<br /> 下記の[3) スマートフォン配置ガイド]を参考に、ガイドがカメラを覆わないように調整してください。",
+    "b.9": "小さなドライバーを使って、ハウジング内部の<strong>可動式スマートフォンガイド ⑱</strong>を移動させてください。<br /> 下記の[3) スマートフォン配置ガイド]を参考に、ガイドがカメラを覆わないように調整してください。",
     "b.10": "<strong>3) スマートフォン配置ガイド</strong>",
     "b.11": "App 3.0は、Universal Proとともにさらに強力になった水中撮影・ダイビング記録アプリです。",
     "b.12": "App 3.0は<strong>2つのモード</strong>でご利用いただけます。モードによって設定が異なります。",
@@ -1015,7 +1015,7 @@ const TRANSLATIONS = {
     "b.32": "<strong>単独モード:</strong> 位置・時間・写真・動画の記録",
     "b.33": "<strong>Mini接続モード:</strong> 水深・水温・位置・時間・写真・動画の記録",
     "b.34": "<strong>iCloud / Google Drive</strong>連携でクラウドに自動バックアップ",
-    "b.35": "乾燥剤は<strong>150°Cのフライパンで5分加熱</strong>すると再利用できます。",
+    "b.35": "曇り止めシートは<strong>150°Cのフライパンで5分加熱</strong>すると再利用できます。",
     "b.36": "最大<strong>4回</strong>まで再利用できます。",
     "b.37": "使用しないときは、密封パックに保管してください。",
     "b.38": "横 (mm)",
@@ -1047,7 +1047,7 @@ const TRANSLATIONS = {
     "b.64": "※ ハウジングを開ける際にOリング周辺に生じる水分は正常です。<br /> ※ 再使用前には、Oリング周辺の水分を必ず拭き取ってください。<br /> ※ 浸水の痕跡がある場合は、<strong>help@diveroid.com</strong>までお問い合わせのうえ、製品交換をご依頼ください。",
     "b.65": "初回の防水テストで欠陥が発見された場合、保証ポリシーに従い<strong>購入日から3ヶ月以内</strong>に製品交換が可能です。",
     "b.66": "※ 物理キーパッドを備えた機器はご使用いただけません。<br /> ※ 特定機種の互換性については、<strong>www.diveroid.com</strong>までお問い合わせください。",
-    "b.67": "Step 1 → Step 2 → Step 3の順に、調節式フォンガイドを移動させてください。",
+    "b.67": "Step 1 → Step 2 → Step 3の順に、可動式スマートフォンガイドを移動させてください。",
     "b.68": "登録完了後のHome画面 — 機器および記録を確認できます",
     "b.69": "アプリでMiniの使用有無を選択します。下記の分岐に従ってください。",
     "b.70": "単独モードのホーム画面 (Mini未接続の状態)",
@@ -1126,7 +1126,7 @@ const TRANSLATIONS = {
     "b.103": "<strong>Miniの登録</strong> — 検出されたMiniを選択して登録します。",
     "b.104": "Home画面に移動します。",
     "b.105": "DIVEROIDアプリを起動します。",
-    "b.106": "ハウジングにスマートフォンを装着してフタを閉じると、<strong>撮影モードへ自動的に進みます</strong>。",
+    "b.106": "ハウジングにスマートフォンを装着してフタを閉じると、<strong>撮影モードに自動的に移行します</strong>。",
     "b.107": "DIVEROIDアプリを起動します。",
     "b.108": "Miniの電源を入れます (Miniのセンターボタンを長押し)。",
     "b.109": "アプリでMiniの接続を確認します。",
@@ -1200,9 +1200,9 @@ const TRANSLATIONS = {
     "h.mini": "Miniをお持ちですか？",
     "h.dive": "ダイビングモードの開始（ダイビング開始）",
     "h.ch3": "製品の使い方",
-    "h.ch3-1a": "3-1. 使用準備 — スタンドアロンモード（Mini なし）",
-    "h.ch3-1b": "3-2. 使用準備 — Mini接続モード（ダイビングコンピュータ使用）",
-    "h.ch3-compare": "3-3. スタンドアロンモード vs Mini接続モード 比較",
+    "h.ch3-1a": "3-1. 使用準備 — 単独モード（Miniなし）",
+    "h.ch3-1b": "3-2. 使用準備 — Mini接続モード（ダイブコンピューター使用）",
+    "h.ch3-compare": "3-3. 単独モード vs Mini接続モード 比較",
     "h.ch3-btn": "3-4. ボタン操作",
     "h.ch3-feat": "3-5. App 3.0 主要機能",
     "h.ch4": "保管 & メンテナンス",
@@ -1222,7 +1222,7 @@ const TRANSLATIONS = {
     "intro.f1": "✅ iCloud · Google Drive連携による個人クラウドログブック管理",
     "intro.f2": "✅ AI機能によるログブック自動入力",
     "intro.f3": "✅ ダイビングサイトレビュー & コミュニティ",
-    "intro.f4": "✅ リアルタイム色補正（赤フィルター不要、ソフトウェアで補正）",
+    "intro.f4": "✅ リアルタイム色補正（レッドフィルター不要、ソフトウェアで補正）",
     "intro.f5": "✅ Miniなしでも写真・動画・ログブック使用可（App 3.0新機能）",
     "pkg.item1": "Universal Pro ハウジング",
     "pkg.item2": "リストストラップ",
@@ -1256,7 +1256,7 @@ const TRANSLATIONS = {
       "幅67〜82mm、高さ138〜163mm、厚さ7〜9mmのほとんどのAndroid/iOSスマートフォンと互換性があります。物理キーパッドのある端末は使用できません。特定機種の互換性はwww.diveroid.comでご確認ください。",
     "faq.q2": "Miniなしでも使用できますか？",
     "faq.a2":
-      "はい。App 3.0からMiniなしでも写真・動画撮影、リアルタイム色補正、ログブック（位置・時間）が使用できます。ただし、ダイビングコンピュータ機能（水深・水温測定）はMini接続時のみ使用可能です。",
+      "はい。App 3.0からMiniなしでも写真・動画撮影、リアルタイム色補正、ログブック（位置・時間）が使用できます。ただし、ダイブコンピューター機能（水深・水温測定）はMini接続時のみ使用可能です。",
     "faq.q3": "防水深度はどのくらいですか？",
     "faq.a3":
       "Universal Pro ハウジングは水深60m（6気圧）まで防水設計されています。初回使用前に必ず空のハウジング状態で10m以上の深さで防水テストを行ってください。",
@@ -1285,7 +1285,7 @@ const TRANSLATIONS = {
     "faq.a11":
       "はい。App 3.0ではiCloud（iOS）またはGoogle Drive（Android）連携を通じて、ログブックデータを自動的にクラウドにバックアップできます。アプリ設定で連携を有効にしてください。",
     "w.scope-p1":
-      "OceanWick株式会社（以下「本社」）は、本製品の材料および製造上の欠陥について、<strong>購入日から2年間</strong>保証します。",
+      "Oceanwick株式会社（以下「本社」）は、本製品の材料および製造上の欠陥について、<strong>購入日から2年間</strong>保証します。",
     "w.scope-p2":
       "購入者は、販売製品およびアクセサリについて、無償および有償修理を受ける権利があります。",
     "w.scope-p3":
@@ -1299,7 +1299,7 @@ const TRANSLATIONS = {
       "ユーザーの不注意、乱用、誤使用またはユーザー責任の事故による損傷",
     "w.excl-3": "第三者による改造または修理による損傷",
     "w.limit-p1":
-      "OceanWick株式会社は、本社または本社が承認した販売者を通じて販売された製品およびアクセサリの交換、または購入者が支払った実際の費用の返金についてのみ責任を負います。",
+      "Oceanwick株式会社は、本社または本社が承認した販売者を通じて販売された製品およびアクセサリの交換、または購入者が支払った実際の費用の返金についてのみ責任を負います。",
     "w.limit-p2":
       "本社は、製品使用中に直接的・間接的・結果的または付随的に発生する経済的損失、個人の有形・無形資産の損失等について責任を負いません。",
     "w.limit-caution":
@@ -1307,7 +1307,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "本製品を使用することにより、上記条件に同意したものとみなします。",
     "footer.text":
-      "DIVEROID Universal Pro ユーザーガイド &nbsp;|&nbsp; OceanWick株式会社",
+      "DIVEROID Universal Pro ユーザーガイド &nbsp;|&nbsp; Oceanwick株式会社",
   },
   ES: {
     "b.1": "<strong>Abrir</strong>",
@@ -1485,7 +1485,7 @@ const TRANSLATIONS = {
 
     "cover.tagline": "La IA que entiende el océano",
     "cover.sub":
-      "El momento en que tu smartphone se convierte en una cámara 4K submarina",
+      "El momento en que su smartphone se convierte en una cámara 4K submarina",
     "cover.lang": "Español",
     "nav.g1": "Primeros pasos",
     "nav.g2": "Hardware",
@@ -1527,7 +1527,7 @@ const TRANSLATIONS = {
     "h.ch2": "Usar la App DIVEROID",
     "h.ch2-1": "2-1. Instalar la App & Registrar el dispositivo",
     "h.ch2-2": "2-2. Configuración del smartphone",
-    "h.mini": "¿Tienes un Mini?",
+    "h.mini": "¿Tiene un Mini?",
     "h.dive": "Entrar al modo buceo (Comenzar un buceo)",
     "h.ch3": "Operación del producto",
     "h.ch3-1a": "3-1. Preparación — Modo independiente (sin Mini)",
@@ -1548,7 +1548,7 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. Exclusiones de garantía",
     "h.ch5-3": "5-3. Limitación de responsabilidad",
     "intro.p1":
-      "Universal Pro es una carcasa que transforma tu smartphone en una cámara 4K submarina con capacidad para 60m.<br>Experimenta la fotografía submarina profesional con el smartphone que ya tienes, sin necesidad de una cara cámara dedicada.",
+      "Universal Pro es una carcasa que transforma su smartphone en una cámara 4K submarina con capacidad para 60m.<br>Experimente la fotografía submarina profesional con el smartphone que ya tiene, sin necesidad de una cara cámara dedicada.",
     "intro.p2":
       "App 3.0 es la potente app de fotografía submarina y registro de buceos creada para Universal Pro.",
     "intro.f1":
@@ -1557,15 +1557,15 @@ const TRANSLATIONS = {
     "intro.f3": "✅ Reseñas de sitios de buceo & comunidad",
     "intro.f4":
       "✅ Corrección de color en tiempo real (sin filtro rojo, por software)",
-    "intro.f5": "✅ Fotos, videos y diario sin Mini (nueva función de App 3.0)",
+    "intro.f5": "✅ Fotos, vídeos y diario sin Mini (nueva función de App 3.0)",
     "pkg.item1": "Carcasa Universal Pro",
     "pkg.item2": "Correa de muñeca",
     "pkg.item3": "Hoja antiempañante",
     "pkg.item4": "Grasa de silicona",
     "pkg.strap-caption":
-      "Conecta la correa de muñeca al orificio del mosquetón en el lateral de la carcasa.",
+      "Conecte la correa de muñeca al orificio del mosquetón en el lateral de la carcasa.",
     "pkg.strap-p":
-      "Pasa la correa de muñeca por el orificio del mosquetón en el lateral de la carcasa.",
+      "Pase la correa de muñeca por el orificio del mosquetón en el lateral de la carcasa.",
     "parts.tbl-num": "N.º",
     "parts.tbl-name": "Nombre",
     "parts.1": "Orificio mosquetón",
@@ -1587,40 +1587,40 @@ const TRANSLATIONS = {
     "parts.18": "Guía de teléfono ajustable",
     "faq.q1": "¿Con qué smartphones es compatible?",
     "faq.a1":
-      "Compatible con la mayoría de smartphones Android/iOS: ancho 67–82mm, alto 138–163mm, grosor 7–9mm. Los dispositivos con teclado físico no son compatibles. Consulta modelos específicos en www.diveroid.com.",
+      "Compatible con la mayoría de smartphones Android/iOS: ancho 67–82mm, alto 138–163mm, grosor 7–9mm. Los dispositivos con teclado físico no son compatibles. Consulte modelos específicos en www.diveroid.com.",
     "faq.q2": "¿Se puede usar sin un Mini?",
     "faq.a2":
-      "Sí. Desde App 3.0, puedes hacer fotos/videos, usar corrección de color en tiempo real y registrar un diario (ubicación y hora) sin Mini. Sin embargo, las funciones de ordenador de buceo (profundidad y temperatura del agua) requieren conexión con Mini.",
+      "Sí. Desde App 3.0, puede hacer fotos/vídeos, usar corrección de color en tiempo real y registrar un diario (ubicación y hora) sin Mini. Sin embargo, las funciones de ordenador de buceo (profundidad y temperatura del agua) requieren conexión con Mini.",
     "faq.q3": "¿Cuál es la profundidad máxima de impermeabilidad?",
     "faq.a3":
-      "La carcasa Universal Pro está diseñada para ser impermeable hasta 60m (6 ATM). Antes del primer uso, realiza siempre una inmersión de prueba con la carcasa vacía a al menos 10m de profundidad.",
+      "La carcasa Universal Pro está diseñada para ser impermeable hasta 60m (6 ATM). Antes del primer uso, realice siempre una inmersión de prueba con la carcasa vacía a al menos 10m de profundidad.",
     "faq.q4": "¿Con qué frecuencia debo mantener el O-ring?",
     "faq.a4":
-      "Inspecciona el O-ring antes y después de cada buceo, y aplica una pequeña cantidad de grasa de silicona según sea necesario. Si guardas durante más de 3 meses, retira el O-ring y guárdalo por separado en una bolsa con cierre.",
+      "Inspeccione el O-ring antes y después de cada buceo, y aplique una pequeña cantidad de grasa de silicona según sea necesario. Si guarda durante más de 3 meses, retire el O-ring y guárdelo por separado en una bolsa con cierre.",
     "faq.q5": "¿Puedo usar la app de cámara integrada?",
     "faq.a5":
       "No. Universal Pro solo funciona con la app dedicada DIVEROID (App 3.0) y no es compatible con la app de cámara predeterminada del smartphone.",
-    "faq.q6": "¿Qué resoluciones de video están disponibles?",
+    "faq.q6": "¿Qué resoluciones de vídeo están disponibles?",
     "faq.a6":
-      "Disponible en FHD (1080p) y 4K. Selecciona la resolución y la velocidad de fotogramas en la pantalla de grabación.",
+      "Disponible en FHD (1080p) y 4K. Seleccione la resolución y la velocidad de fotogramas en la pantalla de grabación.",
     "faq.q7":
       "¿Qué pasa si la batería del teléfono se agota durante la grabación?",
     "faq.a7":
-      "No es posible cargar bajo el agua, así que asegúrate de cargar completamente el teléfono antes de sumergirte. Cuando la batería sea baja, la app puede cambiar automáticamente al modo de bajo consumo o limitar ciertas funciones.",
+      "No es posible cargar bajo el agua, así que asegúrese de cargar completamente el teléfono antes de sumergirse. Cuando la batería sea baja, la app puede cambiar automáticamente al modo de bajo consumo o limitar ciertas funciones.",
     "faq.q8": "Entró agua en la carcasa. ¿Qué debo hacer?",
     "faq.a8":
-      "Detén el uso de inmediato, saca tu smartphone y sécalo. Enjuaga la carcasa con agua limpia y sécala completamente. Si sospechas de un defecto de impermeabilidad, contacta a help@diveroid.com.",
+      "Detenga el uso de inmediato, saque su smartphone y séquelo. Enjuague la carcasa con agua limpia y séquela completamente. Si sospecha de un defecto de impermeabilidad, contacte a help@diveroid.com.",
     "faq.q9": "Perdí mi número de serie o ya está registrado.",
     "faq.a9":
-      "Puedes restablecer el número de serie de la carcasa directamente en https://serial.diveroid.com. Después del restablecimiento, vuelve a registrar el dispositivo en la app.",
+      "Puede restablecer el número de serie de la carcasa directamente en https://serial.diveroid.com. Después del restablecimiento, vuelva a registrar el dispositivo en la app.",
     "faq.q10": "¿Cuánto dura la garantía?",
     "faq.a10":
       "2 años desde la fecha de compra contra defectos de materiales y fabricación. Si se detecta un defecto durante la prueba de impermeabilidad inicial, se puede cambiar el producto de forma gratuita dentro de los 3 meses posteriores a la compra.",
     "faq.q11": "¿Puedo hacer una copia de seguridad de mis datos del diario?",
     "faq.a11":
-      "Sí. En App 3.0, puedes sincronizar automáticamente los datos del diario de buceo con la nube mediante iCloud (iOS) o Google Drive (Android). Activa la sincronización en la configuración de la app.",
+      "Sí. En App 3.0, puede sincronizar automáticamente los datos del diario de buceo con la nube mediante iCloud (iOS) o Google Drive (Android). Active la sincronización en la configuración de la app.",
     "w.scope-p1":
-      'OceanWick Co., Ltd. (en adelante "la Empresa") garantiza este producto contra defectos de materiales y fabricación durante <strong>2 años a partir de la fecha de compra</strong>.',
+      'Oceanwick Inc. (en adelante "la Empresa") garantiza este producto contra defectos de materiales y fabricación durante <strong>2 años a partir de la fecha de compra</strong>.',
     "w.scope-p2":
       "El comprador tiene derecho a reparaciones gratuitas y de pago por el producto y los accesorios vendidos.",
     "w.scope-p3":
@@ -1635,15 +1635,15 @@ const TRANSLATIONS = {
       "Daños resultantes de negligencia, abuso, mal uso o accidentes por responsabilidad del usuario",
     "w.excl-3": "Daños resultantes de modificación o reparación por terceros",
     "w.limit-p1":
-      "OceanWick Co., Ltd. solo es responsable del reemplazo de productos y accesorios vendidos a través de la Empresa o sus vendedores autorizados, o del reembolso del importe real pagado por el comprador.",
+      "Oceanwick Inc. solo es responsable del reemplazo de productos y accesorios vendidos a través de la Empresa o sus vendedores autorizados, o del reembolso del importe real pagado por el comprador.",
     "w.limit-p2":
       "La Empresa no se hace responsable de pérdidas económicas directas, indirectas, consecuentes o incidentales, ni de pérdidas de activos tangibles/intangibles personales derivadas del uso del producto.",
     "w.limit-caution":
       "No existe ninguna relación entre el fabricante del smartphone y la Empresa. La Empresa no es responsable de ningún daño por agua o daño a los smartphones que ocurra durante el uso del producto.",
     "w.limit-p3":
-      "Al utilizar este producto, se considera que has aceptado los términos anteriores.",
+      "Al utilizar este producto, se considera que ha aceptado los términos anteriores.",
     "footer.text":
-      "Guía del usuario DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guía del usuario DIVEROID Universal Pro &nbsp;|&nbsp; Oceanwick Inc.",
   },
   AR: {
     "b.1": "<strong>فتح</strong>",
@@ -1884,12 +1884,12 @@ const TRANSLATIONS = {
       "Universal Pro هو غلاف يحوّل هاتفك الذكي إلى كاميرا 4K تحت الماء بعمق 60 متر.<br>استمتع بالتصوير الاحترافي تحت الماء باستخدام هاتفك الحالي دون الحاجة إلى كاميرا مخصصة مكلفة.",
     "intro.p2":
       "App 3.0 هو تطبيق قوي للتصوير تحت الماء وتسجيل الغوص مصمم لـ Universal Pro.",
-    "intro.f1": "✅ دفتر غوص شخصي عبر السحابة من خلال iCloud · Google Drive",
-    "intro.f2": "✅ إكمال تلقائي لدفتر الغوص بالذكاء الاصطناعي",
+    "intro.f1": "✅ سجل غوص شخصي عبر السحابة من خلال iCloud · Google Drive",
+    "intro.f2": "✅ إكمال تلقائي لسجل الغوص بالذكاء الاصطناعي",
     "intro.f3": "✅ مراجعات مواقع الغوص & المجتمع",
     "intro.f4": "✅ تصحيح الألوان في الوقت الفعلي (بالبرمجيات، بدون فلتر أحمر)",
     "intro.f5":
-      "✅ الصور والمقاطع ودفتر الغوص بدون Mini (ميزة جديدة في App 3.0)",
+      "✅ الصور والمقاطع وسجل الغوص بدون Mini (ميزة جديدة في App 3.0)",
     "pkg.item1": "غلاف Universal Pro",
     "pkg.item2": "حزام المعصم",
     "pkg.item3": "ورقة مانعة للتبخر",
@@ -1921,7 +1921,7 @@ const TRANSLATIONS = {
       "متوافق مع معظم هواتف Android/iOS: العرض 67–82mm، الارتفاع 138–163mm، السماكة 7–9mm. الأجهزة ذات لوحات المفاتيح المادية غير متوافقة. تحقق من توافق الأجهزة المحددة على www.diveroid.com.",
     "faq.q2": "هل يمكن استخدامه بدون Mini؟",
     "faq.a2":
-      "نعم. من App 3.0، يمكنك التقاط الصور/مقاطع الفيديو، واستخدام تصحيح الألوان في الوقت الفعلي، وتسجيل دفتر الغوص (الموقع والوقت) بدون Mini. ومع ذلك، تتطلب وظائف كمبيوتر الغوص (العمق ودرجة حرارة الماء) اتصال Mini.",
+      "نعم. من App 3.0، يمكنك التقاط الصور/مقاطع الفيديو، واستخدام تصحيح الألوان في الوقت الفعلي، وتدوين سجل الغوص (الموقع والوقت) بدون Mini. ومع ذلك، تتطلب وظائف كمبيوتر الغوص (العمق ودرجة حرارة الماء) اتصال Mini.",
     "faq.q3": "ما عمق مقاومة الماء؟",
     "faq.a3":
       "غلاف Universal Pro مصمم ليكون مقاوماً للماء حتى عمق 60 متر (6 ضغط جوي). قبل الاستخدام الأول، أجرِ دائماً غطسة اختبار بالغلاف الفارغ على عمق لا يقل عن 10 أمتار.",
@@ -1946,11 +1946,11 @@ const TRANSLATIONS = {
     "faq.q10": "كم مدة الضمان؟",
     "faq.a10":
       "سنتان من تاريخ الشراء ضد عيوب المواد والتصنيع. إذا تم اكتشاف عيب أثناء اختبار مقاومة الماء الأولي، يمكن استبدال المنتج مجاناً خلال 3 أشهر من تاريخ الشراء.",
-    "faq.q11": "هل يمكنني النسخ الاحتياطي لبيانات دفتر الغوص؟",
+    "faq.q11": "هل يمكنني النسخ الاحتياطي لبيانات سجل الغوص؟",
     "faq.a11":
-      "نعم. في App 3.0، يمكنك مزامنة بيانات دفتر الغوص تلقائياً مع السحابة عبر iCloud (iOS) أو Google Drive (Android). قم بتفعيل المزامنة في إعدادات التطبيق.",
+      "نعم. في App 3.0، يمكنك مزامنة بيانات سجل الغوص تلقائياً مع السحابة عبر iCloud (iOS) أو Google Drive (Android). قم بتفعيل المزامنة في إعدادات التطبيق.",
     "w.scope-p1":
-      'تضمن شركة OceanWick (المشار إليها فيما بعد بـ"الشركة") هذا المنتج ضد عيوب المواد والتصنيع لمدة <strong>عامين من تاريخ الشراء</strong>.',
+      'تضمن شركة Oceanwick (المشار إليها فيما بعد بـ"الشركة") هذا المنتج ضد عيوب المواد والتصنيع لمدة <strong>عامين من تاريخ الشراء</strong>.',
     "w.scope-p2":
       "يحق للمشتري الحصول على إصلاح مجاني ومدفوع للمنتج والملحقات المباعة.",
     "w.scope-p3":
@@ -1964,7 +1964,7 @@ const TRANSLATIONS = {
       "أضرار ناجمة عن إهمال المستخدم أو إساءة الاستخدام أو سوء الاستخدام",
     "w.excl-3": "أضرار ناجمة عن التعديل أو الإصلاح من قبل طرف ثالث",
     "w.limit-p1":
-      "تتحمل شركة OceanWick المسؤولية فقط عن استبدال المنتجات والملحقات المباعة عبر الشركة أو بائعيها المعتمدين، أو رد المبلغ الفعلي المدفوع من قبل المشتري.",
+      "تتحمل شركة Oceanwick المسؤولية فقط عن استبدال المنتجات والملحقات المباعة عبر الشركة أو بائعيها المعتمدين، أو رد المبلغ الفعلي المدفوع من قبل المشتري.",
     "w.limit-p2":
       "لا تتحمل الشركة المسؤولية عن الخسائر الاقتصادية المباشرة أو غير المباشرة أو التبعية أو العرضية، أو فقدان الأصول الملموسة/غير الملموسة الشخصية الناجمة عن استخدام المنتج.",
     "w.limit-caution":
@@ -1972,7 +1972,7 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "باستخدام هذا المنتج، يُعتبر أنك وافقت على الشروط المذكورة أعلاه.",
     "footer.text":
-      "دليل مستخدم DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "دليل مستخدم DIVEROID Universal Pro &nbsp;|&nbsp; Oceanwick Inc.",
   },
   PT: {
     "b.1": "<strong>Abrir</strong>",
@@ -2160,51 +2160,51 @@ const TRANSLATIONS = {
     "nav.intro": "Visão geral do produto",
     "nav.package": "Conteúdo da caixa",
     "nav.parts": "Nomes das peças",
-    "nav.ch1": "Uso da carcaça",
+    "nav.ch1": "Uso da caixa estanque",
     "nav.ch1-1": "1-1. Abrir e fechar",
-    "nav.ch1-2": "1-2. Teste de impermeabilidade",
-    "nav.ch1-3": "1-3. Ajuste da carcaça",
-    "nav.ch2": "Usar o App",
-    "nav.ch2-1": "2-1. Instalar & Registrar",
-    "nav.ch2-2": "2-2. Configurações do telefone",
-    "nav.dive": "Entrar no modo mergulho",
+    "nav.ch1-2": "1-2. Teste de estanquidade",
+    "nav.ch1-3": "1-3. Ajuste da caixa estanque",
+    "nav.ch2": "Usar a aplicação",
+    "nav.ch2-1": "2-1. Instalar & Registar",
+    "nav.ch2-2": "2-2. Definições do telemóvel",
+    "nav.dive": "Entrar no modo de mergulho",
     "nav.ch3": "Operação do produto",
     "nav.ch3-1": "3-1. Preparação",
     "nav.ch3-mini": "3-2. Preparação com Mini",
     "nav.ch3-comp": "3-3. Comparação de modos",
     "safety.title": "Aviso de segurança",
     "safety.body":
-      "O Universal Pro <strong>não inclui função de computador de mergulho</strong>. Use um <strong>computador de mergulho separado</strong> para garantir um mergulho seguro.",
-    "nav.ch3-2": "3-4. Controles dos botões",
+      "A Universal Pro <strong>não inclui função de computador de mergulho</strong>. Use um <strong>computador de mergulho separado</strong> para garantir um mergulho seguro.",
+    "nav.ch3-2": "3-4. Controlos dos botões",
     "nav.ch3-3": "3-5. Funções principais",
     "nav.ch4": "Armazenamento & Manutenção",
     "nav.faq": "Perguntas frequentes",
     "nav.ch5": "Garantia",
     "h.package": "Conteúdo da caixa",
-    "h.package-strap": "Instalando a pulseira",
+    "h.package-strap": "Instalar a pulseira",
     "h.parts": "Nomes das peças",
     "h.parts-front": "Frente / Lateral",
     "h.parts-back": "Traseira / Topo",
-    "h.ch1": "Uso da carcaça Universal Pro",
-    "h.ch1-1": "1-1. Abrindo e fechando a carcaça",
-    "h.ch1-2": "1-2. Teste de impermeabilidade antes do uso",
-    "h.ch1-3": "1-3. Ajuste da carcaça",
-    "h.ch2": "Usando o App DIVEROID",
-    "h.ch2-1": "2-1. Instalar o App & Registrar o dispositivo",
-    "h.ch2-2": "2-2. Configurações do smartphone",
-    "h.mini": "Você tem um Mini?",
-    "h.dive": "Entrando no modo mergulho (Iniciando um mergulho)",
+    "h.ch1": "Uso da caixa estanque Universal Pro",
+    "h.ch1-1": "1-1. Abrir e fechar a caixa estanque",
+    "h.ch1-2": "1-2. Teste de estanquidade antes do uso",
+    "h.ch1-3": "1-3. Ajuste da caixa estanque",
+    "h.ch2": "Usar a aplicação DIVEROID",
+    "h.ch2-1": "2-1. Instalar a aplicação & Registar o dispositivo",
+    "h.ch2-2": "2-2. Definições do telemóvel",
+    "h.mini": "Tem uma Mini?",
+    "h.dive": "Entrar no modo de mergulho (Iniciar um mergulho)",
     "h.ch3": "Operação do produto",
-    "h.ch3-1a": "3-1. Preparação — Modo independente (sem Mini)",
+    "h.ch3-1a": "3-1. Preparação — Modo autónomo (sem Mini)",
     "h.ch3-1b":
-      "3-2. Preparação — Modo Mini conectado (com computador de mergulho)",
+      "3-2. Preparação — Modo com Mini ligada (com computador de mergulho)",
     "h.ch3-compare":
-      "3-3. Modo independente vs Modo Mini conectado — Comparação",
-    "h.ch3-btn": "3-4. Controles dos botões",
+      "3-3. Modo autónomo vs Modo com Mini ligada — Comparação",
+    "h.ch3-btn": "3-4. Controlos dos botões",
     "h.ch3-feat": "3-5. Funções principais do App 3.0",
     "h.ch4": "Armazenamento & Manutenção",
     "h.ch4-1": "4-1. Manutenção do O-ring",
-    "h.ch4-2": "4-2. Anti-embaçante (Anti-fog)",
+    "h.ch4-2": "4-2. Antiembaciante (Anti-fog)",
     "h.ch4-3": "4-3. Armazenamento",
     "h.ch4-4": "4-4. Após impacto",
     "h.faq": "Perguntas frequentes (FAQ)",
@@ -2213,102 +2213,102 @@ const TRANSLATIONS = {
     "h.ch5-2": "5-2. Exclusões da garantia",
     "h.ch5-3": "5-3. Limitação de responsabilidade",
     "intro.p1":
-      "Universal Pro é uma carcaça que transforma seu smartphone em uma câmera 4K subaquática com classificação de 60m.<br>Experimente a fotografia subaquática profissional com o smartphone que você já possui — sem necessidade de uma cara câmera dedicada.",
+      "A Universal Pro é uma caixa estanque que transforma o seu telemóvel numa câmara 4K subaquática com classificação até 60 m.<br>Experimente a fotografia subaquática profissional com o telemóvel que já possui — sem necessidade de uma câmara dedicada dispendiosa.",
     "intro.p2":
-      "App 3.0 é o poderoso app de filmagem subaquática e registro de mergulhos criado para Universal Pro.",
+      "A App 3.0 é a poderosa aplicação de filmagem subaquática e registo de mergulhos criada para a Universal Pro.",
     "intro.f1":
       "✅ Diário de mergulho pessoal na nuvem via iCloud · Google Drive",
     "intro.f2": "✅ Preenchimento automático do diário de mergulho com IA",
     "intro.f3": "✅ Avaliações de locais de mergulho & comunidade",
     "intro.f4":
       "✅ Correção de cor em tempo real (por software, sem filtro vermelho)",
-    "intro.f5": "✅ Fotos, vídeos e diário sem Mini (novo recurso do App 3.0)",
-    "pkg.item1": "Carcaça Universal Pro",
+    "intro.f5": "✅ Fotografias, vídeos e diário sem Mini (nova funcionalidade da App 3.0)",
+    "pkg.item1": "Caixa estanque Universal Pro",
     "pkg.item2": "Pulseira de pulso",
-    "pkg.item3": "Folha anti-embaçante",
-    "pkg.item4": "Graxa de silicone",
+    "pkg.item3": "Folha anti-fog",
+    "pkg.item4": "Massa de silicone",
     "pkg.strap-caption":
-      "Conecte a pulseira no orifício do mosquetão na lateral da carcaça.",
+      "Prenda a pulseira ao orifício do mosquetão na lateral da caixa estanque.",
     "pkg.strap-p":
-      "Passe a pulseira pelo orifício do mosquetão na lateral da carcaça.",
+      "Passe a pulseira pelo orifício do mosquetão na lateral da caixa estanque.",
     "parts.tbl-num": "N.º",
     "parts.tbl-name": "Nome",
     "parts.1": "Orifício mosquetão",
     "parts.2": "Dissipador de calor",
     "parts.3": "Sapata flash",
     "parts.4": "Lente",
-    "parts.5": "Trava",
+    "parts.5": "Bloqueio",
     "parts.6": "Orifício da alça",
     "parts.7": "Suporte tripé",
-    "parts.8": "Botão de trava",
-    "parts.10": "Lente câmera selfie",
+    "parts.8": "Botão de bloqueio",
+    "parts.10": "Lente da câmara selfie",
     "parts.11": "Botão superior",
     "parts.12": "Botão central",
     "parts.13": "Botão inferior",
     "parts.14": "O-ring",
     "parts.15": "Almofada antiderrapante",
-    "parts.16": "Suporte do telefone",
-    "parts.17": "Guia de telefone fixo",
-    "parts.18": "Guia de telefone ajustável",
-    "faq.q1": "Quais smartphones são compatíveis?",
+    "parts.16": "Suporte do telemóvel",
+    "parts.17": "Guia de telemóvel fixa",
+    "parts.18": "Guia de telemóvel ajustável",
+    "faq.q1": "Quais telemóveis são compatíveis?",
     "faq.a1":
-      "Compatível com a maioria dos smartphones Android/iOS: largura 67–82mm, altura 138–163mm, espessura 7–9mm. Dispositivos com teclado físico não são compatíveis. Verifique modelos específicos em www.diveroid.com.",
-    "faq.q2": "Posso usar sem um Mini?",
+      "Compatível com a maioria dos telemóveis Android / iOS: largura 67–82 mm, altura 138–163 mm, espessura 7–9 mm. Os dispositivos com teclado físico não são compatíveis. Para saber a compatibilidade de um modelo específico, contacte-nos em www.diveroid.com.",
+    "faq.q2": "Posso usar sem uma Mini?",
     "faq.a2":
-      "Sim. A partir do App 3.0, você pode tirar fotos/vídeos, usar correção de cor em tempo real e registrar um diário (localização e hora) sem Mini. No entanto, as funções do computador de mergulho (profundidade e temperatura da água) requerem conexão com Mini.",
-    "faq.q3": "Qual é a profundidade máxima de impermeabilidade?",
+      "Sim. A partir da App 3.0, pode tirar fotografias/vídeos, usar a correção de cor em tempo real e registar um diário (localização e hora) sem a Mini. No entanto, as funções do computador de mergulho (profundidade e temperatura da água) requerem a ligação à Mini.",
+    "faq.q3": "Qual é a profundidade máxima de estanquidade?",
     "faq.a3":
-      "A carcaça Universal Pro tem classificação de impermeabilidade até 60m (6 ATM). Antes do primeiro uso, sempre realize um mergulho de teste com a carcaça vazia a pelo menos 10m de profundidade.",
-    "faq.q4": "Com que frequência devo fazer manutenção no O-ring?",
+      "A caixa estanque Universal Pro tem classificação de estanquidade até 60 m (6 ATM). Antes do primeiro uso, realize sempre um mergulho de teste com a caixa estanque vazia a, pelo menos, 10 m de profundidade.",
+    "faq.q4": "Com que frequência devo fazer a manutenção do O-ring?",
     "faq.a4":
-      "Inspecione o O-ring antes e depois de cada mergulho e aplique uma pequena quantidade de graxa de silicone conforme necessário. Se armazenar por mais de 3 meses, remova o O-ring e guarde-o separadamente em um saco com fecho.",
-    "faq.q5": "Posso usar o app de câmera integrado?",
+      "Inspecione o O-ring antes e depois de cada mergulho e aplique uma pequena quantidade de massa de silicone conforme necessário. Se guardar durante mais de 3 meses, retire o O-ring e guarde-o separadamente num saco com fecho.",
+    "faq.q5": "Posso usar a aplicação de câmara predefinida?",
     "faq.a5":
-      "Não. O Universal Pro funciona apenas com o app dedicado DIVEROID (App 3.0) e não é compatível com o app de câmera padrão do smartphone.",
+      "Não. A Universal Pro funciona apenas na aplicação exclusiva DIVEROID (App 3.0) e não é compatível com a aplicação de câmara predefinida do telemóvel.",
     "faq.q6": "Quais resoluções de vídeo estão disponíveis?",
     "faq.a6":
-      "Disponível em FHD (1080p) e 4K. Selecione a resolução e a taxa de quadros na tela de gravação.",
+      "Disponível em FHD (1080p) e 4K. Selecione a resolução e a velocidade de fotogramas no ecrã de gravação.",
     "faq.q7":
-      "O que acontece se a bateria do telefone acabar durante a gravação?",
+      "O que acontece se a bateria do telemóvel acabar durante a gravação?",
     "faq.a7":
-      "Carregar embaixo d'água é impossível, então certifique-se de carregar seu telefone antes de entrar na água. Quando a bateria estiver baixa, o app pode alternar automaticamente para o modo de baixo consumo ou limitar certas funções.",
-    "faq.q8": "Entrou água na carcaça. O que devo fazer?",
+      "Como não é possível carregar debaixo de água, certifique-se de que carrega o telemóvel antes de entrar na água. Quando a bateria estiver fraca, a aplicação pode mudar automaticamente para o modo de poupança de energia ou limitar algumas funções.",
+    "faq.q8": "Entrou água na caixa estanque. O que devo fazer?",
     "faq.a8":
-      "Pare de usar imediatamente, remova seu smartphone e seque-o. Enxágue a carcaça com água limpa e seque completamente. Se suspeitar de defeito de impermeabilidade, contate help@diveroid.com.",
-    "faq.q9": "Perdi meu número de série ou já está registrado.",
+      "Interrompa imediatamente a utilização, retire o telemóvel e seque-o. Enxagúe a caixa estanque com água limpa e seque-a completamente. Se suspeitar de um defeito de estanquidade, contacte help@diveroid.com.",
+    "faq.q9": "Perdi o meu número de série ou já está registado.",
     "faq.a9":
-      "Você pode redefinir o número de série da carcaça diretamente em https://serial.diveroid.com. Após a redefinição, registre novamente o dispositivo no app.",
+      "Pode repor o número de série da caixa estanque diretamente em https://serial.diveroid.com. Após a reposição, registe novamente o dispositivo na aplicação.",
     "faq.q10": "Quanto tempo dura a garantia?",
     "faq.a10":
-      "2 anos a partir da data de compra contra defeitos de materiais e fabricação. Se um defeito for encontrado durante o teste de impermeabilidade inicial, a troca gratuita do produto está disponível em até 3 meses da compra.",
-    "faq.q11": "Posso fazer backup dos dados do meu diário?",
+      "2 anos a partir da data de compra contra defeitos de materiais e de fabrico. Se for detetado um defeito durante o teste de estanquidade inicial, a troca gratuita do produto está disponível no prazo de 3 meses a contar da data de compra.",
+    "faq.q11": "Posso fazer uma cópia de segurança dos dados do meu diário?",
     "faq.a11":
-      "Sim. No App 3.0, você pode sincronizar automaticamente os dados do diário de mergulho com a nuvem via iCloud (iOS) ou Google Drive (Android). Ative a sincronização nas configurações do app.",
+      "Sim. Na App 3.0, pode fazer automaticamente a cópia de segurança dos dados do diário de mergulho para a sua nuvem pessoal através da integração com o iCloud (iOS) ou o Google Drive (Android). Ative a integração com a nuvem pessoal nas definições da aplicação.",
     "w.scope-p1":
-      'OceanWick Co., Ltd. (doravante "a Empresa") garante este produto contra defeitos de materiais e fabricação por <strong>2 anos a partir da data de compra</strong>.',
+      'OceanWick Co., Ltd. (doravante "a Empresa") garante este produto contra defeitos de materiais e de fabrico durante <strong>2 anos a partir da data de compra</strong>.',
     "w.scope-p2":
-      "O comprador tem direito a reparos gratuitos e pagos para o produto e acessórios vendidos.",
+      "O comprador tem direito a reparações gratuitas e pagas para o produto e acessórios vendidos.",
     "w.scope-p3":
-      "Se um defeito for encontrado durante o teste de impermeabilidade inicial conforme especificado no manual do usuário, uma troca gratuita do produto está disponível <strong>dentro de 3 meses da data de compra</strong>.",
+      "Caso seja detetado um defeito durante o teste de estanquidade inicial, conforme especificado no manual do utilizador, a troca gratuita do produto está disponível <strong>no prazo de 3 meses a contar da data de compra</strong>.",
     "w.scope-p4":
-      "Esta garantia se aplica apenas a compradores que adquiriram o produto diretamente pela Empresa. Não é transferível e não se aplica a produtos adquiridos de vendedores não autorizados.",
+      "Esta garantia aplica-se apenas a compradores que adquiriram o produto diretamente à Empresa. Não é transferível e não se aplica a produtos adquiridos a vendedores não autorizados.",
     "w.excl-intro":
       "A garantia não cobre danos, falhas ou mau funcionamento causados por:",
     "w.excl-1":
-      "Danos resultantes do não cumprimento do manual do usuário fornecido pela Empresa",
+      "Danos resultantes do não cumprimento do manual do utilizador fornecido pela Empresa",
     "w.excl-2":
-      "Danos resultantes de negligência, abuso, mau uso ou acidentes por responsabilidade do usuário",
-    "w.excl-3": "Danos resultantes de modificação ou reparo por terceiros",
+      "Danos resultantes de negligência, abuso, mau uso ou acidentes por responsabilidade do utilizador",
+    "w.excl-3": "Danos resultantes de modificação ou reparação por terceiros",
     "w.limit-p1":
-      "OceanWick Co., Ltd. é responsável apenas pela substituição de produtos e acessórios vendidos pela Empresa ou seus revendedores autorizados, ou pelo reembolso do valor real pago pelo comprador.",
+      "OceanWick Co., Ltd. é responsável apenas pela substituição de produtos e acessórios vendidos pela Empresa ou pelos seus revendedores autorizados, ou pelo reembolso do valor real pago pelo comprador.",
     "w.limit-p2":
-      "A Empresa não é responsável por perdas econômicas diretas, indiretas, consequentes ou incidentais, ou perda de ativos pessoais tangíveis/intangíveis decorrentes do uso do produto.",
+      "A Empresa não é responsável por perdas económicas diretas, indiretas, consequentes ou incidentais, ou perda de ativos pessoais tangíveis/intangíveis decorrentes do uso do produto.",
     "w.limit-caution":
-      "Não há relação entre o fabricante do smartphone e a Empresa. A Empresa não é responsável por danos causados por água ou danos ao smartphone que ocorram durante o uso do produto.",
+      "Não há qualquer relação entre o fabricante do telemóvel e a Empresa. A Empresa não é responsável por danos causados por água ou por danos no telemóvel que ocorram durante a utilização do produto.",
     "w.limit-p3":
-      "Ao usar este produto, considera-se que você concordou com os termos acima.",
+      "Ao usar este produto, considera-se que concordou com os termos acima.",
     "footer.text":
-      "Guia do usuário DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guia do utilizador DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
   },
   IT: {
     "b.1": "<strong>Apertura</strong>",
@@ -2496,7 +2496,7 @@ const TRANSLATIONS = {
     "nav.intro": "Panoramica prodotto",
     "nav.package": "Contenuto della confezione",
     "nav.parts": "Nomi dei componenti",
-    "nav.ch1": "Uso del custodia",
+    "nav.ch1": "Uso della custodia",
     "nav.ch1-1": "1-1. Apertura e chiusura",
     "nav.ch1-2": "1-2. Test impermeabilità",
     "nav.ch1-3": "1-3. Regolazione custodia",
@@ -2551,14 +2551,14 @@ const TRANSLATIONS = {
     "intro.p1":
       "Universal Pro è una custodia che trasforma il tuo smartphone in una fotocamera subacquea 4K con profondità fino a 60m.<br>Vivi la fotografia subacquea professionale con lo smartphone che già possiedi — senza bisogno di una costosa fotocamera dedicata.",
     "intro.p2":
-      "App 3.0 è la potente app di ripresa subacquea e registrazione immersioni creata per Universal Pro.",
+      "App 3.0 è la potente app di ripresa subacquea e registro immersioni creata per Universal Pro.",
     "intro.f1":
-      "✅ Diario immersioni personale nel cloud tramite iCloud · Google Drive",
-    "intro.f2": "✅ Completamento automatico del diario immersioni con IA",
-    "intro.f3": "✅ Recensioni siti di immersione & community",
+      "✅ Gestione del registro immersioni sul cloud personale tramite integrazione iCloud · Google Drive",
+    "intro.f2": "✅ Completamento automatico del registro immersioni tramite funzioni AI",
+    "intro.f3": "✅ Recensioni dei siti di immersione e community",
     "intro.f4":
-      "✅ Correzione colore in tempo reale (software, senza filtro rosso)",
-    "intro.f5": "✅ Foto, video e diario senza Mini (nuova funzione App 3.0)",
+      "✅ Correzione del colore in tempo reale (correzione dei colori subacquei via software, senza filtro rosso)",
+    "intro.f5": "✅ Utilizzo di foto, video e registro immersioni anche senza Mini (nuova funzione di App 3.0)",
     "pkg.item1": "Custodia Universal Pro",
     "pkg.item2": "Laccio da polso",
     "pkg.item3": "Foglio anti-appannamento",
@@ -2591,7 +2591,7 @@ const TRANSLATIONS = {
       "Compatibile con la maggior parte degli smartphone Android/iOS: larghezza 67–82mm, altezza 138–163mm, spessore 7–9mm. I dispositivi con tastiera fisica non sono compatibili. Verifica i modelli specifici su www.diveroid.com.",
     "faq.q2": "Posso usarlo senza un Mini?",
     "faq.a2":
-      "Sì. Da App 3.0, puoi scattare foto/video, usare la correzione colore in tempo reale e registrare un diario (posizione e ora) senza Mini. Tuttavia, le funzioni del computer subacqueo (profondità e temperatura dell'acqua) richiedono la connessione Mini.",
+      "Sì. Da App 3.0, puoi scattare foto/video, usare la correzione colore in tempo reale e il registro immersioni (posizione e ora) senza Mini. Tuttavia, le funzioni del computer subacqueo (profondità e temperatura dell'acqua) richiedono la connessione Mini.",
     "faq.q3": "Qual è la profondità massima di impermeabilità?",
     "faq.a3":
       "La custodia Universal Pro è impermeabile fino a 60m (6 ATM). Prima del primo utilizzo, esegui sempre un'immersione di test con la custodia vuota ad almeno 10m di profondità.",
@@ -2618,11 +2618,11 @@ const TRANSLATIONS = {
     "faq.q10": "Quanto dura la garanzia?",
     "faq.a10":
       "2 anni dalla data di acquisto contro difetti di materiali e fabbricazione. Se viene rilevato un difetto durante il test di impermeabilità iniziale, è possibile sostituire il prodotto gratuitamente entro 3 mesi dall'acquisto.",
-    "faq.q11": "Posso fare il backup dei dati del mio diario?",
+    "faq.q11": "Posso fare il backup dei dati del registro immersioni?",
     "faq.a11":
-      "Sì. In App 3.0, puoi sincronizzare automaticamente i dati del diario immersioni con il cloud tramite iCloud (iOS) o Google Drive (Android). Attiva la sincronizzazione nelle impostazioni dell'app.",
+      "Sì. In App 3.0, puoi sincronizzare automaticamente i dati del registro immersioni con il cloud tramite iCloud (iOS) o Google Drive (Android). Attiva la sincronizzazione nelle impostazioni dell'app.",
     "w.scope-p1":
-      'OceanWick Co., Ltd. (di seguito "la Società") garantisce questo prodotto contro difetti di materiali e fabbricazione per <strong>2 anni dalla data di acquisto</strong>.',
+      'Oceanwick Inc. (di seguito "la Società") garantisce questo prodotto contro difetti di materiali e fabbricazione per <strong>2 anni dalla data di acquisto</strong>.',
     "w.scope-p2":
       "L'acquirente ha diritto a riparazioni gratuite e a pagamento per il prodotto e gli accessori venduti.",
     "w.scope-p3":
@@ -2637,7 +2637,7 @@ const TRANSLATIONS = {
       "Danni derivanti da negligenza dell'utente, abuso, uso improprio o incidenti per responsabilità dell'utente",
     "w.excl-3": "Danni derivanti da modifiche o riparazioni da parte di terzi",
     "w.limit-p1":
-      "OceanWick Co., Ltd. è responsabile solo per la sostituzione di prodotti e accessori venduti tramite la Società o i suoi rivenditori autorizzati, o per il rimborso dell'importo effettivamente pagato dall'acquirente.",
+      "Oceanwick Inc. è responsabile solo per la sostituzione di prodotti e accessori venduti tramite la Società o i suoi rivenditori autorizzati, o per il rimborso dell'importo effettivamente pagato dall'acquirente.",
     "w.limit-p2":
       "La Società non è responsabile per perdite economiche dirette, indirette, consequenziali o incidentali, o per la perdita di beni personali tangibili/intangibili derivanti dall'uso del prodotto.",
     "w.limit-caution":
@@ -2645,6 +2645,6 @@ const TRANSLATIONS = {
     "w.limit-p3":
       "Utilizzando questo prodotto, si considera che abbiate accettato i termini di cui sopra.",
     "footer.text":
-      "Guida utente DIVEROID Universal Pro &nbsp;|&nbsp; OceanWick Co., Ltd.",
+      "Guida utente DIVEROID Universal Pro &nbsp;|&nbsp; Oceanwick Inc.",
   },
 };
