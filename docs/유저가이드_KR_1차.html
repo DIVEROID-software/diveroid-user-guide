@@ -1593,75 +1593,37 @@
         <div class="gh-toc-wrap">
           <div class="gh-toc-btn" id="ghTocBtn" onclick="toggleToc(event)">
             <i class="fa-solid fa-list gh-toc-icon"></i>
-            <span id="ghTocLabel">목차 바로가기</span>
+            <span id="ghTocLabel" data-i18n-html="b.124">목차 바로가기</span>
             <span class="gh-lang-chevron">▼</span>
           </div>
           <div class="gh-toc-dropdown" id="ghTocDropdown">
-            <div class="gh-toc-group">시작하기</div>
-            <div class="gh-toc-item" onclick="tocGo('sec-intro')">
-              <span class="gh-toc-icon-s">✦</span> 제품 소개
-            </div>
-            <div class="gh-toc-item" onclick="tocGo('sec-package')">
-              <span class="gh-toc-icon-s">📦</span> 구성품
-            </div>
-            <div class="gh-toc-item" onclick="tocGo('sec-parts')">
-              <span class="gh-toc-icon-s">🔍</span> 부위 명칭
-            </div>
-            <div class="gh-toc-group">하드웨어</div>
-            <div class="gh-toc-item" onclick="tocGo('sec-ch1')">
-              <span class="gh-toc-icon-s">①</span> 하우징 사용법
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1')">
-              1-1. 열고 닫기
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-2')">
-              1-2. 방수 테스트
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-3')">
-              1-3. 하우징 조정
-            </div>
-            <div class="gh-toc-group">소프트웨어</div>
-            <div class="gh-toc-item" onclick="tocGo('sec-ch2')">
-              <span class="gh-toc-icon-s">②</span> 앱 사용하기
-            </div>
+            <div class="gh-toc-group" data-i18n="nav.g1">시작하기</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-intro')"><span class="gh-toc-icon-s">✦</span> <span data-i18n="nav.intro">제품 소개</span></div>
+            <div class="gh-toc-item" onclick="tocGo('sec-package')"><span class="gh-toc-icon-s">📦</span> <span data-i18n="nav.package">구성품</span></div>
+            <div class="gh-toc-item" onclick="tocGo('sec-parts')"><span class="gh-toc-icon-s">🔍</span> <span data-i18n="nav.parts">부위 명칭</span></div>
+            <div class="gh-toc-group" data-i18n="nav.g2">하드웨어</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch1')"><span class="gh-toc-icon-s">①</span> <span data-i18n="nav.ch1">하우징 사용법</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1')"><span data-i18n="nav.ch1-1">1-1. 열고 닫기</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-2')"><span data-i18n="nav.ch1-2">1-2. 방수 테스트</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch1-3')"><span data-i18n="nav.ch1-3">1-3. 하우징 조정</span></div>
+            <div class="gh-toc-group" data-i18n="nav.g3">소프트웨어</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch2')"><span class="gh-toc-icon-s">②</span> <span data-i18n="nav.ch2">앱 사용하기</span></div>
             <div class="gh-toc-item sub" onclick="tocGo('sec-ch2')">
-              2-1. 앱 설치 &amp; 기기 등록
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch2-2')">
-              2-2. 스마트폰 설정
-            </div>
-            <div class="gh-toc-group">제품 사용</div>
-            <div class="gh-toc-item" onclick="tocGo('sec-ch3')">
-              <span class="gh-toc-icon-s">③</span> 제품 사용하기
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3')">
-              3-1. 사용 준비
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-mini')">
-              3-2. Mini 연결 준비
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-compare')">
-              3-3. 모드 비교
-            </div>
-            <div class="gh-toc-item" onclick="tocGo('sec-dive')">
-              <span class="gh-toc-icon-s">🤿</span> 다이빙 모드 진입
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-btn')">
-              3-4. 버튼 조작
-            </div>
-            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-feat')">
-              3-5. 주요 기능
-            </div>
-            <div class="gh-toc-group">관리 &amp; 지원</div>
-            <div class="gh-toc-item" onclick="tocGo('sec-ch4')">
-              <span class="gh-toc-icon-s">④</span> 보관 및 관리
-            </div>
-            <div class="gh-toc-item" onclick="tocGo('sec-faq')">
-              <span class="gh-toc-icon-s">❓</span> FAQ
-            </div>
+              <span data-i18n="nav.ch2-1">2-1. 앱 설치 &amp; 기기 등록</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch2-2')"><span data-i18n="nav.ch2-2">2-2. 스마트폰 설정</span></div>
+            <div class="gh-toc-group" data-i18n="nav.g4">제품 사용</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch3')"><span class="gh-toc-icon-s">③</span> <span data-i18n="nav.ch3">제품 사용하기</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3')"><span data-i18n="nav.ch3-1">3-1. 사용 준비</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-mini')"><span data-i18n="nav.ch3-mini">3-2. Mini 연결 준비</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-compare')"><span data-i18n="nav.ch3-comp">3-3. 모드 비교</span></div>
+            <div class="gh-toc-item" onclick="tocGo('sec-dive')"><span class="gh-toc-icon-s">🤿</span> <span data-i18n="nav.dive">다이빙 모드 진입</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-btn')"><span data-i18n="nav.ch3-2">3-4. 버튼 조작</span></div>
+            <div class="gh-toc-item sub" onclick="tocGo('sec-ch3-feat')"><span data-i18n="nav.ch3-3">3-5. 주요 기능</span></div>
+            <div class="gh-toc-group" data-i18n="nav.g5">관리 &amp; 지원</div>
+            <div class="gh-toc-item" onclick="tocGo('sec-ch4')"><span class="gh-toc-icon-s">④</span> <span data-i18n="nav.ch4">보관 및 관리</span></div>
+            <div class="gh-toc-item" onclick="tocGo('sec-faq')"><span class="gh-toc-icon-s">❓</span> <span data-i18n="nav.faq">FAQ</span></div>
             <div class="gh-toc-item" onclick="tocGo('sec-ch5')">
-              <span class="gh-toc-icon-s">⑤</span> 제품 보증 &amp; 지원
-            </div>
+              <span class="gh-toc-icon-s">⑤</span> <span data-i18n="nav.ch5">제품 보증 &amp; 지원</span></div>
           </div>
         </div>
       </div>
@@ -1719,9 +1681,9 @@
             </div>
             <div
               class="gh-lang-opt"
-              onclick="ghSetLang(this, '🇧🇷', 'Português', 'PT')"
+              onclick="ghSetLang(this, '🇵🇹', 'Português', 'PT')"
             >
-              🇧🇷&nbsp; Português
+              🇵🇹&nbsp; Português
             </div>
             <div
               class="gh-lang-opt"
@@ -1791,9 +1753,9 @@
         </div>
         <div
           class="lang-option"
-          onclick="selectLang(this, '🇧🇷', 'Português', 'PT')"
+          onclick="selectLang(this, '🇵🇹', 'Português', 'PT')"
         >
-          <span class="lang-flag">🇧🇷</span
+          <span class="lang-flag">🇵🇹</span
           ><span class="lang-name">Português</span
           ><span class="lang-eng">Portuguese</span>
         </div>
@@ -2145,9 +2107,9 @@
                 </div>
                 <div
                   class="snav-opt"
-                  onclick="setSidenavLang(this, '🇧🇷', 'Português', 'PT')"
+                  onclick="setSidenavLang(this, '🇵🇹', 'Português', 'PT')"
                 >
-                  <span>🇧🇷</span><span>Português</span>
+                  <span>🇵🇹</span><span>Português</span>
                 </div>
                 <div
                   class="snav-opt"
@@ -2569,7 +2531,7 @@
             <h3 data-i18n="h.ch1-1">1-1. 하우징 열고 닫기</h3>
           </div>
 
-          <p><strong>열기</strong></p>
+          <p data-i18n-html="b.1"><strong>열기</strong></p>
           <div class="img-block">
             <div
               style="
@@ -2587,12 +2549,12 @@
             </div>
           </div>
 
-          <p>
+          <p data-i18n-html="b.2">
             잠금 버튼을 바깥쪽으로 <strong>당긴 상태에서</strong> 반시계
             방향으로 돌려주세요.
           </p>
 
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.61">
             <strong>⚠️ 주의!</strong> 반드시 버튼을 바깥쪽으로 당긴 후
             회전시키세요.<br />
             <strong>⚠️ 주의!</strong> 당기지 않고 강제로 회전시킬 경우 파손
@@ -2605,17 +2567,17 @@
               style="max-width: 100%; height: auto"
               alt="하우징 닫기 — 직립 상태"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.62">
               반드시 세운 상태(직립)에서 열어주세요.
             </div>
           </div>
 
-          <div class="note">
+          <div class="note" data-i18n-html="b.63">
             하우징을 눕혀서 열면 외부 물이 하우징 안으로 유입될 수 있습니다.
           </div>
 
-          <p style="margin-top: 20px"><strong>닫기</strong></p>
-          <p>
+          <p style="margin-top: 20px" data-i18n-html="b.3"><strong>닫기</strong></p>
+          <p data-i18n-html="b.4">
             잠금장치를 시계 방향으로
             <strong>딸깍 소리가 날 때까지</strong> 돌려주세요.
           </p>
@@ -2627,7 +2589,7 @@
             <h3 data-i18n="h.ch1-2">1-2. 사용 전 방수 테스트</h3>
           </div>
 
-          <p>스마트폰을 넣기 전, 반드시 방수 기능을 먼저 확인해야 합니다.</p>
+          <p data-i18n-html="b.5">스마트폰을 넣기 전, 반드시 방수 기능을 먼저 확인해야 합니다.</p>
 
           <div class="img-block">
             <img
@@ -2639,7 +2601,7 @@
 
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.92">
               하우징을 열고 <strong>O링 상태</strong>를 확인합니다.<br />
               <span style="font-size: 12px; color: #888"
                 >O링에 이물질이 묻어 있거나 건조한 경우 → [4-1 O링 관리] 항목을
@@ -2649,7 +2611,7 @@
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">O링 확인 후 하우징을 단단히 닫아주세요.</div>
+            <div class="step-body" data-i18n-html="b.93">O링 확인 후 하우징을 단단히 닫아주세요.</div>
           </div>
           <div class="img-block">
             <img
@@ -2660,7 +2622,7 @@
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.94">
               스마트폰 없이 <strong>빈 하우징 상태</strong>로 수심 10m 이상에서
               테스트 다이빙을 진행합니다.
             </div>
@@ -2676,20 +2638,20 @@
 
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.95">
               테스트 후 하우징 외부를 수건으로 닦고, 하우징을 닫은 상태에서
               내부에 물이 들어갔는지 확인합니다.
             </div>
           </div>
 
-          <div class="note">
+          <div class="note" data-i18n-html="b.64">
             ※ 하우징을 열 때 O링 주변에 생기는 수분은 정상입니다.<br />
             ※ 재사용 전에는 O링 주변의 수분을 반드시 닦아주세요.<br />
             ※ 침수 흔적이 있으면 <strong>help@diveroid.com</strong>으로 문의해
             제품 교환을 요청하세요.
           </div>
 
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.65">
             초기 방수 테스트에서 결함이 발견될 경우, 보증 정책에 따라
             <strong>구매일로부터 3개월 이내</strong>에 제품 교환이 가능합니다.
           </div>
@@ -2701,8 +2663,8 @@
             <h3 data-i18n="h.ch1-3">1-3. 하우징 조정</h3>
           </div>
 
-          <p><strong>1) 스마트폰 호환 사이즈 확인</strong></p>
-          <p>
+          <p data-i18n-html="b.6"><strong>1) 스마트폰 호환 사이즈 확인</strong></p>
+          <p data-i18n-html="b.7">
             Universal Pro 하우징은 대부분의 Android / iOS 스마트폰과 호환됩니다.
           </p>
 
@@ -2716,24 +2678,24 @@
 
           <table>
             <tr>
-              <th>항목</th>
-              <th>호환 범위</th>
+              <th data-i18n-html="b.53">항목</th>
+              <th data-i18n-html="b.54">호환 범위</th>
             </tr>
             <tr>
-              <td>가로 (mm)</td>
+              <td data-i18n-html="b.38">가로 (mm)</td>
               <td>67 ~ 82</td>
             </tr>
             <tr>
-              <td>세로 (mm)</td>
+              <td data-i18n-html="b.39">세로 (mm)</td>
               <td>138 ~ 163</td>
             </tr>
             <tr>
-              <td>두께 (mm)</td>
+              <td data-i18n-html="b.40">두께 (mm)</td>
               <td>7 ~ 9</td>
             </tr>
           </table>
 
-          <div class="note">
+          <div class="note" data-i18n-html="b.66">
             ※ 물리 키패드가 있는 기기는 사용 불가합니다.<br />
             ※ 특정 기종 호환 여부는 <strong>www.diveroid.com</strong>에서 문의해
             주세요.
@@ -2760,11 +2722,11 @@
               onmouseover="this.style.background = '#3a8de0'"
               onmouseout="this.style.background = '#36a9e1'"
             >
-              📱 내 스마트폰 호환 여부 확인 →
+              <span data-i18n-html="b.125">📱 내 스마트폰 호환 여부 확인 →</span>
             </a>
           </div>
 
-          <p style="margin-top: 24px"><strong>2) 내부 가이드 조정</strong></p>
+          <p style="margin-top: 24px" data-i18n-html="b.8"><strong>2) 내부 가이드 조정</strong></p>
           <div class="img-block">
             <div
               style="
@@ -2780,18 +2742,18 @@
                 style="max-width: 80%; height: auto"
               />
             </div>
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.67">
               Step 1 → Step 2 → Step 3 순서로 조절식 폰 가이드를 이동하세요.
             </div>
           </div>
-          <p>
+          <p data-i18n-html="b.9">
             작은 드라이버를 사용해 하우징 내부의
             <strong>조절식 폰 가이드 ⑱</strong>을 이동하세요.<br />
             아래 [3) 스마트폰 배치 가이드]를 참고하여 가이드가 카메라를 가리지
             않도록 조정하세요.
           </p>
 
-          <p style="margin-top: 24px">
+          <p style="margin-top: 24px" data-i18n-html="b.10">
             <strong>3) 스마트폰 배치 가이드</strong>
           </p>
           <div class="img-block">
@@ -2823,12 +2785,12 @@
               line-height: 2;
             "
           >
-            <li>
+            <li data-i18n-html="b.21">
               하우징의 모든 버튼이 스마트폰 <strong>화면 위</strong>에 위치해야
               합니다.
             </li>
-            <li>후면 카메라 위치를 확인하세요.</li>
-            <li>전면(셀피) 카메라 위치를 확인하세요.</li>
+            <li data-i18n-html="b.22">후면 카메라 위치를 확인하세요.</li>
+            <li data-i18n-html="b.23">전면(셀피) 카메라 위치를 확인하세요.</li>
           </ul>
         </div>
 
@@ -2855,7 +2817,7 @@
                 line-height: 1.8;
                 margin: 0 0 14px 0;
               "
-            >
+             data-i18n-html="b.11">
               App 3.0은 Universal Pro와 함께 더욱 강력해진 수중 촬영·다이빙 기록
               앱입니다.
             </p>
@@ -2869,19 +2831,19 @@
                 gap: 8px;
               "
             >
-              <li style="font-size: 13px; color: #333">
+              <li style="font-size: 13px; color: #333" data-i18n-html="b.24">
                 ✅ iCloud · Google Drive 연동을 통한 개인 클라우드 로그북 관리
               </li>
-              <li style="font-size: 13px; color: #333">
+              <li style="font-size: 13px; color: #333" data-i18n-html="b.25">
                 ✅ AI 기능을 이용한 로그북 자동 완성
               </li>
-              <li style="font-size: 13px; color: #333">
+              <li style="font-size: 13px; color: #333" data-i18n-html="b.26">
                 ✅ 다이빙 사이트 리뷰 및 커뮤니티
               </li>
-              <li style="font-size: 13px; color: #333">
+              <li style="font-size: 13px; color: #333" data-i18n-html="b.27">
                 ✅ 실시간 색보정 (레드 필터 없이 소프트웨어로 수중 색상 보정)
               </li>
-              <li style="font-size: 13px; color: #333">
+              <li style="font-size: 13px; color: #333" data-i18n-html="b.28">
                 ✅ Mini 없이도 사진·영상·로그북 사용 가능 (App 3.0 신기능)
               </li>
             </ul>
@@ -2894,7 +2856,7 @@
           <!-- STEP 1: App 설치 -->
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.96">
               Google Play 또는 App Store에서 <strong>DIVEROID</strong> 앱을
               검색해 설치합니다.
             </div>
@@ -2910,7 +2872,7 @@
           <!-- STEP 2: 회원가입 & 로그인 -->
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.97">
               앱을 실행한 후 <strong>회원가입</strong> 또는
               <strong>로그인</strong>합니다.
             </div>
@@ -2926,7 +2888,7 @@
           <!-- STEP 3: 기기 등록 -->
           <div class="step">
             <div class="step-num">3</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.98">
               기기를 선택합니다. <strong>Universal Pro</strong>를 선택하세요.
             </div>
           </div>
@@ -2941,7 +2903,7 @@
           <!-- STEP 4: 하우징 시리얼 입력 -->
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.99">
               하우징 내부에 있는 <strong>시리얼 번호(영문 8자리)</strong>를
               입력합니다.
             </div>
@@ -2957,7 +2919,7 @@
           <!-- STEP 5: Home 화면 -->
           <div class="step">
             <div class="step-num">5</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.100">
               등록이 완료되면 <strong>Home 화면</strong>으로 이동합니다.<br />
               이제 모든 설정이 완료됐습니다!
             </div>
@@ -2968,7 +2930,7 @@
               alt="Home 화면"
               style="max-width: 100%; height: auto"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.68">
               등록 완료 후 Home 화면 — 기기 및 기록 확인 가능
             </div>
           </div>
@@ -2984,10 +2946,10 @@
             "
           >
             <div style="font-size: 15px; font-weight: 700; margin-bottom: 4px">
-              가입 및 등록 완료!
+              <span data-i18n-html="b.126">가입 및 등록 완료!</span>
             </div>
             <div style="font-size: 13px; opacity: 0.9">
-              하우징을 닫으면 자동으로 다이빙 모드로 진입합니다.
+              <span data-i18n-html="b.127">하우징을 닫으면 자동으로 다이빙 모드로 진입합니다.</span>
             </div>
           </div>
         </div>
@@ -3005,7 +2967,7 @@
               alt="앱에서 Mini 사용 여부 선택 화면"
               style="max-width: 50%; height: auto; border-radius: 16px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.69">
               앱에서 Mini 사용 여부를 선택합니다. 아래 분기를 따라가세요.
             </div>
           </div>
@@ -3035,7 +2997,7 @@
                   padding-bottom: 8px;
                   border-bottom: 1px solid #e2e8f0;
                 "
-              >
+               data-i18n-html="b.128">
                 No — Mini 없이 사용 (단독 모드)
               </div>
 
@@ -3046,7 +3008,7 @@
                 >
                   →
                 </div>
-                <div class="step-body" style="font-size: 13px">
+                <div class="step-body" style="font-size: 13px" data-i18n-html="b.101">
                   Home 화면으로 이동됩니다.
                 </div>
               </div>
@@ -3056,7 +3018,7 @@
                   alt="단독 모드 홈화면"
                   style="max-width: 70%; height: auto; border-radius: 16px"
                 />
-                <div class="img-caption">
+                <div class="img-caption" data-i18n-html="b.70">
                   단독 모드 홈화면 (Mini 미연결 상태)
                 </div>
               </div>
@@ -3074,13 +3036,9 @@
               >
                 <div
                   style="font-size: 15px; font-weight: 700; margin-bottom: 4px"
-                >
-                  하우징을 닫으면
-                </div>
-                <div style="font-size: 13px; font-weight: 600">
-                  자동으로 다이빙 모드 진입!
-                </div>
-                <div style="font-size: 11px; margin-top: 6px; opacity: 0.85">
+                 data-i18n-html="b.131">하우징을 닫으면</div>
+                <div style="font-size: 13px; font-weight: 600" data-i18n-html="b.132">자동으로 다이빙 모드 진입!</div>
+                <div style="font-size: 11px; margin-top: 6px; opacity: 0.85" data-i18n-html="b.130">
                   다른 설정 필요 없음
                 </div>
               </div>
@@ -3104,7 +3062,7 @@
                   padding-bottom: 8px;
                   border-bottom: 1px solid #bfdbfe;
                 "
-              >
+               data-i18n-html="b.129">
                 Yes — Mini 연결 모드
               </div>
 
@@ -3120,7 +3078,7 @@
                 >
                   5
                 </div>
-                <div class="step-body" style="font-size: 13px">
+                <div class="step-body" style="font-size: 13px" data-i18n-html="b.102">
                   <strong>Mini 찾기</strong> — Bluetooth를 켜고 주변 Mini를
                   스캔합니다.
                 </div>
@@ -3145,7 +3103,7 @@
                 >
                   6
                 </div>
-                <div class="step-body" style="font-size: 13px">
+                <div class="step-body" style="font-size: 13px" data-i18n-html="b.103">
                   <strong>Mini 등록</strong> — 검색된 Mini를 선택해 등록합니다.
                 </div>
               </div>
@@ -3169,7 +3127,7 @@
                 >
                   →
                 </div>
-                <div class="step-body" style="font-size: 13px">
+                <div class="step-body" style="font-size: 13px" data-i18n-html="b.104">
                   Home 화면으로 이동됩니다.
                 </div>
               </div>
@@ -3179,7 +3137,7 @@
                   alt="Mini 연결 홈화면"
                   style="max-width: 70%; height: auto; border-radius: 16px"
                 />
-                <div class="img-caption">
+                <div class="img-caption" data-i18n-html="b.71">
                   Mini 연결 홈화면 (EAN·수심·온도 표시)
                 </div>
               </div>
@@ -3197,20 +3155,14 @@
               >
                 <div
                   style="font-size: 15px; font-weight: 700; margin-bottom: 4px"
-                >
-                  하우징을 닫으면
-                </div>
-                <div style="font-size: 13px; font-weight: 600">
-                  자동으로 다이빙 모드 진입!
-                </div>
-                <div style="font-size: 11px; margin-top: 6px; opacity: 0.85">
-                  다른 설정 필요 없음
-                </div>
+                 data-i18n-html="b.131">하우징을 닫으면</div>
+                <div style="font-size: 13px; font-weight: 600" data-i18n-html="b.132">자동으로 다이빙 모드 진입!</div>
+                <div style="font-size: 11px; margin-top: 6px; opacity: 0.85" data-i18n-html="b.130">다른 설정 필요 없음</div>
               </div>
             </div>
           </div>
 
-          <div class="note" style="margin-top: 20px">
+          <div class="note" style="margin-top: 20px" data-i18n-html="b.72">
             ※ 시리얼 번호 변경이 필요한 경우 제품 등록을 취소하고 새 번호로
             재등록하세요.<br />
             ※ 문의: <strong>help@diveroid.com</strong>
@@ -3223,7 +3175,7 @@
             <h3 data-i18n="h.ch2-2">2-2. 스마트폰 설정</h3>
           </div>
 
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.73">
             <strong
               >Universal Housing 사용 시 스마트폰 케이스를 반드시
               제거하세요.</strong
@@ -3231,35 +3183,35 @@
             보호 필름도 카메라를 가릴 경우 제거해야 합니다.
           </div>
 
-          <p style="margin-top: 20px">
+          <p style="margin-top: 20px" data-i18n-html="b.12">
             App 3.0은 <strong>두 가지 모드</strong>로 사용할 수 있습니다. 모드에
             따라 설정이 달라집니다.
           </p>
 
           <table>
             <tr>
-              <th>설정 항목</th>
-              <th>단독 모드 (Mini 없음)</th>
-              <th>Mini 연결 모드</th>
+              <th data-i18n-html="b.55">설정 항목</th>
+              <th data-i18n-html="b.56">단독 모드 (Mini 없음)</th>
+              <th data-i18n-html="b.57">Mini 연결 모드</th>
             </tr>
             <tr>
-              <td>블루투스</td>
+              <td data-i18n-html="b.41">블루투스</td>
               <td>OFF</td>
               <td>ON</td>
             </tr>
             <tr>
-              <td>비행기 모드</td>
+              <td data-i18n-html="b.42">비행기 모드</td>
               <td>ON</td>
               <td>ON</td>
             </tr>
             <tr>
-              <td>알림 &amp; 일정</td>
+              <td data-i18n-html="b.43">알림 &amp; 일정</td>
               <td>OFF</td>
               <td>OFF</td>
             </tr>
             <tr>
-              <td>핸드폰 배터리</td>
-              <td colspan="2">충전 후 사용 권장</td>
+              <td data-i18n-html="b.44">핸드폰 배터리</td>
+              <td colspan="2" data-i18n-html="b.45">충전 후 사용 권장</td>
             </tr>
           </table>
 
@@ -3269,7 +3221,7 @@
               alt="비행기 모드 / 블루투스 설정 가이드"
               style="max-width: 70%; height: auto; border-radius: 16px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.74">
               앱이 안내하는 비행기 모드 / 블루투스 설정 화면
             </div>
           </div>
@@ -3288,11 +3240,11 @@
 
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">DIVEROID 앱을 실행합니다.</div>
+            <div class="step-body" data-i18n-html="b.105">DIVEROID 앱을 실행합니다.</div>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.106">
               하우징에 스마트폰을 장착하고 뚜껑을 닫으면
               <strong>촬영 모드로 자동으로 진행</strong>됩니다.
             </div>
@@ -3304,7 +3256,7 @@
               alt="App 3.0 홈화면"
               class="app-screen"
             />
-            <div class="img-caption">App 3.0 홈화면 (단독 모드)</div>
+            <div class="img-caption" data-i18n-html="b.75">App 3.0 홈화면 (단독 모드)</div>
           </div>
 
           <div class="img-block">
@@ -3313,7 +3265,7 @@
               alt="단독 모드 카메라 촬영 화면"
               class="app-screen-wide"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.76">
               카메라 촬영 화면 (단독 모드) — Wide angle / Standard / Zoom /
               Selfie 모드 선택 가능
             </div>
@@ -3328,7 +3280,7 @@
               border: 1px solid #eee;
             "
           >
-            <p style="font-weight: 700; margin-bottom: 14px">
+            <p style="font-weight: 700; margin-bottom: 14px" data-i18n-html="b.13">
               📋 입수 전 체크리스트
             </p>
 
@@ -3340,9 +3292,9 @@
                 line-height: 2.2;
               "
             >
-              <li>스마트폰을 하우징에 넣고 Anti-fog 시트를 삽입합니다.</li>
-              <li>O링에 이물질이 없는지 확인합니다.</li>
-              <li>하우징을 딸깍 소리가 날 때까지 단단히 닫습니다.</li>
+              <li data-i18n-html="b.29">스마트폰을 하우징에 넣고 Anti-fog 시트를 삽입합니다.</li>
+              <li data-i18n-html="b.30">O링에 이물질이 없는지 확인합니다.</li>
+              <li data-i18n-html="b.31">하우징을 딸깍 소리가 날 때까지 단단히 닫습니다.</li>
             </ul>
           </div>
         </div>
@@ -3357,21 +3309,21 @@
 
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">DIVEROID 앱을 실행합니다.</div>
+            <div class="step-body" data-i18n-html="b.107">DIVEROID 앱을 실행합니다.</div>
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.108">
               Mini 전원을 켭니다 (Mini 중앙 버튼 길게 누름).
             </div>
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <div class="step-body">앱에서 Mini 연결을 확인합니다.</div>
+            <div class="step-body" data-i18n-html="b.109">앱에서 Mini 연결을 확인합니다.</div>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.110">
               <strong>비행기 모드 진입</strong> 후 하우징을 닫으면 다이빙 모드로
               자동 진입됩니다.
             </div>
@@ -3383,7 +3335,7 @@
               alt="Mini 연결 홈화면"
               class="app-screen"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.77">
               Mini 연결 모드 — 수심·기체·해상도 정보 표시
             </div>
           </div>
@@ -3394,7 +3346,7 @@
               alt="Mini 연결 모드 다이빙 진입 화면"
               style="max-width: 100%; height: auto; border-radius: 12px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.78">
               비행기 모드 진입 + 하우징 닫음 → 자동으로 다이빙 모드 진입
             </div>
           </div>
@@ -3408,42 +3360,42 @@
 
           <table>
             <tr>
-              <th>기능</th>
-              <th>단독 모드</th>
-              <th>Mini 연결 모드</th>
+              <th data-i18n-html="b.58">기능</th>
+              <th data-i18n-html="b.59">단독 모드</th>
+              <th data-i18n-html="b.60">Mini 연결 모드</th>
             </tr>
             <tr>
-              <td>사진 촬영</td>
-              <td class="check">✅</td>
-              <td class="check">✅</td>
-            </tr>
-            <tr>
-              <td>영상 촬영</td>
+              <td data-i18n-html="b.46">사진 촬영</td>
               <td class="check">✅</td>
               <td class="check">✅</td>
             </tr>
             <tr>
-              <td>실시간 색보정</td>
+              <td data-i18n-html="b.47">영상 촬영</td>
               <td class="check">✅</td>
               <td class="check">✅</td>
             </tr>
             <tr>
-              <td>로그북 (위치·시간)</td>
+              <td data-i18n-html="b.48">실시간 색보정</td>
               <td class="check">✅</td>
               <td class="check">✅</td>
             </tr>
             <tr>
-              <td>로그북 (수심·수온)</td>
+              <td data-i18n-html="b.49">로그북 (위치·시간)</td>
+              <td class="check">✅</td>
+              <td class="check">✅</td>
+            </tr>
+            <tr>
+              <td data-i18n-html="b.50">로그북 (수심·수온)</td>
               <td class="cross">❌</td>
               <td class="check">✅</td>
             </tr>
             <tr>
-              <td>다이빙 컴퓨터</td>
+              <td data-i18n-html="b.51">다이빙 컴퓨터</td>
               <td class="cross">❌</td>
               <td class="check">✅</td>
             </tr>
             <tr>
-              <td>수심 측정</td>
+              <td data-i18n-html="b.52">수심 측정</td>
               <td class="cross">❌</td>
               <td class="check">✅</td>
             </tr>
@@ -3468,15 +3420,9 @@
               margin-bottom: 28px;
             "
           >
-            <div style="font-size: 20px; font-weight: 700; margin-bottom: 12px">
-              하우징을 닫으면
-            </div>
-            <div style="font-size: 24px; font-weight: 800; margin-bottom: 14px">
-              자동으로 다이빙 모드 진입!
-            </div>
-            <div style="font-size: 14px; opacity: 0.85">
-              다른 설정 필요 없음
-            </div>
+            <div style="font-size: 20px; font-weight: 700; margin-bottom: 12px" data-i18n-html="b.131">하우징을 닫으면</div>
+            <div style="font-size: 24px; font-weight: 800; margin-bottom: 14px" data-i18n-html="b.132">자동으로 다이빙 모드 진입!</div>
+            <div style="font-size: 14px; opacity: 0.85" data-i18n-html="b.130">다른 설정 필요 없음</div>
           </div>
 
           <div class="img-block">
@@ -3485,7 +3431,7 @@
               alt="Universal Pro 단독 모드 다이빙 화면"
               style="max-width: 100%; height: auto; border-radius: 12px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.79">
               Universal Pro 단독 모드 — 기본 다이빙 촬영 화면
             </div>
           </div>
@@ -3496,7 +3442,7 @@
               alt="Universal Pro 단독 모드 카메라 메뉴"
               style="max-width: 100%; height: auto; border-radius: 12px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.80">
               Universal Pro 단독 모드 — Wide angle / Standard / Zoom / Selfie
               모드 선택
             </div>
@@ -3508,7 +3454,7 @@
               alt="Universal Pro & Mini 다이빙 촬영 화면"
               style="max-width: 100%; height: auto; border-radius: 12px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.81">
               Universal Pro &amp; Mini 모드 (Mini 사용) — 수심·기체 정보 포함
             </div>
           </div>
@@ -3526,7 +3472,7 @@
               alt="Universal Pro 버튼 위치"
               style="max-width: 100%; height: auto"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.82">
               ① 탑 버튼 &nbsp;② 중앙 버튼 &nbsp;③ 바텀 버튼
             </div>
           </div>
@@ -3534,12 +3480,12 @@
           <div class="button-box">
             <div class="btn-title">
               <span class="btn-badge">①</span
-              ><span class="btn-name">탑 버튼 (Top Button)</span>
+              ><span class="btn-name" data-i18n-html="b.115">탑 버튼 (Top Button)</span>
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.118">
               <span class="btn-type">짧게 누름</span>메뉴 이동
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.119">
               <span class="btn-type">길게 누름</span>슬립 모드 진입
             </div>
           </div>
@@ -3547,15 +3493,15 @@
           <div class="button-box">
             <div class="btn-title">
               <span class="btn-badge">②</span
-              ><span class="btn-name">중앙 버튼 (Center Button)</span>
+              ><span class="btn-name" data-i18n-html="b.116">중앙 버튼 (Center Button)</span>
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.120">
               <span class="btn-type">짧게 누름</span>사진 촬영 / 메뉴 선택
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.121">
               <span class="btn-type">길게 누름</span>영상 촬영 시작·종료
             </div>
-            <div class="note" style="margin-top: 8px; font-size: 12px">
+            <div class="note" style="margin-top: 8px; font-size: 12px" data-i18n-html="b.83">
               ※ 영상 촬영 중 탑 버튼: 스크린샷 촬영
             </div>
           </div>
@@ -3563,12 +3509,12 @@
           <div class="button-box">
             <div class="btn-title">
               <span class="btn-badge">③</span
-              ><span class="btn-name">바텀 버튼 (Bottom Button)</span>
+              ><span class="btn-name" data-i18n-html="b.117">바텀 버튼 (Bottom Button)</span>
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.122">
               <span class="btn-type">짧게 누름</span>포커스 초기화
             </div>
-            <div class="btn-action">
+            <div class="btn-action" data-i18n-html="b.123">
               <span class="btn-type">길게 누름</span>실시간 색보정 필터 ON/OFF
             </div>
           </div>
@@ -3579,7 +3525,7 @@
               alt="색보정 OFF (BEFORE)"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
-            <div class="img-caption">BEFORE — 색보정 OFF</div>
+            <div class="img-caption" data-i18n-html="b.84">BEFORE — 색보정 OFF</div>
           </div>
           <div class="img-block">
             <img
@@ -3587,7 +3533,7 @@
               alt="색보정 ON (AFTER)"
               style="max-width: 100%; height: auto; border-radius: 8px"
             />
-            <div class="img-caption">AFTER — 색보정 ON</div>
+            <div class="img-caption" data-i18n-html="b.85">AFTER — 색보정 ON</div>
           </div>
         </div>
 
@@ -3597,7 +3543,7 @@
             <h3 data-i18n="h.ch3-feat">3-5. App 3.0 주요 기능</h3>
           </div>
 
-          <p><strong>자동 로그북 (Auto Logbook)</strong></p>
+          <p data-i18n-html="b.14"><strong>자동 로그북 (Auto Logbook)</strong></p>
 
           <div class="img-block">
             <img
@@ -3605,7 +3551,7 @@
               alt="Logbook Basic — Universal Pro 단독 / Mini 공통"
               style="max-width: 60%; height: auto; border-radius: 12px"
             />
-            <div class="img-caption">
+            <div class="img-caption" data-i18n-html="b.86">
               Logbook Basic — Universal Pro 단독 모드 (Mini 공통)
             </div>
           </div>
@@ -3626,7 +3572,7 @@
                 font-weight: 700;
                 margin: 0 0 10px;
               "
-            >
+             data-i18n-html="b.15">
               📊 Logbook Pro — Mini 연결 시 (구독 필요)
             </p>
             <div
@@ -3652,11 +3598,11 @@
             <div
               class="img-caption"
               style="margin-top: 8px; text-align: center"
-            >
+             data-i18n-html="b.87">
               Mini 연결 시 수심·수온·다이빙 프로파일 그래프 등 상세 데이터 제공
             </div>
           </div>
-          <p>다이빙 후 수심, 수온, 위치, 사진·영상이 자동으로 기록됩니다.</p>
+          <p data-i18n-html="b.16">다이빙 후 수심, 수온, 위치, 사진·영상이 자동으로 기록됩니다.</p>
           <ul
             style="
               font-size: 13px;
@@ -3665,21 +3611,21 @@
               line-height: 2;
             "
           >
-            <li><strong>단독 모드:</strong> 위치·시간·사진·영상 기록</li>
-            <li>
+            <li data-i18n-html="b.32"><strong>단독 모드:</strong> 위치·시간·사진·영상 기록</li>
+            <li data-i18n-html="b.33">
               <strong>Mini 연결 모드:</strong> 수심·수온·위치·시간·사진·영상
               기록
             </li>
-            <li>
+            <li data-i18n-html="b.34">
               <strong>iCloud / Google Drive</strong> 연동으로 클라우드에 자동
               백업
             </li>
           </ul>
 
-          <p style="margin-top: 24px">
+          <p style="margin-top: 24px" data-i18n-html="b.17">
             <strong>셀피 카메라 (Selfie Camera)</strong>
           </p>
-          <p>
+          <p data-i18n-html="b.18">
             하우징 전면의 셀피 렌즈를 통해 수중 셀피 촬영이 가능합니다.<br />촬영
             화면에서 <strong>Selfie</strong> 버튼을 눌러 전·후면 카메라를
             전환하세요.
@@ -3696,7 +3642,7 @@
           <div class="section-header">
             <h3 data-i18n="h.ch4-1">4-1. O링 관리</h3>
           </div>
-          <p>
+          <p data-i18n-html="b.19">
             O링 관리는 방수 제품에서 매우 중요합니다. 수압이 높거나 이물질이
             있는 환경에서는 방수 기능에 문제가 생길 수 있습니다.
           </p>
@@ -3710,7 +3656,7 @@
           </div>
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.111">
               한 손으로 O링을 잡고 약간의 힘을 주어
               <strong>옆으로 밀어줍니다.</strong>
             </div>
@@ -3725,7 +3671,7 @@
           </div>
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.112">
               O링이 밀리면서 공간이 생기면 <strong>손가락으로 잡습니다.</strong>
             </div>
           </div>
@@ -3739,7 +3685,7 @@
           </div>
           <div class="step">
             <div class="step-num">3</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.113">
               O링을 꺼냅니다.<br /><span style="color: #8a5a00"
                 >⚠️ [주의] O링이 찢어지지 않도록 조심하세요.</span
               >
@@ -3752,17 +3698,17 @@
               alt="O링 Step 4 — 실리콘 그리스 도포"
               style="max-width: 100%; height: auto"
             />
-            <div class="img-caption">실리콘 그리스 도포</div>
+            <div class="img-caption" data-i18n-html="b.88">실리콘 그리스 도포</div>
           </div>
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="b.114">
               실리콘 그리스를 손가락에 <strong>쌀알 크기</strong>만큼 묻혀 O링
               전체에 고르게 발라줍니다.
             </div>
           </div>
 
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.89">
             <strong>관리 주기:</strong> 다이빙 전후 반드시 점검하세요. 3개월
             이상 보관할 경우 O링을 분리하여 지퍼백에 따로 보관하세요.
           </div>
@@ -3785,18 +3731,18 @@
               line-height: 2.2;
             "
           >
-            <li>
+            <li data-i18n-html="b.35">
               습기 방지제는 <strong>150°C 팬에 5분 가열</strong>하면 재사용
               가능합니다.
             </li>
-            <li>최대 <strong>4회</strong>까지 재사용 가능합니다.</li>
-            <li>사용하지 않을 때는 밀봉 팩에 보관하세요.</li>
+            <li data-i18n-html="b.36">최대 <strong>4회</strong>까지 재사용 가능합니다.</li>
+            <li data-i18n-html="b.37">사용하지 않을 때는 밀봉 팩에 보관하세요.</li>
           </ul>
 
           <div class="section-header">
             <h3 data-i18n="h.ch4-3">4-3. 보관</h3>
           </div>
-          <p>
+          <p data-i18n-html="b.20">
             직사광선을 피하고 플라스틱 하우징이 햇빛에 노출되지 않도록
             하세요.<br />
             다이빙 후에는 주머니나 가방 안에 넣어 보관하세요.
@@ -3805,7 +3751,7 @@
           <div class="section-header">
             <h3 data-i18n="h.ch4-4">4-4. 충격 발생 시</h3>
           </div>
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.90">
             하우징에 충격이 가해지거나 낙하한 경우, 즉시 사용하지 마세요.<br />
             반드시 빈 하우징 상태로 <strong>방수 테스트를 먼저 진행</strong>한
             후 사용하세요.
@@ -4250,7 +4196,7 @@
             본사는 제품 사용 중 직접적·간접적·결과적 또는 부수적으로 발생하는
             경제적 손실, 개인 유·무형 자산 손실 등에 대해 책임을 지지 않습니다.
           </p>
-          <div class="caution">
+          <div class="caution" data-i18n-html="b.91">
             <strong data-i18n="w.limit-caution"
               >스마트폰 제조사와 본사 사이에는 어떠한 관계도 없으며, 본사는 제품
               사용 중 발생한 스마트폰 침수 또는 손상에 대해 책임을 지지
