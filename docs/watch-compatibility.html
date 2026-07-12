@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/css/SpoqaHanSansNeo.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIVEROID WATCHDIVE — Watch Compatibility Chart</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Spoqa Han Sans Neo", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 14px;
+        color: #1a1a1a;
+        background: #f4f6f9;
+        line-height: 1.7;
+      }
+
+      header {
+        background: #0f0c26;
+        color: #fff;
+        padding: 32px 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      header .logo-text {
+        font-size: 11px;
+        letter-spacing: 4px;
+        color: #36a9e1;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      header h1 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      header p {
+        font-size: 13px;
+        color: #8ea8c3;
+        margin-top: 4px;
+      }
+
+      .spec-banner {
+        background: #0d1f36;
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .spec-banner .spec-label {
+        font-size: 11px;
+        color: #36a9e1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
+      }
+      .spec-banner .spec-value {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .spec-banner .spec-unit {
+        font-size: 12px;
+        color: #8ea8c3;
+        margin-left: 4px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 36px auto;
+        padding: 0 24px;
+      }
+
+      .legend {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: #444;
+      }
+      .legend-badge {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0f0c26;
+        margin: 36px 0 0;
+        padding: 14px 16px 14px 0;
+        border-bottom: 2px solid #36a9e1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        user-select: none;
+        justify-content: space-between;
+      }
+      .section-title:hover {
+        color: #36a9e1;
+      }
+      .section-title .brand-icon {
+        font-size: 20px;
+      }
+      .section-title .title-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .section-title .chevron {
+        font-size: 12px;
+        color: #36a9e1;
+        transition: transform 0.25s ease;
+        transform: rotate(0deg);
+        flex-shrink: 0;
+      }
+      .section-title.open .chevron {
+        transform: rotate(180deg);
+      }
+
+      .table-collapse {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.35s ease,
+          opacity 0.25s ease;
+        opacity: 0;
+        margin-bottom: 0;
+      }
+      .table-collapse.open {
+        max-height: 4000px;
+        opacity: 1;
+        margin-bottom: 8px;
+        padding-top: 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        margin-bottom: 8px;
+      }
+      thead tr {
+        background: #1e2d42;
+        color: #fff;
+      }
+      thead th {
+        padding: 13px 16px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      thead th.col-model {
+        text-align: left;
+        min-width: 220px;
+      }
+      tbody tr {
+        border-bottom: 1px solid #eef0f3;
+        transition: background 0.15s;
+      }
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+      tbody tr:hover {
+        background: #f0f7ff;
+      }
+      tbody tr.incompatible {
+        background: #fafafa;
+        color: #999;
+      }
+      tbody tr.incompatible:hover {
+        background: #f5f5f5;
+      }
+      td {
+        padding: 11px 16px;
+        text-align: center;
+        font-size: 13px;
+      }
+      td.col-model {
+        text-align: left;
+        font-weight: 500;
+        color: #1a1a1a;
+      }
+      tbody tr.incompatible td.col-model {
+        color: #aaa;
+      }
+      td.hw-ok {
+        font-size: 18px;
+        color: #2ecc71;
+      }
+      td.hw-ng {
+        font-size: 18px;
+        color: #e74c3c;
+      }
+      td.sw-cell {
+        color: #ccc;
+        font-size: 12px;
+      }
+      td.note-cell {
+        font-size: 11px;
+        color: #aaa;
+        text-align: left;
+      }
+
+      .caution {
+        background: #fffbf0;
+        border: 1px solid #f0d070;
+        border-radius: 8px;
+        padding: 14px 18px;
+        font-size: 13px;
+        color: #7a6200;
+        margin-top: 24px;
+        line-height: 1.8;
+      }
+
+      .footer-note {
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+        padding: 32px 0 48px;
+      }
+      .footer-note a {
+        color: #36a9e1;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 24px 20px;
+          gap: 12px;
+        }
+        header h1 {
+          font-size: 17px;
+        }
+        .spec-banner {
+          padding: 16px 20px;
+          gap: 24px;
+        }
+        .container {
+          padding: 0 12px;
+        }
+        table {
+          font-size: 12px;
+        }
+        th,
+        td {
+          padding: 9px 10px;
+        }
+        thead th.col-model {
+          min-width: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo-text">DIVEROID</div>
+        <h1>WATCHDIVE — Watch Compatibility Chart</h1>
+        <p>
+          Simple rule: <strong>any smartwatch that can install the WatchDive app is supported.</strong>
+        </p>
+      </div>
+    </header>
+
+    <div class="spec-banner">
+      <div>
+        <div class="spec-label">Apple Watch</div>
+        <div class="spec-value">All models<span class="spec-unit">✅</span></div>
+      </div>
+      <div>
+        <div class="spec-label">Apple Watch Ultra</div>
+        <div class="spec-value">App only<span class="spec-unit">no housing</span></div>
+      </div>
+      <div>
+        <div class="spec-label">Other watches</div>
+        <div class="spec-value">App + housing<span class="spec-unit"></span></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-badge">⌚</span> App only — no housing needed (dive-rated watch)
+        </div>
+        <div class="legend-item">
+          <span class="legend-badge">✅</span> Supported with the dedicated WatchDive housing
+        </div>
+      </div>
+
+      <!-- ─────────────── Apple Watch ─────────────── -->
+      <div class="section-title">
+        <span class="title-left"><span class="brand-icon">⌚</span> Apple Watch</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">Model</th>
+            <th>How to use</th>
+            <th>Status</th>
+            <th class="col-model">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-model">Apple Watch Ultra 2</td><td>App only</td><td class="hw-ok">⌚</td><td class="note-cell">No housing needed</td></tr>
+          <tr><td class="col-model">Apple Watch Ultra</td><td>App only</td><td class="hw-ok">⌚</td><td class="note-cell">No housing needed</td></tr>
+          <tr><td class="col-model">Apple Watch Series 10</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Apple Watch Series 9</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Apple Watch Series 8</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Apple Watch Series 7 &amp; earlier</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell">Any Series that runs the app</td></tr>
+          <tr><td class="col-model">Apple Watch SE (1st &amp; 2nd gen)</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+        </tbody>
+      </table>
+
+      <!-- ─────────────── Samsung Galaxy Watch ─────────────── -->
+      <div class="section-title">
+        <span class="title-left"><span class="brand-icon">⌚</span> Samsung Galaxy Watch</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-model">Model</th>
+            <th>How to use</th>
+            <th>Status</th>
+            <th class="col-model">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-model">Galaxy Watch Ultra</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Galaxy Watch 7</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Galaxy Watch 6 / 6 Classic</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Galaxy Watch 5 / 5 Pro</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell"></td></tr>
+          <tr><td class="col-model">Galaxy Watch 4 &amp; earlier</td><td>App + housing</td><td class="hw-ok">✅</td><td class="note-cell">Any model that runs the app</td></tr>
+        </tbody>
+      </table>
+
+      <div class="caution">
+        <strong>⚠️ Notes</strong><br />
+        · If your watch can install the WatchDive app, it is supported.<br />
+        · Apple Watch Ultra models are dive-rated by themselves — the app alone is enough.<br />
+        · All other watches dive inside the dedicated WatchDive housing.<br />
+        · Housing bundles and pricing tiers will be announced at the Kickstarter launch.<br />
+        · Questions? <strong>help@diveroid.com</strong> or live chat at
+        <a href="https://watchdive.diveroid.com">watchdive.diveroid.com</a>.
+      </div>
+
+      <div class="footer-note">
+        DIVEROID WATCHDIVE &nbsp;|&nbsp; Watch Compatibility Reference<br />
+        Last verified: 2026-07-12
+      </div>
+    </div>
+  </body>
+</html>
