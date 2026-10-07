@@ -1,22 +1,1213 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DIVEROID watch-dive Guide</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0a0e1a; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
-    .logo { font-size: 12px; letter-spacing: 4px; color: #50A9FC; text-transform: uppercase; margin-bottom: 16px; }
-    h1 { font-size: 22px; font-weight: 300; margin-bottom: 8px; }
-    p { font-size: 14px; color: #64748b; margin-bottom: 32px; line-height: 1.8; }
-    a { color: #50A9FC; font-size: 13px; }
-  </style>
-</head>
-<body>
-  <div class="logo">DIVEROID</div>
-  <h1>watch-dive</h1>
-  <p>가이드를 준비 중입니다.<br/>Guide coming soon.</p>
-  <a href="../../">← 전체 제품 목록</a>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watch Dive User Guide | DIVEROID</title>
+    <style>
+      :root {
+        --bg: #0a0e1a;
+        --panel: #0d1424;
+        --card: #121a2e;
+        --ink: #f2f5fa;
+        --sub: #8ea0bd;
+        --line: #212c46;
+        --accent: #3ba7ff;
+        --warn: #ffb020;
+        --warnbg: #241d10;
+        --sbw: 280px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          16px/1.72 -apple-system,
+          BlinkMacSystemFont,
+          "Apple SD Gothic Neo",
+          "Pretendard",
+          "Segoe UI",
+          sans-serif;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* ===== Sidebar ===== */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--sbw);
+        height: 100vh;
+        overflow-y: auto;
+        background: var(--panel);
+        border-right: 1px solid var(--line);
+        padding: 26px 0 40px;
+        z-index: 10;
+      }
+      .sb-brand {
+        padding: 0 26px 20px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 14px;
+      }
+      .sb-brand .k {
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        color: var(--accent);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .sb-brand .t {
+        font-size: 22px;
+        font-weight: 800;
+        margin-top: 6px;
+      }
+      .sb-brand .d {
+        font-size: 12.5px;
+        color: var(--sub);
+        margin-top: 3px;
+      }
+      .nav a {
+        display: block;
+        padding: 9px 26px;
+        color: var(--sub);
+        text-decoration: none;
+        font-size: 14.5px;
+        border-left: 3px solid transparent;
+      }
+      .nav a .num {
+        display: inline-block;
+        width: 22px;
+        color: #4a5a78;
+        font-variant-numeric: tabular-nums;
+      }
+      .nav a:hover {
+        color: var(--ink);
+        background: #0f1830;
+      }
+      .nav a.active {
+        color: var(--accent);
+        border-left-color: var(--accent);
+        background: #0f1830;
+        font-weight: 600;
+      }
+
+      /* ===== Content ===== */
+      .main {
+        margin-left: var(--sbw);
+        max-width: 820px;
+        padding: 0 44px 120px;
+      }
+      .hero {
+        position: relative;
+        margin: 0 -44px 0;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 44px 44px 40px;
+        overflow: hidden;
+      }
+      .hero img.bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(10, 14, 26, 0.3),
+          rgba(10, 14, 26, 0.94)
+        );
+      }
+      .hero > * {
+        position: relative;
+        z-index: 1;
+      }
+      .hero .brand {
+        font-size: 12px;
+        letter-spacing: 0.3em;
+        color: var(--accent);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .hero h1 {
+        font-size: 40px;
+        font-weight: 800;
+        margin: 10px 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .hero .tag {
+        font-size: 16px;
+        color: #cdd7e6;
+        max-width: 32ch;
+      }
+
+      section {
+        margin-top: 54px;
+        scroll-margin-top: 24px;
+      }
+      h2.sec {
+        font-size: 12.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 4px;
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 2px 0 14px;
+        letter-spacing: -0.01em;
+      }
+      h4 {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 24px 0 6px;
+      }
+      p {
+        color: #c4cfe0;
+        margin: 8px 0;
+      }
+      .subt {
+        color: var(--sub);
+        font-size: 14.5px;
+      }
+      ul.feat {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+      ul.feat li {
+        padding: 5px 0 5px 26px;
+        position: relative;
+        color: #c4cfe0;
+      }
+      ul.feat li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 800;
+      }
+      figure {
+        margin: 18px 0;
+      }
+      figure img {
+        border-radius: 14px;
+        border: 1px solid var(--line);
+      }
+      figcaption {
+        color: var(--sub);
+        font-size: 13px;
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        margin: 12px 0;
+        background: var(--card);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 9px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #182238;
+        font-weight: 700;
+      }
+      td {
+        color: #c4cfe0;
+      }
+
+      .spec {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 1px;
+        background: var(--line);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 14px 0;
+      }
+      .spec div {
+        background: var(--card);
+        padding: 11px 14px;
+        font-size: 14.5px;
+      }
+      .spec div:nth-child(odd) {
+        color: var(--sub);
+        font-weight: 600;
+      }
+
+      .warn {
+        background: var(--warnbg);
+        border: 1px solid #4a3a12;
+        border-left: 4px solid var(--warn);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 16px 0;
+      }
+      .warn b {
+        color: var(--warn);
+      }
+      .warn p {
+        color: #e6d9bc;
+        margin: 4px 0;
+      }
+
+      .step {
+        display: flex;
+        gap: 16px;
+        margin: 14px 0;
+        align-items: flex-start;
+      }
+      .step .n {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #04121f;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+      }
+      .step .t {
+        padding-top: 2px;
+      }
+      .step .t b {
+        color: var(--ink);
+      }
+
+      .qa {
+        border-top: 1px solid var(--line);
+        padding: 14px 0;
+      }
+      .qa .q {
+        font-weight: 700;
+      }
+      .qa .q::before {
+        content: "Q  ";
+        color: var(--accent);
+      }
+      .qa .a {
+        color: var(--sub);
+        margin-top: 4px;
+        font-size: 14.5px;
+      }
+
+      .foot {
+        margin-top: 64px;
+        border-top: 1px solid var(--line);
+        padding-top: 22px;
+        color: var(--sub);
+        font-size: 13px;
+      }
+
+      /* app screens grid (round Wear OS) */
+      .screens {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px 20px;
+        margin: 22px 0 6px;
+      }
+      .screens figure {
+        margin: 0;
+        text-align: center;
+      }
+      .screens img {
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        width: 100%;
+        max-width: 190px;
+        margin: 0 auto;
+      }
+      .screens figcaption {
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      .screens figcaption b {
+        display: block;
+        color: var(--ink);
+        font-size: 14px;
+        margin-bottom: 1px;
+      }
+      /* main single hero screen */
+      .screen-hero {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        margin: 20px 0 6px;
+        flex-wrap: wrap;
+      }
+      .screen-hero img {
+        width: 240px;
+        border: none;
+        border-radius: 0;
+      }
+      .screen-hero .cap {
+        flex: 1;
+        min-width: 220px;
+      }
+      .screen-hero .cap b {
+        color: var(--ink);
+        font-size: 16px;
+      }
+      @media (max-width: 560px) {
+        .screens {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* mobile */
+      .menubtn {
+        display: none;
+      }
+      @media (max-width: 900px) {
+        .sidebar {
+          transform: translateX(-100%);
+          transition: transform 0.25s;
+        }
+        .sidebar.open {
+          transform: none;
+        }
+        .main {
+          margin-left: 0;
+          padding: 0 20px 100px;
+        }
+        .hero {
+          margin: 0 -20px 0;
+          padding: 40px 20px 36px;
+        }
+        .menubtn {
+          display: flex;
+          position: fixed;
+          top: 14px;
+          left: 14px;
+          z-index: 20;
+          width: 44px;
+          height: 44px;
+          border-radius: 10px;
+          background: var(--panel);
+          border: 1px solid var(--line);
+          color: var(--ink);
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="menubtn"
+      onclick="document.querySelector('.sidebar').classList.toggle('open')"
+    >
+      ☰
+    </button>
+
+    <aside class="sidebar">
+      <div class="sb-brand">
+        <div class="k">DIVEROID · User Guide</div>
+        <div class="t">Watch Dive</div>
+        <div class="d">User Guide (English)</div>
+      </div>
+      <nav class="nav">
+        <a href="#intro"><span class="num">01</span>What is Watch Dive?</a>
+        <a href="#compat"><span class="num">02</span>Check compatibility</a>
+        <a href="#box"><span class="num">03</span>In the box &amp; specs</a>
+        <a href="#setup"><span class="num">04</span>Install the app</a>
+        <a href="#housing"><span class="num">05</span>Using the housing</a>
+        <a href="#howto"><span class="num">06</span>Start to finish</a>
+        <a href="#features"><span class="num">07</span>Key features</a>
+        <a href="#safety"><span class="num">08</span>Safety features</a>
+        <a href="#care"><span class="num">09</span>Care &amp; storage</a>
+        <a href="#faq"><span class="num">10</span>FAQ</a>
+        <a href="#warranty"><span class="num">11</span>Warranty</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="hero">
+        <img class="bg" src="../assets/hero.jpg" alt="" />
+        <div class="brand">DIVEROID · User Guide</div>
+        <h1>Watch Dive</h1>
+        <div class="tag">
+          Turn the smartwatch you already own into a dive computer.
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <section id="intro">
+        <h2 class="sec">01 · Introduction</h2>
+        <h3>What is Watch Dive?</h3>
+        <p>
+          <b>Watch Dive</b> is a <b>waterproof housing plus a dedicated app</b>
+          that turns the smartwatch you already own — Apple Watch, Galaxy Watch,
+          Pixel Watch and more — into a dive computer. Instead of buying a
+          separate dive computer, you can track depth, dive time, safety stops
+          and your logbook on the watch you already know how to use.
+        </p>
+        <ul class="feat">
+          <li>The most affordable way into a dive computer for new divers</li>
+          <li>Depth · dive time · NDL · compass · safety-stop guidance</li>
+          <li>
+            Your dive is written to the logbook automatically when you surface
+          </li>
+          <li>Works for both scuba diving and freediving</li>
+        </ul>
+        <figure>
+          <img src="../assets/product.jpg" alt="Watch Dive housing" />
+          <figcaption>
+            Watch Dive housing — body · wrist strap · latch
+          </figcaption>
+        </figure>
+        <div class="warn">
+          <b>⚠️ Safety notice</b>
+          <p>
+            Watch Dive is an aid to diving. It
+            <b
+              >does not replace dive training, certification, or a back-up dive
+              computer.</b
+            >
+            Dive only within the limits of your training and always follow your
+            safety procedures.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section id="compat">
+        <h2 class="sec">02 · Compatibility</h2>
+        <h3>Check that your watch works</h3>
+        <p>
+          There are two ways to use Watch Dive. Check which one applies to your
+          watch before you start.
+        </p>
+        <table>
+          <tr>
+            <th>Configuration</th>
+            <th>Watch</th>
+            <th>What you need</th>
+          </tr>
+          <tr>
+            <td><b>App only</b></td>
+            <td>
+              Apple Watch Ultra 1 · 2 · 3<br /><span class="subt"
+                >(built-in pressure sensor · rated for diving)</span
+              >
+            </td>
+            <td>DIVEROID app only</td>
+          </tr>
+          <tr>
+            <td><b>Housing + app</b></td>
+            <td>
+              Apple Watch Series and SE, all Galaxy Watch models (including
+              Ultra), Google Pixel Watch, and other Wear OS watches
+            </td>
+            <td>Watch Dive housing + app</td>
+          </tr>
+        </table>
+        <div class="warn">
+          <b>Will your watch fit the housing?</b>
+          <p>
+            The housing has a size limit, so not every watch fits.
+            <b>Please check your exact model against the compatibility list</b>
+            before you buy.
+          </p>
+          <p>
+            Watches that run a closed operating system of their own — Garmin,
+            Suunto, Fitbit, Amazfit and Huawei, for example — cannot install the
+            DIVEROID app and are not supported.
+          </p>
+        </div>
+        <p class="subt">
+          Look up your model at
+          <b>guide.diveroid.com/watch-compatibility.html</b>.
+        </p>
+      </section>
+
+      <!-- 3 -->
+      <section id="box">
+        <h2 class="sec">03 · What's in the box</h2>
+        <h3>In the box &amp; specifications</h3>
+        <figure>
+          <img src="../assets/on_fins.jpg" alt="Watch Dive housing" />
+          <figcaption>Watch Dive housing (White)</figcaption>
+        </figure>
+        <h4>In the box</h4>
+        <ul class="feat">
+          <li>Watch Dive housing (battery already fitted inside)</li>
+          <li>Wrist strap &amp; buckle</li>
+          <li>Toggle latch</li>
+        </ul>
+        <h4>Specifications</h4>
+        <div class="spec">
+          <div>Depth of use</div>
+          <div>60 m / 200 ft</div>
+          <div>Water-resistance test</div>
+          <div>Passed at 10 bar</div>
+          <div>Depth display</div>
+          <div>0.0 – 60.0 m, in 0.1 m steps</div>
+          <div>Sensor</div>
+          <div>
+            The housing itself measures depth and water temperature (0.1 °C
+            steps)
+          </div>
+          <div>Battery</div>
+          <div>Built-in lithium cell — approx. 2 years or 500 dives</div>
+          <div>Watch connection</div>
+          <div>Bluetooth (housing ↔ watch)</div>
+          <div>Colors</div>
+          <div>Black / White</div>
+          <div>App</div>
+          <div>DIVEROID App (iOS · Android)</div>
+        </div>
+        <p class="subt">
+          ※ The battery is sealed inside the housing and is not replaced by the
+          user. If it needs replacing, please contact DIVEROID support.
+        </p>
+      </section>
+
+      <!-- 4 -->
+      <section id="setup">
+        <h2 class="sec">04 · Getting started</h2>
+        <h3>Install the app and set up</h3>
+        <div class="step">
+          <div class="n">1</div>
+          <div class="t">
+            <b>Install the DIVEROID app</b><br /><span class="subt"
+              >Search for "DIVEROID" on the App Store or Google Play and install
+              it. Have both your watch and your phone to hand.</span
+            >
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div class="t">
+            <b>Turn on Bluetooth</b><br /><span class="subt"
+              >Dive mode needs Bluetooth switched on — this is how the housing
+              and the watch talk to each other.</span
+            >
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div class="t">
+            <b>Register your device</b><br /><span class="subt"
+              >Follow the prompts in the app to register the watch you are
+              using.</span
+            >
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div class="t">
+            <b>Switch on flight mode</b><br /><span class="subt"
+              >Flight mode keeps notifications and calls from interrupting your
+              dive display. Once it is on, closing the housing takes you
+              straight into dive mode.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section id="housing">
+        <h2 class="sec">05 · Housing</h2>
+        <h3>Using the housing</h3>
+        <figure>
+          <img
+            src="../assets/in_housing.jpg"
+            alt="Watch installed in housing"
+          />
+          <figcaption>A watch installed in the housing</figcaption>
+        </figure>
+        <h4>Fitting the watch and closing up</h4>
+        <div class="step">
+          <div class="n">1</div>
+          <div class="t">
+            <b>Check the O-ring and the sealing surfaces.</b> They must be clean
+            and free of sand, hair and salt crystals. A single grain trapped
+            here is enough to let water in.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div class="t">
+            <b>Charge the watch and switch it to flight mode.</b> You cannot
+            open the housing under water, so check the battery level now. Flight
+            mode also stops notifications from covering the dive display.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div class="t">
+            <b>Place the watch with its display facing the window</b> and close
+            the housing until the latch engages completely.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div class="t">
+            <b>Fit the strap to your wrist.</b> Tighten it enough that the
+            housing cannot slip off.
+          </div>
+        </div>
+        <p>
+          Once the housing is closed, the app
+          <b>enters dive mode automatically</b> and begins showing the depth and
+          water temperature measured by the housing.
+        </p>
+
+        <h4>Operating the watch through the housing</h4>
+        <p>
+          You can
+          <b>operate the watch display using the housing button</b> with the
+          housing fully closed — no need to open it, and it works with gloves
+          on. The button distinguishes a <b>short press</b> from a
+          <b>long press of 2 seconds or more</b>, and what each one does depends
+          on the screen you are looking at.
+        </p>
+        <table>
+          <tr>
+            <th>Screen</th>
+            <th>Short press</th>
+            <th>Long press (2 s)</th>
+          </tr>
+          <tr>
+            <td>Leak-prevention test</td>
+            <td>Run the test again</td>
+            <td>Skip the test</td>
+          </tr>
+          <tr>
+            <td>Dive screen</td>
+            <td class="subt">See the on-screen prompt</td>
+            <td>Switch to the compass screen</td>
+          </tr>
+        </table>
+        <p class="subt">
+          ※ On any other screen, follow the prompts shown on the watch.
+        </p>
+
+        <h4>Leak-prevention test before you get in</h4>
+        <p>
+          Watch Dive can <b>watch its own internal pressure</b> to confirm that
+          the seal is good before you enter the water. We recommend running this
+          test before every dive.
+        </p>
+        <p>
+          It watches for up to <b>60 seconds</b>, and passes as soon as the
+          pressure has held steady for <b>30 seconds without interruption</b>.
+          If the housing settles quickly it finishes in a little over 30
+          seconds; if it cannot reach a steady stretch within 60 seconds, it
+          reports a failure.
+        </p>
+        <div class="step">
+          <div class="n">1</div>
+          <div class="t">
+            <b>Close the housing and set it down on a flat surface.</b> The test
+            starts by itself.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div class="t">
+            <b>Leave it alone and wait.</b> The steady stretch has to be
+            uninterrupted, so picking the housing up or knocking it
+            <b>restarts the 30 seconds from zero</b>. Once you have set it down,
+            leave it there.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div class="t">
+            <b>When it reports that the housing is sealed,</b> you are good to
+            go.<br /><span class="subt"
+              >If a pressure change is detected, open the housing, clean the
+              O-ring, re-seat it properly, close up and run the test
+              again.</span
+            >
+          </div>
+        </div>
+        <p class="subt">
+          ※ On the test screen, a <b>short press</b> starts the test over and a
+          <b>long press of 2 seconds or more</b> skips it — but skipping means
+          entering the water without having confirmed the seal.
+        </p>
+        <div class="warn">
+          <b>Check that the depth reads 0.0 m before you get in</b>
+          <p>
+            Before entering the water, look at the depth on the watch and
+            confirm that it reads <b>0.0 m</b>. The surface reference has to be
+            right for depth to be shown correctly during the dive and for the
+            dive to be saved to your logbook afterwards. If it does not read 0.0
+            m, do not use this product as your depth reference — go by your
+            back-up instrument.
+          </p>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section id="howto">
+        <h2 class="sec">06 · How to use</h2>
+        <h3>From the start of the dive to the end</h3>
+        <p>
+          On an actual dive you will go through the steps below. The watch
+          guides you through each one automatically.
+        </p>
+        <div class="step">
+          <div class="n">1</div>
+          <div class="t">
+            <b>Get ready</b> — open the DIVEROID app on the watch and switch to
+            flight mode. If you are using the housing, place the watch inside
+            and close it.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div class="t">
+            <b>Leak-prevention test</b> — leave the closed housing on a flat
+            surface and it checks the seal by itself. Once it reports that the
+            housing is sealed, you can get in.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div class="t">
+            <b>The dive starts</b> — once you pass <b>0.8 m</b>, the dive begins
+            automatically and <b>depth, dive time and NDL</b> appear in real
+            time. There is no start button to press.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div class="t">
+            <b>Alerts during the dive</b> — safety stops, ascent rate, exceeding
+            the MOD and more are signaled on screen and audibly. See the next
+            section.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">5</div>
+          <div class="t">
+            <b>Ascent &amp; safety stop</b> — on any dive deeper than
+            <b>10 m</b>, safety-stop guidance appears. The target is
+            <b>3 minutes at 5 m</b>; hold your depth while watching the
+            countdown on screen.
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">6</div>
+          <div class="t">
+            <b>Surfacing &amp; automatic logging</b> — when you surface the dive
+            ends and your logbook entry is completed automatically, along with
+            your recommended surface interval and no-fly time.<br /><span
+              class="subt"
+              >Do take a moment to confirm the dive was saved to your
+              logbook.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section id="features">
+        <h2 class="sec">07 · Features</h2>
+        <h3>Key features</h3>
+        <h4>Dive computer</h4>
+        <div class="screen-hero">
+          <img src="../assets/screens/rnd_main.jpg" alt="Dive main screen" />
+          <div class="cap">
+            <p>
+              The dive screen shows
+              <b
+                >current depth · maximum depth · dive time · NDL
+                (no-decompression limit) · water temperature · ascent rate ·
+                compass · housing battery</b
+              >
+              together, in real time. If you incur a decompression obligation,
+              NDL is replaced by <b>time to surface (TTS)</b>.
+            </p>
+            <p>
+              Decompression is calculated with
+              <b>Bühlmann ZHL-16C</b>, a model widely used across the diving
+              industry, and both scuba diving and freediving are supported.
+            </p>
+            <p class="subt">
+              ※ These are real app screens (Wear OS). What you see may differ
+              depending on your watch model and settings.
+            </p>
+          </div>
+        </div>
+        <h4>Automatic logbook</h4>
+        <p>
+          When a dive ends, the
+          <b
+            >date · location · weather · maximum depth · dive time · water
+            temperature · breathing gas (air / nitrox)</b
+          >
+          are written to your logbook automatically. Freedives are recorded with
+          water temperature as well.
+        </p>
+        <h4>Your photos and videos, sorted automatically</h4>
+        <p>
+          Watch Dive has no camera of its own. What it does instead is match
+          photos and videos from a separate camera — a GoPro, a Canon, whatever
+          you shoot with — to the right dive <b>by the time they were taken</b>,
+          so you never have to work out which dive a photo came from.
+        </p>
+      </section>
+
+      <!-- 8 -->
+      <section id="safety">
+        <h2 class="sec">08 · Safety</h2>
+        <h3>Safety features</h3>
+        <p>
+          Watch Dive signals risky situations on screen and audibly while you
+          dive. Below are real app screens.
+        </p>
+        <div class="screens">
+          <figure>
+            <img src="../assets/screens/rnd_safetystop.jpg" alt="Safety stop" />
+            <figcaption>
+              <b>Safety stop</b>Stop depth and remaining time
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/screens/rnd_ascent.jpg"
+              alt="Ascent rate warning"
+            />
+            <figcaption><b>Ascent rate warning</b>SLOW DOWN</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/screens/rnd_mod.jpg"
+              alt="MOD exceeded warning"
+            />
+            <figcaption><b>MOD exceeded</b>Ascend now</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/screens/rnd_ndl.jpg" alt="Depth alarm" />
+            <figcaption><b>Depth alarm</b>Alerts at your set depth</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/screens/rnd_alarm.jpg" alt="Time alarm" />
+            <figcaption>
+              <b>Time alarm</b>Alerts at your set dive time
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/screens/rnd_compass.jpg"
+              alt="Compass calibration"
+            />
+            <figcaption>
+              <b>Compass calibration</b>Trace a figure of eight
+            </figcaption>
+          </figure>
+        </div>
+        <ul class="feat">
+          <li>
+            <b>Safety-stop guidance</b> — tells you the stop depth and how long
+            to hold it.
+          </li>
+          <li>
+            <b>Ascent-rate warning</b> — warns you when you are coming up too
+            fast.
+          </li>
+          <li>
+            <b>MOD warning</b> — warns you when you go past the maximum
+            operating depth of your breathing gas.
+          </li>
+          <li>
+            <b>Spoken time-to-surface (TTS)</b> — reads out the time remaining
+            so you can hear it.
+          </li>
+          <li>
+            <b>Depth and time alarms</b> — alerts you at the depth or dive time
+            you set yourself.
+          </li>
+          <li>
+            <b>Decompression and missed-stop warnings</b> — tells you when you
+            have gone past your no-decompression limit and incurred a
+            decompression obligation, and warns you if you miss a required
+            decompression stop.
+          </li>
+          <li>
+            <b>Post-dive guidance</b> — shows your surface interval and no-fly
+            time.
+          </li>
+        </ul>
+        <div class="warn">
+          <b>⚠️ Never ignore a warning</b>
+          <p>
+            When an ascent-rate, MOD or decompression warning appears, act on it
+            immediately according to your training. In particular,
+            <b
+              >do not continue a dive while a missed-decompression-stop warning
+              is showing.</b
+            >
+            The guidance Watch Dive gives is for reference; your own judgment
+            and your dive training come first.
+          </p>
+        </div>
+        <div class="warn">
+          <b>⚠️ Always carry a back-up</b>
+          <p>
+            Always dive with an <b>independent back-up</b> means of reading
+            depth and elapsed time — dive tables or a second dive computer.
+            Electronic equipment, batteries and wireless links can fail without
+            warning.
+          </p>
+          <p>
+            The depth, time and decompression information this product shows
+            applies <b>only to the diver wearing the housing</b>. Never apply it
+            to another diver.
+          </p>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section id="care">
+        <h2 class="sec">09 · Care</h2>
+        <h3>Care &amp; storage</h3>
+        <h4>After every dive</h4>
+        <ul class="feat">
+          <li>
+            Rinse the housing thoroughly in clean fresh water
+            <b>with it still closed</b>, to remove salt and sand. Work the
+            buttons a few times while rinsing so salt cannot crystallize around
+            them.
+          </li>
+          <li>
+            <b>Dry it completely before opening it.</b> Wipe the water away from
+            around the O-ring in particular, so none of it runs inside.
+          </li>
+          <li>
+            Take the watch out, then leave the housing open to dry in the shade.
+          </li>
+        </ul>
+        <h4>O-ring care</h4>
+        <ul class="feat">
+          <li>
+            Inspect the O-ring before every dive. One grain of sand or a single
+            hair is enough to let water in.
+          </li>
+          <li>
+            Clean the O-ring and its groove with a soft, lint-free cloth. Never
+            use a pointed metal tool to lever it out.
+          </li>
+          <li>
+            Replace it as soon as you see a flat spot, a cut or any distortion.
+            If it needs lubricating, use a diving-grade silicone grease and
+            apply
+            <b>only the thinnest film</b> — too much grease attracts sand and
+            causes the very leak you are trying to prevent.
+          </li>
+        </ul>
+        <h4>Storage</h4>
+        <ul class="feat">
+          <li>
+            Store it somewhere <b>cool and dry</b>, out of direct sunlight and
+            away from heat.
+          </li>
+          <li>
+            Store it <b>open and unlatched</b>. Left closed for long periods,
+            the O-ring takes a set under compression and no longer seals
+            properly.
+          </li>
+          <li>Protect the clear window from scratches when carrying it.</li>
+          <li>
+            Never use solvents, alcohol, abrasive cleaners or a dishwasher —
+            they will damage the housing.
+          </li>
+        </ul>
+        <div class="warn">
+          <b>⚠️ If it has taken an impact or water has got in</b>
+          <p>
+            If you have dropped it, it has taken a hard knock, or you suspect
+            water got inside,
+            <b
+              >run the leak-prevention test to confirm the seal before you dive
+              with it again.</b
+            >
+            Do not use a product with a cracked window or a deformed latch —
+            contact support instead.
+          </p>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section id="faq">
+        <h2 class="sec">10 · FAQ</h2>
+        <h3>Frequently asked questions</h3>
+        <div class="qa">
+          <div class="q">Which watches can I use?</div>
+          <div class="a">
+            Apple Watch Ultra needs only the app. Other watches — Apple Watch
+            Series and SE, Galaxy Watch, Pixel Watch and so on — are used with
+            the housing. See the compatibility section above, or look up your
+            model at guide.diveroid.com/watch-compatibility.html.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">Can I use it for freediving?</div>
+          <div class="a">
+            Yes. Watch Dive supports both scuba diving and freediving.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">How deep can I take it?</div>
+          <div class="a">
+            The housing is designed to be watertight to 60 m and can be used to
+            a depth of 60 m. Dive within the limits of your own training and
+            experience.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">How do I get into dive mode?</div>
+          <div class="a">
+            Switch the watch to flight mode and close the housing — dive mode
+            starts automatically.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">Do I have to run the leak-prevention test?</div>
+          <div class="a">
+            It is not mandatory, but it takes 60 seconds at most and lets you
+            confirm the seal in advance, so we recommend it before every dive —
+            especially if you have dropped the product or have not used it for a
+            while.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">How do I change the battery?</div>
+          <div class="a">
+            The battery is sealed inside the housing and is not replaced by the
+            user. It lasts roughly <b>2 years or 500 dives</b>; when it needs
+            replacing, contact DIVEROID support. Please do not open the housing
+            yourself — doing so compromises its water-resistance.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">How much charge does my watch need?</div>
+          <div class="a">
+            You cannot open the housing under water, so there is no way to
+            charge the watch once you are in. Always charge it before a dive and
+            make sure it has enough for the dive you have planned.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">Can I operate the watch during a dive?</div>
+          <div class="a">
+            Yes — the housing button lets you operate the watch display with the
+            housing closed. A short press and a long press of 2 seconds or more
+            do different things, and what they do depends on the screen you are
+            on. On the dive screen, for example, a long press switches to the
+            compass screen.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">My depth reads deeper than it really is.</div>
+          <div class="a">
+            Depth is calculated for fresh water, so in sea water it can read
+            slightly deeper than your true depth. That error is
+            <b>on the conservative side</b>, which is the safe direction. Do
+            check that depth reads 0.0 m at the surface before you get in.
+          </div>
+        </div>
+        <div class="qa">
+          <div class="q">Can I shoot underwater with Watch Dive?</div>
+          <div class="a">
+            Watch Dive is a dive computer and logbook — it has no camera. It
+            will, however, sort photos and videos from a separate camera into
+            the right dive by the time they were taken. If underwater
+            photography is what you are after, take a look at the DIVEROID
+            Universal Pro range.
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 -->
+      <section id="warranty">
+        <h2 class="sec">11 · Warranty</h2>
+        <h3>Warranty</h3>
+        <p>
+          If a manufacturing defect appears under normal use, we will repair or
+          replace the product free of charge within the warranty period from the
+          date of purchase.
+        </p>
+        <h4>Not covered by the warranty</h4>
+        <ul class="feat">
+          <li>Damage from misuse, drops or impact</li>
+          <li>Damage from use beyond the rated depth of 60 m</li>
+          <li>Faults caused by unauthorized disassembly or modification</li>
+          <li>Flooding or failure caused by opening the sealed interior</li>
+          <li>Normal wear of consumable parts such as the O-ring and strap</li>
+        </ul>
+        <p class="subt">
+          Warranty &amp; service enquiries: <b>help@diveroid.com</b>
+        </p>
+      </section>
+
+      <div class="foot">
+        For the latest information and guides in other languages, visit
+        <b>guide.diveroid.com</b>. Specifications and app screens may change
+        without prior notice as we improve the product. ·
+        <a href="../kr/" style="color: var(--accent)">한국어</a> · © OceanWick
+        Inc.
+      </div>
+    </main>
+
+    <script>
+      // Highlight the current section in the sidebar while scrolling
+      const links = [...document.querySelectorAll(".nav a")];
+      const secs = links.map((a) =>
+        document.querySelector(a.getAttribute("href")),
+      );
+      const onScroll = () => {
+        let idx = 0;
+        secs.forEach((s, i) => {
+          if (s && s.getBoundingClientRect().top <= 140) idx = i;
+        });
+        links.forEach((a, i) => a.classList.toggle("active", i === idx));
+      };
+      document.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+      links.forEach((a) =>
+        a.addEventListener("click", () =>
+          document.querySelector(".sidebar").classList.remove("open"),
+        ),
+      );
+    </script>
+  </body>
 </html>

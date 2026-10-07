@@ -1,9 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=./kr/" />
-  <title>DIVEROID watch-dive Guide</title>
-</head>
-<body></body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Dive User Guide | DIVEROID</title>
+    <script>
+      // Korean speakers get the Korean guide; everyone else gets English.
+      (function () {
+        var lang = (
+          navigator.language ||
+          navigator.userLanguage ||
+          ""
+        ).toLowerCase();
+        var isKorean = lang === "ko" || lang.indexOf("ko-") === 0;
+        location.replace(isKorean ? "./kr/" : "./en/");
+      })();
+    </script>
+    <style>
+      body {
+        background: #0a0e1a;
+        color: #f2f5fa;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .logo {
+        font-size: 12px;
+        letter-spacing: 4px;
+        color: #3ba7ff;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 0 24px;
+      }
+      a {
+        color: #3ba7ff;
+        font-size: 15px;
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">DIVEROID</div>
+    <h1>Watch Dive User Guide</h1>
+    <!-- Shown only if the redirect above does not run (e.g. JavaScript off). -->
+    <a href="./kr/">한국어 사용자 가이드 →</a>
+    <a href="./en/">English User Guide →</a>
+    <noscript>
+      <p style="color: #8ea0bd; font-size: 13px">
+        Please choose your language above.
+      </p>
+    </noscript>
+  </body>
 </html>
